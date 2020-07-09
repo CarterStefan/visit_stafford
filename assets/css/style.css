@@ -1,35 +1,35 @@
 /* -------------------- SETTING OUT PAGE LAYOUT */
 
 #hero-image-box {
-    background-color: #f2f2f2;
+    background-color: #979FA6;
     height: 300px;
     text-align:center;
     padding: 100px;
 }
 
 #introduction-box {
-    background-color: green;
+    background-color: #F2BD1D;
     height: 300px;
     text-align:center;
     padding: 100px;
 }
 
 #google-maps-box {
-    background-color: blue;
+    background-color: #F2F2F2;
     height: 300px;
     text-align:center;
     padding: 100px;
 }
 
 #weather-box {
-    background-color: blueviolet;
+    background-color: #F2921D;
     height: 300px;
     text-align:center;
     padding: 100px;
 }
 
 #footer-box {
-    background-color: yellow;
+    background-color: #0D0D0D;
     height: 300px;
     text-align:center;
     padding: 100px;
@@ -43,6 +43,29 @@ body {
     font-family: 'Bebas Neue', cursive; 
     font-size: 200%;
 }
+
+/* ------------------------------ COLORS  */
+
+/* Color Theme Swatches in Hex */
+.Yellow-Town-1-hex { color: #979FA6; }
+.Yellow-Town-2-hex { color: #F2BD1D; }
+.Yellow-Town-3-hex { color: #F2921D; }
+.Yellow-Town-4-hex { color: #F2F2F2; }
+.Yellow-Town-5-hex { color: #0D0D0D; }
+
+/* Color Theme Swatches in RGBA */
+.Yellow-Town-1-rgba { color: rgba(151, 159, 166, 1); }
+.Yellow-Town-2-rgba { color: rgba(242, 189, 29, 1); }
+.Yellow-Town-3-rgba { color: rgba(242, 146, 29, 1); }
+.Yellow-Town-4-rgba { color: rgba(242, 242, 242, 1); }
+.Yellow-Town-5-rgba { color: rgba(13, 13, 13, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Yellow-Town-1-hsla { color: hsla(208, 7, 62, 1); }
+.Yellow-Town-2-hsla { color: hsla(45, 89, 53, 1); }
+.Yellow-Town-3-hsla { color: hsla(32, 89, 53, 1); }
+.Yellow-Town-4-hsla { color: hsla(0, 0, 94, 1); }
+.Yellow-Town-5-hsla { color: hsla(0, 0, 5, 1); }
 
 
 
