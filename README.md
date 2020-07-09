@@ -40,7 +40,9 @@ List of fonts used along with the source. Also include a brief description of ea
 
 ### color
 
-Where you got the color theme from, and why you chose this color.
+![color_theme](https://user-images.githubusercontent.com/64138643/87045675-106b4a00-c1f0-11ea-8c87-82c5c3c3fa2a.PNG)
+
+I chose this color theme as it tied in well with the colors of Stafford. Many of the iconic buildings of stafford are old Tudor houses, and are painted balck and white. As well as this, the two main sports teams in Stafford, Stafford Rugby Club and Stafford Rangers FC play in yellow/black and white/black respectively. 
 
 ### Images 
 
