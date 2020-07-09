@@ -36,11 +36,18 @@ Contents of all the pages which are on the site and a brief description of the p
 
 ### Fonts
 
-List of fonts used along with the source. Also include a brief description of each font and why it was used.
+I have used the Google Fonts library to make the text on my page visually appealing.
 
-### color
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-Where you got the color theme from, and why you chose this color.
+-   Bebas - This was a striking font, which is easy on the eye also. I did not want anything that applied to a specific target audience (nothing too childish or playful). This font will appeal to all that use the site, and wont take away anything from the content of the page.
+
+
+### Color
+
+![color_theme](https://user-images.githubusercontent.com/64138643/87045675-106b4a00-c1f0-11ea-8c87-82c5c3c3fa2a.PNG)
+
+I chose this color theme as it tied in well with the colors of Stafford. Many of the iconic buildings of stafford are old Tudor houses, and are painted balck and white. As well as this, the two main sports teams in Stafford, Stafford Rugby Club and Stafford Rangers FC play in yellow/black and white/black respectively. 
 
 ### Images 
 
