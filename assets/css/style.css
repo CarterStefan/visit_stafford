@@ -1,3 +1,12 @@
+/* ------------------------------ FONTS  */
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+body {
+  font-family: "Bebas Neue", cursive;
+  font-size: 200%;
+}
+
 /* -------------------- SETTING OUT PAGE LAYOUT */
 
 #hero-image-box {
@@ -35,14 +44,7 @@
   padding: 100px;
 }
 
-/* ------------------------------ FONTS  */
 
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-
-body {
-  font-family: "Bebas Neue", cursive;
-  font-size: 200%;
-}
 
 /* ------------------------------ COLORS  */
 
@@ -104,7 +106,12 @@ body {
   width: 100px;
 }
 
-/* -------------------------HERO IMAGE  */
+/* ------------------------------- NAV  */
+
+
+
+
+/* ------------------------- HERO IMAGE */
 
 .main-image-container {
   padding: 5px 0px;
@@ -130,4 +137,6 @@ body {
 }
 
 /* ------------------------- MAP  */
-div#map {min-height: 580px;}
+#map {
+    height: 500px;
+}
