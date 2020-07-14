@@ -140,3 +140,17 @@ body {
 #map {
     height: 500px;
 }
+
+
+/* ------------------------- DIVS  */
+#places-to-eat {
+    display: none;
+}
+
+#places-to-see {
+    display: none;
+}
+
+#places-to-stay {
+    display: none;
+}
