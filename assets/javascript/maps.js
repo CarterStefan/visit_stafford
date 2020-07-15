@@ -1,13 +1,14 @@
 let map;
+let markers = [];
 
+// FUNCTION TO INITILISE MAP ONTO PAGE.
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
     center: new google.maps.LatLng(52.8072076, -2.1173127),
     zoom: 16,
     styles: [
       {
-        featureType: "administrative",
-        elementType: "geometry",
+        elementType: "labels",
         stylers: [
           {
             visibility: "off",
@@ -15,7 +16,7 @@ function initMap() {
         ],
       },
       {
-        featureType: "poi",
+        featureType: "administrative.land_parcel",
         stylers: [
           {
             visibility: "off",
@@ -23,16 +24,7 @@ function initMap() {
         ],
       },
       {
-        featureType: "road",
-        elementType: "labels.icon",
-        stylers: [
-          {
-            visibility: "off",
-          },
-        ],
-      },
-      {
-        featureType: "transit",
+        featureType: "administrative.neighborhood",
         stylers: [
           {
             visibility: "off",
@@ -41,36 +33,42 @@ function initMap() {
       },
     ],
   });
+}
 
-  // PIZZA EXPRESS
+// MARKERS.
+// THE FOLLOWING FUNCTIONS SHOW THE LOCATIONS OF THE RESTAURANTS ON THE MAP.
+// THESE ARE SHOWN WHEN THE 'PLACES TO EAT' BUTTON IS CLICKED.
+
+$("#eat").click(function () {
+  // PIN LOCATION FOR PIZZA EXPRESS
   var markerPizzaExpress = new google.maps.Marker({
     position: new google.maps.LatLng(52.807589, -2.117275),
     map: map,
     title: "Pizza Express",
     icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png",
   });
+   
+
 
   google.maps.event.addListener(markerPizzaExpress, "click", function () {
-    hideInfo();
-    showInfo(".pizzaexpress");
     map.panTo(this.getPosition());
     map.setZoom(18);
   });
 
-  // NANDOS
-  var markerNandos = new google.maps.Marker({
-    position: new google.maps.LatLng(52.804452, -2.113377),
+  // PIN LOCATION FOR THE SWAN
+  var markerSwan = new google.maps.Marker({
+    position: new google.maps.LatLng(52.806043, -2.116994),
     map: map,
-    title: "Nandos",
+    title: "The Swan",
     icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png",
   });
 
-  google.maps.event.addListener(markerNandos, "click", function () {
+  google.maps.event.addListener(markerSwan, "click", function () {
     map.panTo(this.getPosition());
     map.setZoom(18);
   });
 
-  // MARKET VAULTS
+  // PIN LOCATION FOR MARKET VAULTS
   var markerMarketVaults = new google.maps.Marker({
     position: new google.maps.LatLng(52.806962, -2.116683),
     map: map,
@@ -83,7 +81,7 @@ function initMap() {
     map.setZoom(18);
   });
 
-  // SOUP KITCHEN
+  // PIN LOCATION FOR SOUP KITCHEN
   var markerSoupKitchen = new google.maps.Marker({
     position: new google.maps.LatLng(52.805889, -2.118376),
     map: map,
@@ -96,32 +94,32 @@ function initMap() {
     map.setZoom(18);
   });
 
-  // THE SWAN
-  var markerSwan = new google.maps.Marker({
-    position: new google.maps.LatLng(52.806043, -2.116994),
+  // PIN LOCATION FOR THE BEAR
+  var markerTheBear = new google.maps.Marker({
+    position: new google.maps.LatLng(52.806509, -2.116485),
     map: map,
-    title: "The Swan",
+    title: "The Bear",
     icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png",
   });
-  }
 
-  google.maps.event.addListener(markerSwan, "click", function () {
+  google.maps.event.addListener(markerTheBear, "click", function () {
     map.panTo(this.getPosition());
     map.setZoom(18);
   });
 
+  // PIN LOCATION FOR THE SUN INN
+  var markerTheSunInn = new google.maps.Marker({
+    position: new google.maps.LatLng(52.806428, -2.116867),
+    map: map,
+    title: "The Sun INN",
+    icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png",
+  });
 
-function showInfo(selector) {
-  document.querySelector(selector).classList.add("shown");
-  document.querySelector("#map-canvas").classList.add("zoomed");
-  document.querySelector("#map-overview").classList.remove("hidden");
-}
-
-function hideInfo() {
-  if (document.querySelector(".shown")) {
-    document.querySelector(".shown").classList.remove("shown");
-  }
-}
+  google.maps.event.addListener(markerTheSunInn, "click", function () {
+    map.panTo(this.getPosition());
+    map.setZoom(18);
+  });
+});
 
 /* var map;
 function initMap() {
