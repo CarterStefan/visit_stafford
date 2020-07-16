@@ -1,45 +1,89 @@
-let map;
-let markers = [];
+(function (exports) {
+  "use strict";
 
-// FUNCTION TO INITILISE MAP ONTO PAGE.
-function initMap() {
-  map = new google.maps.Map(document.getElementById("map"), {
-    center: new google.maps.LatLng(52.8072076, -2.1173127),
-    zoom: 16,
-    styles: [
-      {
-        elementType: "labels",
-        stylers: [
-          {
-            visibility: "off",
-          },
-        ],
-      },
-      {
-        featureType: "administrative.land_parcel",
-        stylers: [
-          {
-            visibility: "off",
-          },
-        ],
-      },
-      {
-        featureType: "administrative.neighborhood",
-        stylers: [
-          {
-            visibility: "off",
-          },
-        ],
-      },
-    ],
-  });
-}
+  
+
+  // In the following example, markers appear when the user clicks on the map.
+  // The markers are stored in an array.
+  // The user can then click an option to hide, show or delete the markers.
+
+  exports.markers = [];
+
+  function initMap() {
+    var stafford = {
+      lat: 52.8072076,
+      lng: -2.1173127,
+    };
+    exports.map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 16,
+      center: stafford,
+    });
+
+    // This event listener will call addMarker() when the map is clicked.
+    var buttonLocation = document.getElementById("pizza-express-marker");
+    google.maps.event.addDomListener(buttonLocation, "click", function (event) {
+      deleteMarkers();
+      addMarker(event.latLng);
+    });
+
+    // Adds a marker at the center of the map.
+    // addMarker(stafford);
+  }
+
+  // Deletes all markers in the array by removing references to them.
+  function deleteMarkers() {
+    clearMarkers();
+    exports.markers = [];
+  }
+
+  // Adds a marker to the map and push to the array.
+  function addMarker(location) {
+    var marker = new google.maps.Marker({
+      position: new google.maps.LatLng(52.807589, -2.117275),
+      animation: google.maps.Animation.DROP,
+      map: exports.map,
+    });
+    setMapOnAll(null);
+    exports.markers.push(marker);
+    console.log(markers);
+  }
+
+  // Sets the map on all markers in the array.
+  function setMapOnAll(map) {
+    for (var i = 0; i < exports.markers.length; i++) {
+      exports.markers[i].setMap(map);
+    }
+  }
+
+  // Removes the markers from the map, but keeps them in the array.
+  function clearMarkers() {
+    setMapOnAll(null);
+  }
+
+  // Shows any markers currently in the array.
+  function showMarkers() {
+    setMapOnAll(exports.map);
+  }
+
+  // Deletes all markers in the array by removing references to them.
+  function deleteMarkers() {
+    clearMarkers();
+    exports.markers = [];
+  }
+
+  exports.addMarker = addMarker;
+  exports.clearMarkers = clearMarkers;
+  exports.deleteMarkers = deleteMarkers;
+  exports.initMap = initMap;
+  exports.setMapOnAll = setMapOnAll;
+  exports.showMarkers = showMarkers;
+})((this.window = this.window || {}));
 
 // MARKERS.
 // THE FOLLOWING FUNCTIONS SHOW THE LOCATIONS OF THE RESTAURANTS ON THE MAP.
 // THESE ARE SHOWN WHEN THE 'PLACES TO EAT' BUTTON IS CLICKED.
 
-$("#eat").click(function () {
+/* $("#eat").click(function () {
   // PIN LOCATION FOR PIZZA EXPRESS
   var markerPizzaExpress = new google.maps.Marker({
     position: new google.maps.LatLng(52.807589, -2.117275),

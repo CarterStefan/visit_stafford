@@ -193,14 +193,16 @@ let cameronLodge = new hotel(
 let eat1 = 
 '<p>' + pizzaExpress.name + '</p>' +
 '<p>' + pizzaExpress.type + '</p>' +
-'<p> <a target=_blank href="' + pizzaExpress.website +'">Make a booking</a></p>';
+'<p> <a target=_blank href="' + pizzaExpress.website +'">Make a booking</a></p>' + 
+'<button id="pizza-express-marker">View On Map</button>';
 let food1 = document.getElementById("pizza-express");
 food1.innerHTML = eat1;
 
 let eat2 = 
 '<p>' + theSwan.name + '</p>' +
 '<p>' + theSwan.type + '</p>' +
-'<p> <a target=_blank href="' + theSwan.website +'">Make a booking</a></p>';
+'<p> <a target=_blank href="' + theSwan.website +'">Make a booking</a></p>' + 
+'<button id="the-swan-marker">View On Map</button>';;
 let food2 = document.getElementById("the-swan");
 food2.innerHTML = eat2;
 
