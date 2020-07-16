@@ -1,8 +1,6 @@
 (function (exports) {
   "use strict";
 
-  
-
   // In the following example, markers appear when the user clicks on the map.
   // The markers are stored in an array.
   // The user can then click an option to hide, show or delete the markers.
@@ -19,15 +17,180 @@
       center: stafford,
     });
 
-    // This event listener will call addMarker() when the map is clicked.
-    var buttonLocation = document.getElementById("pizza-express-marker");
-    google.maps.event.addDomListener(buttonLocation, "click", function (event) {
+    // Event listeners will call the relevant addMarker() when the show on map button is clicked.
+
+    //RESTAURANTS
+    var pizzaExpressLocation = document.getElementById("pizza-express-marker");
+    google.maps.event.addDomListener(pizzaExpressLocation, "click", function (
+      event
+    ) {
       deleteMarkers();
-      addMarker(event.latLng);
+      addPizzaExpressMarker(event.latLng);
     });
 
-    // Adds a marker at the center of the map.
-    // addMarker(stafford);
+    var theSwanLocation = document.getElementById("the-swan-marker");
+    google.maps.event.addDomListener(theSwanLocation, "click", function (
+      event
+    ) {
+      deleteMarkers();
+      addTheSwanMarker(event.latLng);
+    });
+
+    var theMarketVaultsLocation = document.getElementById(
+      "the-market-vaults-marker"
+    );
+    google.maps.event.addDomListener(
+      theMarketVaultsLocation,
+      "click",
+      function (event) {
+        deleteMarkers();
+        addTheMarketVaultsMarker(event.latLng);
+      }
+    );
+
+    var theSoupKitchenLocation = document.getElementById(
+      "the-soup-kitchen-marker"
+    );
+    google.maps.event.addDomListener(theSoupKitchenLocation, "click", function (
+      event
+    ) {
+      deleteMarkers();
+      addTheSoupKitchenMarker(event.latLng);
+    });
+
+    var theBearLocation = document.getElementById("the-bear-marker");
+    google.maps.event.addDomListener(theBearLocation, "click", function (
+      event
+    ) {
+      deleteMarkers();
+      addTheBearMarker(event.latLng);
+    });
+
+    var theSunInnLocation = document.getElementById("the-sun-inn-marker");
+    google.maps.event.addDomListener(theSunInnLocation, "click", function (
+      event
+    ) {
+      deleteMarkers();
+      addTheSunInnMarker(event.latLng);
+    });
+
+    //ATTRACTIONS
+
+    var theAncientHighHouseLocation = document.getElementById(
+      "the-ancient-high-house-marker"
+    );
+    google.maps.event.addDomListener(
+      theAncientHighHouseLocation,
+      "click",
+      function (event) {
+        deleteMarkers();
+        addAncientHighHouseMarker(event.latLng);
+      }
+    );
+
+    var staffordCastleLocation = document.getElementById("stafford-castle-marker");
+    google.maps.event.addDomListener(staffordCastleLocation, "click", function (
+      event
+    ) {
+      deleteMarkers();
+      addStaffordCastleMarker(event.latLng);
+    });
+
+    var victoriaParkLocation = document.getElementById("victoria-park-marker");
+    google.maps.event.addDomListener(victoriaParkLocation, "click", function (
+      event
+    ) {
+      deleteMarkers();
+      addVictoriaParkMarker(event.latLng);
+    });
+
+    var doxeyMarshesLocation = document.getElementById("doxey-marshes-marker");
+    google.maps.event.addDomListener(doxeyMarshesLocation, "click", function (
+      event
+    ) {
+      deleteMarkers();
+      addDoxeyMarshesMarker(event.latLng);
+    });
+
+    var shireHallGalleryLocation = document.getElementById(
+      "shire-hall-gallery-marker"
+    );
+    google.maps.event.addDomListener(
+      shireHallGalleryLocation,
+      "click",
+      function (event) {
+        deleteMarkers();
+        addShireHallGalleryMarker(event.latLng);
+      }
+    );
+
+    var gatehouseTheatreLocation = document.getElementById(
+      "gatehouse-theatre-marker"
+    );
+    google.maps.event.addDomListener(
+      gatehouseTheatreLocation,
+      "click",
+      function (event) {
+        deleteMarkers();
+        addGatehouseTheatreMarker(event.latLng);
+      }
+    );
+
+    //HOTELS
+
+    var pizzaExpressLocation = document.getElementById("pizza-express-marker");
+    google.maps.event.addDomListener(pizzaExpressLocation, "click", function (
+      event
+    ) {
+      deleteMarkers();
+      addPizzaExpressMarker(event.latLng);
+    });
+
+    var theSwanLocation = document.getElementById("the-swan-marker");
+    google.maps.event.addDomListener(theSwanLocation, "click", function (
+      event
+    ) {
+      deleteMarkers();
+      addTheSwanMarker(event.latLng);
+    });
+
+    var theMarketVaultsLocation = document.getElementById(
+      "the-market-vaults-marker"
+    );
+    google.maps.event.addDomListener(
+      theMarketVaultsLocation,
+      "click",
+      function (event) {
+        deleteMarkers();
+        addTheMarketVaultsMarker(event.latLng);
+      }
+    );
+
+    var theSoupKitchenLocation = document.getElementById(
+      "the-soup-kitchen-marker"
+    );
+    google.maps.event.addDomListener(theSoupKitchenLocation, "click", function (
+      event
+    ) {
+      deleteMarkers();
+      addTheSoupKitchenMarker(event.latLng);
+    });
+
+    var theBearLocation = document.getElementById("the-bear-marker");
+    google.maps.event.addDomListener(theBearLocation, "click", function (
+      event
+    ) {
+      deleteMarkers();
+      addTheBearMarker(event.latLng);
+    });
+
+    var theSunInnLocation = document.getElementById("the-sun-inn-marker");
+    google.maps.event.addDomListener(theSunInnLocation, "click", function (
+      event
+    ) {
+      deleteMarkers();
+      addTheSunInnMarker(event.latLng);
+    });
   }
 
   // Deletes all markers in the array by removing references to them.
@@ -37,9 +200,129 @@
   }
 
   // Adds a marker to the map and push to the array.
-  function addMarker(location) {
+  function addPizzaExpressMarker(location) {
     var marker = new google.maps.Marker({
       position: new google.maps.LatLng(52.807589, -2.117275),
+      animation: google.maps.Animation.DROP,
+      map: exports.map,
+    });
+    setMapOnAll(null);
+    exports.markers.push(marker);
+  }
+
+  function addTheSwanMarker(location) {
+    var marker = new google.maps.Marker({
+      position: new google.maps.LatLng(52.806043, -2.116994),
+      animation: google.maps.Animation.DROP,
+      map: exports.map,
+    });
+    setMapOnAll(null);
+    exports.markers.push(marker);
+    console.log(markers);
+  }
+
+  function addTheMarketVaultsMarker(location) {
+    var marker = new google.maps.Marker({
+      position: new google.maps.LatLng(52.80706, -2.116824),
+      animation: google.maps.Animation.DROP,
+      map: exports.map,
+    });
+    setMapOnAll(null);
+    exports.markers.push(marker);
+    console.log(markers);
+  }
+
+  function addTheSoupKitchenMarker(location) {
+    var marker = new google.maps.Marker({
+      position: new google.maps.LatLng(52.80589, -2.118329),
+      animation: google.maps.Animation.DROP,
+      map: exports.map,
+    });
+    setMapOnAll(null);
+    exports.markers.push(marker);
+    console.log(markers);
+  }
+
+  function addTheBearMarker(location) {
+    var marker = new google.maps.Marker({
+      position: new google.maps.LatLng(52.806442, -2.116837),
+      animation: google.maps.Animation.DROP,
+      map: exports.map,
+    });
+    setMapOnAll(null);
+    exports.markers.push(marker);
+    console.log(markers);
+  }
+
+  function addTheSunInnMarker(location) {
+    var marker = new google.maps.Marker({
+      position: new google.maps.LatLng(52.803788, -2.11429),
+      animation: google.maps.Animation.DROP,
+      map: exports.map,
+    });
+    setMapOnAll(null);
+    exports.markers.push(marker);
+    console.log(markers);
+  }
+
+  //ATTRACTIONS
+  function addAncientHighHouseMarker(location) {
+    var marker = new google.maps.Marker({
+      position: new google.maps.LatLng(52.806302, -2.117101),
+      animation: google.maps.Animation.DROP,
+      map: exports.map,
+    });
+    setMapOnAll(null);
+    exports.markers.push(marker);
+  }
+
+  function addStaffordCastleMarker(location) {
+    var marker = new google.maps.Marker({
+      position: new google.maps.LatLng(52.798038, -2.147365),
+      animation: google.maps.Animation.DROP,
+      map: exports.map,
+    });
+    setMapOnAll(null);
+    exports.markers.push(marker);
+    console.log(markers);
+  }
+
+  function addVictoriaParkMarker(location) {
+    var marker = new google.maps.Marker({
+      position: new google.maps.LatLng(52.804004, -2.120334),
+      animation: google.maps.Animation.DROP,
+      map: exports.map,
+    });
+    setMapOnAll(null);
+    exports.markers.push(marker);
+    console.log(markers);
+  }
+
+  function addDoxeyMarshesMarker(location) {
+    var marker = new google.maps.Marker({
+      position: new google.maps.LatLng(52.820263, -2.145788),
+      animation: google.maps.Animation.DROP,
+      map: exports.map,
+    });
+    setMapOnAll(null);
+    exports.markers.push(marker);
+    console.log(markers);
+  }
+
+  function addShireHallGalleryMarker(location) {
+    var marker = new google.maps.Marker({
+      position: new google.maps.LatLng(52.807201, -2.11675),
+      animation: google.maps.Animation.DROP,
+      map: exports.map,
+    });
+    setMapOnAll(null);
+    exports.markers.push(marker);
+    console.log(markers);
+  }
+
+  function addGatehouseTheatreMarker(location) {
+    var marker = new google.maps.Marker({
+      position: new google.maps.LatLng(52.807243, -2.115737),
       animation: google.maps.Animation.DROP,
       map: exports.map,
     });
@@ -65,217 +348,9 @@
     setMapOnAll(exports.map);
   }
 
-  // Deletes all markers in the array by removing references to them.
-  function deleteMarkers() {
-    clearMarkers();
-    exports.markers = [];
-  }
-
-  exports.addMarker = addMarker;
   exports.clearMarkers = clearMarkers;
   exports.deleteMarkers = deleteMarkers;
   exports.initMap = initMap;
   exports.setMapOnAll = setMapOnAll;
   exports.showMarkers = showMarkers;
 })((this.window = this.window || {}));
-
-// MARKERS.
-// THE FOLLOWING FUNCTIONS SHOW THE LOCATIONS OF THE RESTAURANTS ON THE MAP.
-// THESE ARE SHOWN WHEN THE 'PLACES TO EAT' BUTTON IS CLICKED.
-
-/* $("#eat").click(function () {
-  // PIN LOCATION FOR PIZZA EXPRESS
-  var markerPizzaExpress = new google.maps.Marker({
-    position: new google.maps.LatLng(52.807589, -2.117275),
-    map: map,
-    title: "Pizza Express",
-    icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png",
-  });
-   
-
-
-  google.maps.event.addListener(markerPizzaExpress, "click", function () {
-    map.panTo(this.getPosition());
-    map.setZoom(18);
-  });
-
-  // PIN LOCATION FOR THE SWAN
-  var markerSwan = new google.maps.Marker({
-    position: new google.maps.LatLng(52.806043, -2.116994),
-    map: map,
-    title: "The Swan",
-    icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png",
-  });
-
-  google.maps.event.addListener(markerSwan, "click", function () {
-    map.panTo(this.getPosition());
-    map.setZoom(18);
-  });
-
-  // PIN LOCATION FOR MARKET VAULTS
-  var markerMarketVaults = new google.maps.Marker({
-    position: new google.maps.LatLng(52.806962, -2.116683),
-    map: map,
-    title: "Market Vaults",
-    icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png",
-  });
-
-  google.maps.event.addListener(markerMarketVaults, "click", function () {
-    map.panTo(this.getPosition());
-    map.setZoom(18);
-  });
-
-  // PIN LOCATION FOR SOUP KITCHEN
-  var markerSoupKitchen = new google.maps.Marker({
-    position: new google.maps.LatLng(52.805889, -2.118376),
-    map: map,
-    title: "Soup Kitchen",
-    icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png",
-  });
-
-  google.maps.event.addListener(markerSoupKitchen, "click", function () {
-    map.panTo(this.getPosition());
-    map.setZoom(18);
-  });
-
-  // PIN LOCATION FOR THE BEAR
-  var markerTheBear = new google.maps.Marker({
-    position: new google.maps.LatLng(52.806509, -2.116485),
-    map: map,
-    title: "The Bear",
-    icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png",
-  });
-
-  google.maps.event.addListener(markerTheBear, "click", function () {
-    map.panTo(this.getPosition());
-    map.setZoom(18);
-  });
-
-  // PIN LOCATION FOR THE SUN INN
-  var markerTheSunInn = new google.maps.Marker({
-    position: new google.maps.LatLng(52.806428, -2.116867),
-    map: map,
-    title: "The Sun INN",
-    icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png",
-  });
-
-  google.maps.event.addListener(markerTheSunInn, "click", function () {
-    map.panTo(this.getPosition());
-    map.setZoom(18);
-  });
-});
-
-/* var map;
-function initMap() {
-  map = new google.maps.Map(document.getElementById("map"), {
-    center: new google.maps.LatLng(52.8072076, -2.1173127),
-    zoom: 16,
-  });
-
-  
-}
-
-// Data for the markers consisting of a name, a LatLng and a zIndex for the
-// order in which these markers should display on top of each other.
-var foods = [
-  ["Pizza Express", 52.80749022738673, -2.117243520977638, 1],
-  ["The Bakehouse", 52.807513559894325, -2.1164920390789144, 2],
-  ["The Market Vaults", 52.80694065799884, -2.1166817024969053, 3],
-  ["Grove Coffee House", 52.80668482822292, -2.1180137534526633, 4],
-  ["The Soup Kitchen", 52.80587092807219, -2.1183753426146157, 5],
-  ["The Swan", 52.806071977798034, -2.116980032861837, 6],
-  ["Royal Bangkok", 52.80486888552228, -2.1168604587943096, 7],
-  ["Ayo Gorkhali", 52.80483665866169, -2.1170096765799973, 8],
-  ["The Sun Inn", 52.803756592079, -2.1144042312020117, 9],
-  ["Nandos", 52.80444489138128, -2.1133998484127536, 10],
-  ["The Bear", 52.80642479101823, -2.116871050282536, 11],
-];
-
-let attractions = [
-  ["Ancient High House", 52.80637610727258, -2.117107258551081, 1],
-  ["Doxey Marshes", 52.82024877228274, -2.145856260858241, 2],
-  ["Shire Hall Gallery", 52.80719662664109, -2.1167741830841336, 3],
-  ["Gatehouse Theatre", 52.80720378578625, -2.115744265416404, 4],
-  ["Victoria Park", 52.80398925465019, -2.1203379837765857, 5],
-  ["Stafford Castle", 52.797918450118445, -2.147415021577961, 6],
-];
-
-function setFoodMarkers(map) {    
-  // Adds markers to the map.
-
-  // Marker sizes are expressed as a Size of X,Y where the origin of the image
-  // (0,0) is located in the top left of the image.
-
-  // Origins, anchor positions and coordinates of the marker increase in the X
-  // direction to the right and in the Y direction down.
-  var image = {
-    url: "http://maps.google.com/mapfiles/kml/paddle/grn-blank.png",
-    // This marker is 60 pixels wide by 60 pixels high.
-    size: new google.maps.Size(60, 60),
-    // The origin for this image is (0, 0).
-    origin: new google.maps.Point(0, 0),
-    // The anchor for this image is the base of the flagpole at (0, 32).
-    anchor: new google.maps.Point(0, 0),
-  };
-  // Shapes define the clickable region of the icon. The type defines an HTML
-  // <area> element 'poly' which traces out a polygon as a series of X,Y points.
-  // The final coordinate closes the poly by connecting to the first coordinate.
-  var shape = {
-    coords: [1, 1, 1, 20, 18, 20, 18, 1],
-    type: "poly",
-  };
-
-
-
-  for (var i = 0; i < foods.length; i++) {
-    var food = foods[i];
-    var foodMarker = new google.maps.Marker({
-      position: { lat: food[1], lng: food[2] },
-      map: map,
-      icon: image,
-      shape: shape,
-      title: food[0],
-      zIndex: food[3],
-    });
-  }
-
-  
-
-}
-
-function setAttractionMarkers(map) {
-  // Adds markers to the map.
-
-  // Marker sizes are expressed as a Size of X,Y where the origin of the image
-  // (0,0) is located in the top left of the image.
-
-  // Origins, anchor positions and coordinates of the marker increase in the X
-  // direction to the right and in the Y direction down.
-  var image = {
-    url: "http://maps.google.com/mapfiles/kml/paddle/blu-blank.png",
-    // This marker is 60 pixels wide by 60 pixels high.
-    size: new google.maps.Size(60, 60),
-    // The origin for this image is (0, 0).
-    origin: new google.maps.Point(0, 0),
-    // The anchor for this image is the base of the flagpole at (0, 32).
-    anchor: new google.maps.Point(0, 0),
-  };
-  // Shapes define the clickable region of the icon. The type defines an HTML
-  // <area> element 'poly' which traces out a polygon as a series of X,Y points.
-  // The final coordinate closes the poly by connecting to the first coordinate.
-  var shape = {
-    coords: [1, 1, 1, 20, 18, 20, 18, 1],
-    type: "poly",
-  };
-  for (var i = 0; i < attractions.length; i++) {
-    var attraction = attractions[i];
-    var attractionMarker = new google.maps.Marker({
-      position: { lat: attraction[1], lng: attraction[2] },
-      map: map,
-      icon: image,
-      shape: shape,
-      title: attraction[0],
-      zIndex: attraction[3],
-    });
-  }
-} */

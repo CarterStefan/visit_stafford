@@ -1,38 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stafford</title>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Stafford</title>
+    <!-----------------------------------------------EXTERNAL RESOURCES-->
 
-	<!-----------------------------------------------EXTERNAL RESOURCES-->
+    <!------------------------------------BOOTSTRAP---------------------->
 
-   
-    
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
 
-	<!------------------------------------BOOTSTRAP---------------------->
+    <!-----------------------------------------------INTERNAL RESOURCES-->
 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    <!------------------------------------CSS---------------------------->
 
-	<!-----------------------------------------------INTERNAL RESOURCES-->
+    <link href="assets/css/style.css" type="text/css" rel="stylesheet" />
+  </head>
 
-	<!------------------------------------CSS---------------------------->
-
-	<link href="assets/css/style.css" type="text/css" rel="stylesheet" />
-</head>
-
-<body>
-	<!------------------------------------NAVBAR------------------------->
-	<section>
-		<nav class="navbar navbar-light navbar-expand-md">
-			<a href="index.html"><img
+  <body>
+    <!------------------------------------NAVBAR------------------------->
+    <section>
+      <nav class="navbar navbar-light navbar-expand-md">
+        <a href="index.html"
+          ><img
             src="assets/img/stafford_knot.png"
             alt="stafford_knot"
             id="logo"
         /></a>
-				<button
+        <button
           class="navbar-toggler"
           type="button"
           data-toggle="collapse"
@@ -43,209 +44,182 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-				<div class="collapse navbar-collapse" id="navbarNavDropdown">
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item active">
-							<a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#introduction-box">ABOUT</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#google-maps-box">MAP</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#weather-box">WEATHER</a>
-						</li>
-					</ul>
-				</div>
-		</nav>
-	</section>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >HOME <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#introduction-box">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#google-maps-box">MAP</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#weather-box">WEATHER</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
 
-	<div class="container-fluid main-image-container">
-		<div class="row">
-			<div class="col-12">
-				<section class="jumbotron">
-					<div class="row">
-						<div class="col-12">
-							<p class="hero-image-text">Welcome To Stafford.</p>
-						</div>
-					</div>
-				</section>
-			</div>
-		</div>
-	</div>
+    <div class="container-fluid main-image-container">
+      <div class="row">
+        <div class="col-12">
+          <section class="jumbotron">
+            <div class="row">
+              <div class="col-12">
+                <p class="hero-image-text">Welcome To Stafford.</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
 
-	<!------------------------------------INTRODUCTION------------------>
-	<section>
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-12" id="introduction-box">
-					<p>INTRODUCTION TO STAFFORD HERE</p>
-				</div>
-			</div>
-		</div>
-	</section>
+    <!------------------------------------INTRODUCTION------------------>
+    <section>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12" id="introduction-box">
+            <p>INTRODUCTION TO STAFFORD HERE</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-	<!------------------------------------WHAT TO DO------------------->
+    <!------------------------------------WHAT TO DO------------------->
 
-	<section>
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-12" id="What-to-do-box">
-					<button id="eat">places to eat</button>
-					<button id="see">places to see</button>
-					<button id="stay">places to stay</button>
-				</div>
-			</div>
+    <section>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12" id="What-to-do-box">
+            <button id="eat">places to eat</button>
+            <button id="see">places to see</button>
+            <button id="stay">places to stay</button>
+          </div>
+        </div>
 
-			<article id="places-to-eat">
-				<div class="row" id="places-to-eat-first-row">
-					<div class="col-4 eat-box" id="pizza-express">
-					</div>
-					<div class="col-4 eat-box" id="the-swan">
-					</div>
-					<div class="col-4 eat-box" id="market-vaults">
-					</div>
-				</div>
-				<div class="row" id="places-to-eat-second-row">
-					<div class="col-4 eat-box" id="the-soup-kitchen">
-					</div>
-					<div class="col-4 eat-box" id="the-bear">
-					</div>
-					<div class="col-4 eat-box" id="the-sun">
-					</div>
-				</div>
-			</article>
+        <article id="places-to-eat">
+          <div class="row" id="places-to-eat-first-row">
+            <div class="col-4 eat-box" id="pizza-express"></div>
+            <div class="col-4 eat-box" id="the-swan"></div>
+            <div class="col-4 eat-box" id="the-market-vaults"></div>
+          </div>
+          <div class="row" id="places-to-eat-second-row">
+            <div class="col-4 eat-box" id="the-soup-kitchen"></div>
+            <div class="col-4 eat-box" id="the-bear"></div>
+            <div class="col-4 eat-box" id="the-sun"></div>
+          </div>
+        </article>
 
+        <article id="places-to-see">
+          <div class="row" id="places-to-see-first-row">
+            <div class="col-4 see-box" id="ancient-high-house"></div>
+            <div class="col-4 see-box" id="stafford-castle"></div>
+            <div class="col-4 see-box" id="victoria-park"></div>
+          </div>
 
+          <div class="row" id="places-to-see-second-row">
+            <div class="col-4 see-box" id="doxey-marshes"></div>
+            <div class="col-4 see-box" id="shire-hall-gallery"></div>
+            <div class="col-4 see-box" id="gatehouse-theatre"></div>
+          </div>
+        </article>
 
-			<article id="places-to-see">
-				<div class="row" id="places-to-see-first-row">
-					<div class="col-4 see-box" id="ancient-high-house">
+        <article id="places-to-stay">
+          <div class="row" id="places-to-stay-first-row">
+            <div class="col-4 see-box" id="the-swan-hotel"></div>
+            <div class="col-4 see-box" id="the-vine"></div>
+            <div class="col-4 see-box" id="tillington-hall"></div>
+          </div>
 
-					</div>
-					<div class="col-4 see-box" id="stafford-castle">
+          <div class="row" id="places-to-stay-second-row">
+            <div class="col-4 see-box" id="the-spittal-brook"></div>
+            <div class="col-4 see-box" id="abbey-hotel"></div>
+            <div class="col-4 see-box" id="cameron-lodge"></div>
+          </div>
+        </article>
+      </div>
+    </section>
 
-					</div>
-					<div class="col-4 see-box" id="victoria-park">
+    <!------------------------------------GOOGLE MAPS------------------->
 
-					</div>
-				</div>
+    <section>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12" id="google-maps-box">
+            <div id="map"></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-				<div class="row" id="places-to-see-second-row">
-					<div class="col-4 see-box" id="doxey-marshes">
+    <!------------------------------------WEATHER API------------------->
 
-					</div>
-					<div class="col-4 see-box" id="shire-hall-gallery">
+    <section>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12" id="weather-box">
+            <p>WEATHER API HERE</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-					</div>
-					<div class="col-4 see-box" id="gatehouse-theatre">
+    <!------------------------------------FOOTER------------------------>
 
-					</div>
-				</div>
-			</article>
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12" id="footer-box">
+            <p>FOOTER</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-----------------------------------------------SCRIPTS------------->
+    <!-----------------------------------------------EXTERNAL RESOURCES-->
 
-			<article id="places-to-stay">
-				<div class="row" id="places-to-stay-first-row">
-					<div class="col-4 see-box" id="the-swan-hotel">
+    <!------------------------------------JQUERY------------------------->
 
-					</div>
-					<div class="col-4 see-box" id="the-vine">
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
 
-					</div>
-					<div class="col-4 see-box" id="tillington-hall">
+    <!------------------------------------BOOTSTRAP---------------------->
 
-					</div>
-				</div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
 
-				<div class="row" id="places-to-stay-second-row">
-					<div class="col-4 see-box" id="the-spittal-brook">
+    <!------------------------------------FONTAWESOME-------------------->
 
-					</div>
-					<div class="col-4 see-box" id="abbey-hotel">
-
-					</div>
-					<div class="col-4 see-box" id="cameron-lodge">
-
-					</div>
-				</div>
-			</article>
-
-		</div>
-	</section>
-
-    
-
-	<!------------------------------------GOOGLE MAPS------------------->
-
-	<section>
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-12" id="google-maps-box">
-					<div id="map"></div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-    <div> <input onclick="deleteMarkers();" type="button" value="Delete Markers" /> </div>
-
-	<!------------------------------------WEATHER API------------------->
-
-	<section>
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-12" id="weather-box">
-					<p>WEATHER API HERE</p>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!------------------------------------FOOTER------------------------>
-
-	<footer>
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-12" id="footer-box">
-					<p>FOOTER</p>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<!-----------------------------------------------SCRIPTS------------->
-	<!-----------------------------------------------EXTERNAL RESOURCES-->
-
-	<!------------------------------------JQUERY------------------------->
-
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-	</script>
-
-	<!------------------------------------BOOTSTRAP---------------------->
-
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-	</script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
-	</script>
-
-	<!------------------------------------FONTAWESOME-------------------->
-
-	<script src="https://kit.fontawesome.com/3dcc7a92aa.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/3dcc7a92aa.js"
+      crossorigin="anonymous"
+    ></script>
 
     <script src="assets/javascript/scripts.js"></script>
 
-     <!------------------------------------GOOGLE MAPS API---------------->
+    <!------------------------------------GOOGLE MAPS API---------------->
 
     <script src="assets/javascript/maps.js"></script>
-	<script async defer
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6Mtga96rxT7bdX2-ufaC_gJ80zqE9fLc&callback=initMap">
-	</script>
-	
-	
-</body>
-
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6Mtga96rxT7bdX2-ufaC_gJ80zqE9fLc&callback=initMap"
+    ></script>
+  </body>
 </html>

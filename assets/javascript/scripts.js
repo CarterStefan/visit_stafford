@@ -202,35 +202,39 @@ let eat2 =
 '<p>' + theSwan.name + '</p>' +
 '<p>' + theSwan.type + '</p>' +
 '<p> <a target=_blank href="' + theSwan.website +'">Make a booking</a></p>' + 
-'<button id="the-swan-marker">View On Map</button>';;
+'<button id="the-swan-marker">View On Map</button>';
 let food2 = document.getElementById("the-swan");
 food2.innerHTML = eat2;
 
 let eat3 = 
 '<p>' + theMarketVaults.name + '</p>' +
 '<p>' + theMarketVaults.type + '</p>' +
-'<p> <a target=_blank href="' + theMarketVaults.website +'">Make a booking</a></p>';
-let food3 = document.getElementById("market-vaults");
+'<p> <a target=_blank href="' + theMarketVaults.website +'">Make a booking</a></p>' + 
+'<button id="the-market-vaults-marker">View On Map</button>';
+let food3 = document.getElementById("the-market-vaults");
 food3.innerHTML = eat3;
 
 let eat4 = 
 '<p>' + theSoupKitchen.name + '</p>' +
 '<p>' + theSoupKitchen.type + '</p>' +
-'<p> <a target=_blank href="' + theSoupKitchen.website +'">Make a booking</a></p>';
+'<p> <a target=_blank href="' + theSoupKitchen.website +'">Make a booking</a></p>' + 
+'<button id="the-soup-kitchen-marker">View On Map</button>';;
 let food4 = document.getElementById("the-soup-kitchen");
 food4.innerHTML = eat4;
 
 let eat5 = 
 '<p>' + theBear.name + '</p>' +
 '<p>' + theBear.type + '</p>' +
-'<p> <a target=_blank href="' + theBear.website +'">Make a booking</a></p>';
+'<p> <a target=_blank href="' + theBear.website +'">Make a booking</a></p>' + 
+'<button id="the-bear-marker">View On Map</button>';;
 let food5 = document.getElementById("the-bear");
 food5.innerHTML = eat5;
 
 let eat6 = 
 '<p>' + theSunInn.name + '</p>' +
 '<p>' + theSunInn.type + '</p>' +
-'<p> <a target=_blank href="' + theSunInn.website +'">Make a booking</a></p>';
+'<p> <a target=_blank href="' + theSunInn.website +'">Make a booking</a></p>' + 
+'<button id="the-sun-inn-marker">View On Map</button>';;
 let food6 = document.getElementById("the-sun");
 food6.innerHTML = eat6;
 
@@ -239,42 +243,48 @@ food6.innerHTML = eat6;
 let see1 = 
 '<p>' + theAncientHighHouse.name + '</p>' +
 '<p>' + theAncientHighHouse.type + '</p>' +
-'<p> <a target=_blank href="' + theAncientHighHouse.website +'">See Website</a></p>';
+'<p> <a target=_blank href="' + theAncientHighHouse.website +'">See Website</a></p>' + 
+'<button id="the-ancient-high-house-marker">View On Map</button>';;
 let attraction1 = document.getElementById("ancient-high-house");
 attraction1.innerHTML = see1;
 
 let see2 = 
 '<p>' + staffordCastle.name + '</p>' +
 '<p>' + staffordCastle.type + '</p>' +
-'<p> <a target=_blank href="' + staffordCastle.website +'">See Website</a></p>';
+'<p> <a target=_blank href="' + staffordCastle.website +'">See Website</a></p>' + 
+'<button id="stafford-castle-marker">View On Map</button>';;
 let attraction2 = document.getElementById("stafford-castle");
 attraction2.innerHTML = see2;
 
 let see3 = 
 '<p>' + victoriaPark.name + '</p>' +
 '<p>' + victoriaPark.type + '</p>' +
-'<p> <a target=_blank href="' + victoriaPark.website +'">See Website</a></p>';
+'<p> <a target=_blank href="' + victoriaPark.website +'">See Website</a></p>' + 
+'<button id="victoria-park-marker">View On Map</button>';;
 let attraction3 = document.getElementById("victoria-park");
 attraction3.innerHTML = see3;
 
 let see4 = 
 '<p>' + doxeyMarshes.name + '</p>' +
 '<p>' + doxeyMarshes.type + '</p>' +
-'<p> <a target=_blank href="' + doxeyMarshes.website +'">See Website</a></p>';
+'<p> <a target=_blank href="' + doxeyMarshes.website +'">See Website</a></p>' + 
+'<button id="doxey-marshes-marker">View On Map</button>';;
 let attraction4 = document.getElementById("doxey-marshes");
 attraction4.innerHTML = see4;
 
 let see5 = 
 '<p>' + shireHallGallery.name + '</p>' +
 '<p>' + shireHallGallery.type + '</p>' +
-'<p> <a target=_blank href="' + shireHallGallery.website +'">See Website</a></p>';
+'<p> <a target=_blank href="' + shireHallGallery.website +'">See Website</a></p>' + 
+'<button id="shire-hall-gallery-marker">View On Map</button>';;
 let attraction5 = document.getElementById("shire-hall-gallery");
 attraction5.innerHTML = see5;
 
 let see6 = 
 '<p>' + gatehouseTheatre.name + '</p>' +
 '<p>' + gatehouseTheatre.type + '</p>' +
-'<p> <a target=_blank href="' + shireHallGallery.website +'">See Website</a></p>';
+'<p> <a target=_blank href="' + shireHallGallery.website +'">See Website</a></p>' + 
+'<button id="gatehouse-theatre-marker">View On Map</button>';;
 let attraction6 = document.getElementById("gatehouse-theatre");
 attraction6.innerHTML = see6;
 
@@ -283,41 +293,47 @@ attraction6.innerHTML = see6;
 let stay1 = 
 '<p>' + theSwanHotel.name + '</p>' +
 '<p>' + theSwanHotel.type + '</p>' +
-'<p> <a target=_blank href="' + theSwanHotel.website +'">See Website</a></p>';
+'<p> <a target=_blank href="' + theSwanHotel.website +'">See Website</a></p>' + 
+'<button id="the-swan-marker">View On Map</button>';;
 let hotel1 = document.getElementById("the-swan-hotel");
 hotel1.innerHTML = stay1;
 
 let stay2 = 
 '<p>' + theVine.name + '</p>' +
 '<p>' + theVine.type + '</p>' +
-'<p> <a target=_blank href="' + theVine.website +'">See Website</a></p>';
+'<p> <a target=_blank href="' + theVine.website +'">See Website</a></p>' + 
+'<button id="the-vine-marker">View On Map</button>';;
 let hotel2 = document.getElementById("the-vine");
 hotel2.innerHTML = stay2;
 
 let stay3 = 
 '<p>' + tillingtonHall.name + '</p>' +
 '<p>' + tillingtonHall.type + '</p>' +
-'<p> <a target=_blank href="' + tillingtonHall.website +'">See Website</a></p>';
+'<p> <a target=_blank href="' + tillingtonHall.website +'">See Website</a></p>' + 
+'<button id="tillington-hall-marker">View On Map</button>';;
 let hotel3 = document.getElementById("tillington-hall");
 hotel3.innerHTML = stay3;
 
 let stay4 = 
 '<p>' + theSpittalBrook.name + '</p>' +
 '<p>' + theSpittalBrook.type + '</p>' +
-'<p> <a target=_blank href="' + theSpittalBrook.website +'">See Website</a></p>';
+'<p> <a target=_blank href="' + theSpittalBrook.website +'">See Website</a></p>' + 
+'<button id="the-spittal-brook-marker">View On Map</button>';;
 let hotel4 = document.getElementById("the-spittal-brook");
 hotel4.innerHTML = stay4;
 
 let stay5 = 
 '<p>' + abbeyHotel.name + '</p>' +
 '<p>' + abbeyHotel.type + '</p>' +
-'<p> <a target=_blank href="' + abbeyHotel.website +'">See Website</a></p>';
+'<p> <a target=_blank href="' + abbeyHotel.website +'">See Website</a></p>' + 
+'<button id="abbey-hotel-marker">View On Map</button>';;
 let hotel5 = document.getElementById("abbey-hotel");
 hotel5.innerHTML = stay5;
 
 let stay6 = 
 '<p>' + cameronLodge.name + '</p>' +
 '<p>' + cameronLodge.type + '</p>' +
-'<p> <a target=_blank href="' + cameronLodge.website +'">See Website</a></p>';
+'<p> <a target=_blank href="' + cameronLodge.website +'">See Website</a></p>' + 
+'<button id="cameron-lodge-marker">View On Map</button>';;
 let hotel6 = document.getElementById("cameron-lodge");
 hotel6.innerHTML = stay6;
