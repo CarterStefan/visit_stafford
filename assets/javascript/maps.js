@@ -88,7 +88,9 @@
       }
     );
 
-    var staffordCastleLocation = document.getElementById("stafford-castle-marker");
+    var staffordCastleLocation = document.getElementById(
+      "stafford-castle-marker"
+    );
     google.maps.event.addDomListener(staffordCastleLocation, "click", function (
       event
     ) {
@@ -138,58 +140,58 @@
 
     //HOTELS
 
-    var pizzaExpressLocation = document.getElementById("pizza-express-marker");
-    google.maps.event.addDomListener(pizzaExpressLocation, "click", function (
+    var theSwanHotelLocation = document.getElementById("the-swan-hotel-marker");
+    google.maps.event.addDomListener(theSwanHotelLocation, "click", function (
       event
     ) {
       deleteMarkers();
-      addPizzaExpressMarker(event.latLng);
+      addTheSwanHotelMarker(event.latLng);
     });
 
-    var theSwanLocation = document.getElementById("the-swan-marker");
-    google.maps.event.addDomListener(theSwanLocation, "click", function (
+    var theVineLocation = document.getElementById("the-vine-marker");
+    google.maps.event.addDomListener(theVineLocation, "click", function (
       event
     ) {
       deleteMarkers();
-      addTheSwanMarker(event.latLng);
+      addTheVineMarker(event.latLng);
     });
 
-    var theMarketVaultsLocation = document.getElementById(
-      "the-market-vaults-marker"
+    var tillingtonHallLocation = document.getElementById(
+      "tillington-hall-marker"
     );
     google.maps.event.addDomListener(
-      theMarketVaultsLocation,
+      tillingtonHallLocation,
       "click",
       function (event) {
         deleteMarkers();
-        addTheMarketVaultsMarker(event.latLng);
+        addTillingtonHallMarker(event.latLng);
       }
     );
 
-    var theSoupKitchenLocation = document.getElementById(
-      "the-soup-kitchen-marker"
+    var theSpittalBrookLocation = document.getElementById(
+      "the-spittal-brook-marker"
     );
-    google.maps.event.addDomListener(theSoupKitchenLocation, "click", function (
+    google.maps.event.addDomListener(theSpittalBrookLocation, "click", function (
       event
     ) {
       deleteMarkers();
-      addTheSoupKitchenMarker(event.latLng);
+      addTheSpittalBrookMarker(event.latLng);
     });
 
-    var theBearLocation = document.getElementById("the-bear-marker");
-    google.maps.event.addDomListener(theBearLocation, "click", function (
+    var abbeyHotelLocation = document.getElementById("abbey-hotel-marker");
+    google.maps.event.addDomListener(abbeyHotelLocation, "click", function (
       event
     ) {
       deleteMarkers();
-      addTheBearMarker(event.latLng);
+      addAbbeyHotelMarker(event.latLng);
     });
 
-    var theSunInnLocation = document.getElementById("the-sun-inn-marker");
-    google.maps.event.addDomListener(theSunInnLocation, "click", function (
+    var cameronLodgeLocation = document.getElementById("cameron-lodge-marker");
+    google.maps.event.addDomListener(cameronLodgeLocation, "click", function (
       event
     ) {
       deleteMarkers();
-      addTheSunInnMarker(event.latLng);
+      addCameronLodgeMarker(event.latLng);
     });
   }
 
@@ -323,6 +325,72 @@
   function addGatehouseTheatreMarker(location) {
     var marker = new google.maps.Marker({
       position: new google.maps.LatLng(52.807243, -2.115737),
+      animation: google.maps.Animation.DROP,
+      map: exports.map,
+    });
+    setMapOnAll(null);
+    exports.markers.push(marker);
+    console.log(markers);
+  }
+
+  //HOTELS
+  function addTheSwanHotelMarker(location) {
+    var marker = new google.maps.Marker({
+      position: new google.maps.LatLng(52.806075, -2.116975),
+      animation: google.maps.Animation.DROP,
+      map: exports.map,
+    });
+    setMapOnAll(null);
+    exports.markers.push(marker);
+  }
+
+  function addTheVineMarker(location) {
+    var marker = new google.maps.Marker({
+      position: new google.maps.LatLng(52.808092, -2.116838),
+      animation: google.maps.Animation.DROP,
+      map: exports.map,
+    });
+    setMapOnAll(null);
+    exports.markers.push(marker);
+    console.log(markers);
+  }
+
+  function addTillingtonHallMarker(location) {
+    var marker = new google.maps.Marker({
+      position: new google.maps.LatLng(52.822411, -2.134624),
+      animation: google.maps.Animation.DROP,
+      map: exports.map,
+    });
+    setMapOnAll(null);
+    exports.markers.push(marker);
+    console.log(markers);
+  }
+
+  function addTheSpittalBrookMarker(location) {
+    var marker = new google.maps.Marker({
+      position: new google.maps.LatLng(52.797033, -2.100978),
+      animation: google.maps.Animation.DROP,
+      map: exports.map,
+    });
+    setMapOnAll(null);
+    exports.markers.push(marker);
+    console.log(markers);
+  }
+
+  function addAbbeyHotelMarker(location) {
+    var marker = new google.maps.Marker({
+      position: new google.maps.LatLng(52.799386, -2.104048),
+      animation: google.maps.Animation.DROP,
+      map: exports.map,
+    });
+    setMapOnAll(null);
+    exports.markers.push(marker);
+    console.log(markers);
+  }
+
+  function addCameronLodgeMarker(location) {
+    var marker = new google.maps.Marker({
+      position: new google.maps.LatLng(52.800163, -2.106002),
       animation: google.maps.Animation.DROP,
       map: exports.map,
     });

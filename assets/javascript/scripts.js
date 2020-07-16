@@ -294,7 +294,7 @@ let stay1 =
 '<p>' + theSwanHotel.name + '</p>' +
 '<p>' + theSwanHotel.type + '</p>' +
 '<p> <a target=_blank href="' + theSwanHotel.website +'">See Website</a></p>' + 
-'<button id="the-swan-marker">View On Map</button>';;
+'<button id="the-swan-hotel-marker">View On Map</button>';;
 let hotel1 = document.getElementById("the-swan-hotel");
 hotel1.innerHTML = stay1;
 
