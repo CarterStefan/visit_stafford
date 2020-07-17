@@ -15,19 +15,35 @@ function getWeather(cb) {
   };
 }
 
+function getTableHeaders(obj) {
+  let tableHeaders = [];
 
+  Object.keys(obj).forEach(function (key) {
+    tableHeaders.push(`<td>${key}</td>`);
+  });
+
+  return `<tr>${tableHeaders}</tr>`;
+}
 
 function writeToDocument() {
+  let tableRows = [];
   let el = document.getElementById("data");
   el.innerHTML = "";
   getWeather(function (weather) {
     weather = weather.data;
+    let tableHeaders = getTableHeaders(weather[0]);
 
-    weather.forEach(function(item) {
-        Object.keys(item).forEach(function(key){
-            console.log(key);
-        })
-      el.innerHTML += "<p>" + item.weather.description + "</p>";
+    weather.forEach(function (item) {
+      let weatherRow = [];
+
+      Object.keys(item).forEach(function (key) {
+        let rowData = item[key];
+
+        weatherRow.push(`<td>${rowData}</td>`);
+      });
+      tableRows.push(`<tr>${weatherRow}</tr>`);
     });
+
+    el.innerHTML = `<table>${tableHeaders}${tableRows}</table>`.replace(/,/g, "");
   });
 }
