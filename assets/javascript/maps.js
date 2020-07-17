@@ -228,8 +228,7 @@
   }
 
   function addTheSwanMarker(location) {
-
-      // Sets content of info window
+    // Sets content of info window
     var contentString = '<div id="content">THE SWAN</div>';
 
     // Adds content to info window
@@ -240,7 +239,7 @@
       position: new google.maps.LatLng(52.806043, -2.116994),
       animation: google.maps.Animation.DROP,
       map: exports.map,
-      title: 'The Swan'
+      title: "The Swan",
     });
     // Adds info window to marker
     marker.addListener("click", function () {
@@ -251,7 +250,7 @@
   }
 
   function addTheMarketVaultsMarker(location) {
-          // Sets content of info window
+    // Sets content of info window
     var contentString = '<div id="content">THE MARKET VAULTS</div>';
 
     // Adds content to info window
@@ -262,7 +261,7 @@
       position: new google.maps.LatLng(52.80706, -2.116824),
       animation: google.maps.Animation.DROP,
       map: exports.map,
-      title: 'The Market Vaults'
+      title: "The Market Vaults",
     });
     // Adds info window to marker
     marker.addListener("click", function () {
@@ -273,7 +272,7 @@
   }
 
   function addTheSoupKitchenMarker(location) {
-       // Sets content of info window
+    // Sets content of info window
     var contentString = '<div id="content">THE SOUP KITCHEN</div>';
 
     // Adds content to info window
@@ -284,7 +283,7 @@
       position: new google.maps.LatLng(52.80589, -2.118329),
       animation: google.maps.Animation.DROP,
       map: exports.map,
-      title: 'The Soup Kitchen'
+      title: "The Soup Kitchen",
     });
     // Adds info window to marker
     marker.addListener("click", function () {
@@ -295,19 +294,19 @@
   }
 
   function addTheBearMarker(location) {
-           // Sets content of info window
+    // Sets content of info window
     var contentString = '<div id="content">THE BEAR</div>';
 
     // Adds content to info window
     var infowindow = new google.maps.InfoWindow({
       content: contentString,
     });
-      
+
     var marker = new google.maps.Marker({
       position: new google.maps.LatLng(52.806442, -2.116837),
       animation: google.maps.Animation.DROP,
       map: exports.map,
-      title: 'The Bear'
+      title: "The Bear",
     });
     // Adds info window to marker
     marker.addListener("click", function () {
@@ -318,7 +317,7 @@
   }
 
   function addTheSunInnMarker(location) {
-      // Sets content of info window
+    // Sets content of info window
     var contentString = '<div id="content">THE SUN INN</div>';
 
     // Adds content to info window
@@ -329,7 +328,7 @@
       position: new google.maps.LatLng(52.803788, -2.11429),
       animation: google.maps.Animation.DROP,
       map: exports.map,
-      title: 'The Sun'
+      title: "The Sun",
     });
     // Adds info window to marker
     marker.addListener("click", function () {
@@ -341,7 +340,7 @@
 
   //ATTRACTIONS
   function addAncientHighHouseMarker(location) {
-      // Sets content of info window
+    // Sets content of info window
     var contentString = '<div id="content">ANCIENT HIGH HOUSE</div>';
 
     // Adds content to info window
@@ -352,9 +351,9 @@
       position: new google.maps.LatLng(52.806302, -2.117101),
       animation: google.maps.Animation.DROP,
       map: exports.map,
-      title: 'Ancient High House'
+      title: "Ancient High House",
     });
-     // Adds info window to marker
+    // Adds info window to marker
     marker.addListener("click", function () {
       infowindow.open(map, marker);
     });
@@ -363,7 +362,7 @@
   }
 
   function addStaffordCastleMarker(location) {
-      // Sets content of info window
+    // Sets content of info window
     var contentString = '<div id="content">STAFFORD CASTLE</div>';
 
     // Adds content to info window
@@ -374,9 +373,9 @@
       position: new google.maps.LatLng(52.798038, -2.147365),
       animation: google.maps.Animation.DROP,
       map: exports.map,
-      title: 'Stafford Castle'
+      title: "Stafford Castle",
     });
-     // Adds info window to marker
+    // Adds info window to marker
     marker.addListener("click", function () {
       infowindow.open(map, marker);
     });
@@ -385,7 +384,7 @@
   }
 
   function addVictoriaParkMarker(location) {
-       // Sets content of info window
+    // Sets content of info window
     var contentString = '<div id="content">VICTORIA PARK</div>';
 
     // Adds content to info window
@@ -396,7 +395,7 @@
       position: new google.maps.LatLng(52.804004, -2.120334),
       animation: google.maps.Animation.DROP,
       map: exports.map,
-      title: 'Victoria Park'
+      title: "Victoria Park",
     });
     // Adds info window to marker
     marker.addListener("click", function () {
@@ -407,7 +406,7 @@
   }
 
   function addDoxeyMarshesMarker(location) {
-      // Sets content of info window
+    // Sets content of info window
     var contentString = '<div id="content">DOXEY MARSHES</div>';
 
     // Adds content to info window
@@ -418,7 +417,7 @@
       position: new google.maps.LatLng(52.820263, -2.145788),
       animation: google.maps.Animation.DROP,
       map: exports.map,
-      title: 'Doxey Marshes'
+      title: "Doxey Marshes",
     });
     // Adds info window to marker
     marker.addListener("click", function () {
@@ -429,7 +428,7 @@
   }
 
   function addShireHallGalleryMarker(location) {
-       // Sets content of info window
+    // Sets content of info window
     var contentString = '<div id="content">SHIRE HALL GALLERY</div>';
 
     // Adds content to info window
@@ -440,7 +439,7 @@
       position: new google.maps.LatLng(52.807201, -2.11675),
       animation: google.maps.Animation.DROP,
       map: exports.map,
-      title: 'Shire Hall Gallery'
+      title: "Shire Hall Gallery",
     });
     // Adds info window to marker
     marker.addListener("click", function () {
@@ -451,7 +450,7 @@
   }
 
   function addGatehouseTheatreMarker(location) {
-      // Sets content of info window
+    // Sets content of info window
     var contentString = '<div id="content">GATEHOUSE THEATRE</div>';
 
     // Adds content to info window
@@ -462,7 +461,7 @@
       position: new google.maps.LatLng(52.807243, -2.115737),
       animation: google.maps.Animation.DROP,
       map: exports.map,
-      title: 'Gatehouse Theatre'
+      title: "Gatehouse Theatre",
     });
     // Adds info window to marker
     marker.addListener("click", function () {
@@ -474,60 +473,128 @@
 
   //HOTELS
   function addTheSwanHotelMarker(location) {
+    // Sets content of info window
+    var contentString = '<div id="content">THE SWAN HOTEL</div>';
+
+    // Adds content to info window
+    var infowindow = new google.maps.InfoWindow({
+      content: contentString,
+    });
     var marker = new google.maps.Marker({
       position: new google.maps.LatLng(52.806075, -2.116975),
       animation: google.maps.Animation.DROP,
       map: exports.map,
+    });
+    // Adds info window to marker
+    marker.addListener("click", function () {
+      infowindow.open(map, marker);
     });
     setMapOnAll(null);
     exports.markers.push(marker);
   }
 
   function addTheVineMarker(location) {
+    // Sets content of info window
+    var contentString = '<div id="content">THE VINE</div>';
+
+    // Adds content to info window
+    var infowindow = new google.maps.InfoWindow({
+      content: contentString,
+    });
+    
     var marker = new google.maps.Marker({
       position: new google.maps.LatLng(52.808092, -2.116838),
       animation: google.maps.Animation.DROP,
       map: exports.map,
+    });
+    // Adds info window to marker
+    marker.addListener("click", function () {
+      infowindow.open(map, marker);
     });
     setMapOnAll(null);
     exports.markers.push(marker);
   }
 
   function addTillingtonHallMarker(location) {
+    // Sets content of info window
+    var contentString = '<div id="content">TILLINGTON HALL</div>';
+
+    // Adds content to info window
+    var infowindow = new google.maps.InfoWindow({
+      content: contentString,
+    });
+    
     var marker = new google.maps.Marker({
       position: new google.maps.LatLng(52.822411, -2.134624),
       animation: google.maps.Animation.DROP,
       map: exports.map,
+    });
+    // Adds info window to marker
+    marker.addListener("click", function () {
+      infowindow.open(map, marker);
     });
     setMapOnAll(null);
     exports.markers.push(marker);
   }
 
   function addTheSpittalBrookMarker(location) {
+    // Sets content of info window
+    var contentString = '<div id="content">THE SPITTAL BROOK</div>';
+
+    // Adds content to info window
+    var infowindow = new google.maps.InfoWindow({
+      content: contentString,
+    });
     var marker = new google.maps.Marker({
       position: new google.maps.LatLng(52.797033, -2.100978),
       animation: google.maps.Animation.DROP,
       map: exports.map,
+    });
+    // Adds info window to marker
+    marker.addListener("click", function () {
+      infowindow.open(map, marker);
     });
     setMapOnAll(null);
     exports.markers.push(marker);
   }
 
   function addAbbeyHotelMarker(location) {
+    // Sets content of info window
+    var contentString = '<div id="content">ABBEY HOTEL</div>';
+
+    // Adds content to info window
+    var infowindow = new google.maps.InfoWindow({
+      content: contentString,
+    });
     var marker = new google.maps.Marker({
       position: new google.maps.LatLng(52.799386, -2.104048),
       animation: google.maps.Animation.DROP,
       map: exports.map,
+    });
+    // Adds info window to marker
+    marker.addListener("click", function () {
+      infowindow.open(map, marker);
     });
     setMapOnAll(null);
     exports.markers.push(marker);
   }
 
   function addCameronLodgeMarker(location) {
+    // Sets content of info window
+    var contentString = '<div id="content">CAMERON LODGE</div>';
+
+    // Adds content to info window
+    var infowindow = new google.maps.InfoWindow({
+      content: contentString,
+    });
     var marker = new google.maps.Marker({
       position: new google.maps.LatLng(52.800163, -2.106002),
       animation: google.maps.Animation.DROP,
       map: exports.map,
+    });
+    // Adds info window to marker
+    marker.addListener("click", function () {
+      infowindow.open(map, marker);
     });
     setMapOnAll(null);
     exports.markers.push(marker);
