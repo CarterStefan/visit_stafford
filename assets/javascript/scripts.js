@@ -3,19 +3,19 @@
 $("#eat").click(function () {
   $("#places-to-see").hide();
   $("#places-to-stay").hide();
-  $("#places-to-eat").hide().show();
+  $("#places-to-eat").toggle();
 });
 
 $("#see").click(function () {
   $("#places-to-eat").hide();
   $("#places-to-stay").hide();
-  $("#places-to-see").hide().show();
+  $("#places-to-see").toggle();
 });
 
 $("#stay").click(function () {
   $("#places-to-eat").hide();
   $("#places-to-see").hide();
-  $("#places-to-stay").hide().show();
+  $("#places-to-stay").toggle();
 });
 
 // HOTEL OBJECTS
