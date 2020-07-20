@@ -1,78 +1,88 @@
-(function (exports) {
-  "use strict";
+// example data (marker and infowindow data)
+var restaurants = [
+  {
+    position: { lat: 52.807589, lng: -2.117275 },
+    image: { url: "assets/img/marker1.png" },
+    content: { html: "<h1>Pizza Express</h1><p>Book a Table</p>" },
+  },
+  {
+    position: { lat: 52.806043, lng: -2.116994 },
+    image: { url: "assets/img/marker1.png" },
+    content: { html: "<h1>The Swan</h1><p>Book a Table</p>" },
+  },
+  {
+    position: { lat: 52.80706, lng: -2.116824 },
+    image: { url: "assets/img/marker1.png" },
+    content: { html: "<h1>The Market Vaults</h1><p>Book a Table</p>" },
+  },
+  {
+    position: { lat: 52.80589, lng: -2.118329 },
+    image: { url: "assets/img/marker1.png" },
+    content: { html: "<h1>The Soup Kitchen</h1><p>Book a Table</p>" },
+  },
+  {
+    position: { lat: 52.806442, lng: -2.116837 },
+    image: { url: "assets/img/marker1.png" },
+    content: { html: "<h1>The Bear</h1><p>Book a Table</p>" },
+  },
+  {
+    position: { lat: 52.803788, lng: -2.11429 },
+    image: { url: "assets/img/marker1.png" },
+    content: { html: "<h1>The Sun</h1><p>Book a Table</p>" },
+  },
+];
 
-  // If you're adding a number of markers, you may want to drop them on the map
-  // consecutively rather than all at once. This example shows how to use
-  // window.setTimeout() to space your markers' animation.
-  var restaurants = [
-    {
-      lat: 52.807589,
-      lng: -2.117275,
-    },
-    {
-      lat: 52.806043,
-      lng: -2.116994,
-    },
-    {
-      lat: 52.80706,
-      lng: -2.116824,
-    },
-    {
-      lat: 52.80589,
-      lng: -2.118329,
-    },
-    {
-      lat: 52.806442,
-      lng: -2.116837,
-    },
-    {
-        lat: 52.803788, 
-        lng: -2.11429
-    }
-  ];
-  exports.markers = [];
+// Declare Global Variable
+var image;
+var markers = [];
+var map;
+var infowindow;
 
-  function initMap() {
-    exports.map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 16,
-      center: {
-        lat: 52.8072076,
-        lng: -2.1173127,
-      },
+// Initialization Google Map
+function initMap() {
+  map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 16,
+    center: { lat: 52.8072076, lng: -2.1173127 },
+  });
+}
+
+// Function Read data to Pre-Plot Marker
+function drop() {
+  clearMarkers();
+  for (var i = 0; i < restaurants.length; i++) {
+    addMarkerWithTimeout(
+      restaurants[i].position,
+      restaurants[i].image,
+      i * 400,
+      restaurants[i].content.html
+    );
+  }
+}
+
+// Function Plot Marker with animation
+function addMarkerWithTimeout(position, image, timeout, content) {
+  var marker;
+  
+  window.setTimeout(function () {
+    marker = new google.maps.Marker({
+      position: position,
+      map: map,
+      icon: image,
+      animation: google.maps.Animation.DROP,
     });
+    google.maps.event.addListener(marker, "click", function () {
+      // Add listener on click to marker
+      infowindow.open(map, marker); // Show Infowindow
+      infowindow.setContent(content); // Set Content to Infowindow
+    });
+    markers.push(marker);
+  }, timeout);
+}
+
+// Function Clear All Marker in map
+function clearMarkers() {
+  for (var i = 0; i < markers.length; i++) {
+    markers[i].setMap(null);
   }
-
-  function drop() {
-    clearMarkers();
-
-    for (var i = 0; i < restaurants.length; i++) {
-      addMarkerWithTimeout(restaurants[i], i * 200);
-    }
-  }
-
-  function addMarkerWithTimeout(position, timeout) {
-    window.setTimeout(function () {
-      exports.markers.push(
-        new google.maps.Marker({
-          position: position,
-          map: exports.map,
-          animation: google.maps.Animation.DROP,
-        })
-      );
-    }, timeout);
-  }
-
-  function clearMarkers() {
-    for (var i = 0; i < exports.markers.length; i++) {
-      exports.markers[i].setMap(null);
-    }
-
-    exports.markers = [];
-  }
-
-  exports.addMarkerWithTimeout = addMarkerWithTimeout;
-  exports.clearMarkers = clearMarkers;
-  exports.drop = drop;
-  exports.initMap = initMap;
-  exports.restaurants = restaurants;
-})((this.window = this.window || {}));
+  markers = [];
+}
