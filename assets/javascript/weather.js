@@ -1,10 +1,12 @@
+let weather;
+
 const baseURL =
-  "https://api.weatherbit.io/v2.0/forecast/daily?postal_code=ST162RP&days=7&key=8adc9c07736e467cb1e8ef7497ddc0f8";
+  'https://api.weatherbit.io/v2.0/forecast/daily?postal_code=ST162RP&days=7&key=8adc9c07736e467cb1e8ef7497ddc0f8';
 
 function getWeather(cb) {
   var xhr = new XMLHttpRequest();
 
-  xhr.open("GET", baseURL);
+  xhr.open('GET', baseURL);
 
   xhr.send();
 
@@ -16,25 +18,25 @@ function getWeather(cb) {
 }
 
 function writeToDocument() {
-  let el = document.getElementById("data");
-  el.innerHTML = "";
+  let el = document.getElementById('data');
+  el.innerHTML = '';
   getWeather(function (weather) {
     weather = weather.data;
 
     weather.forEach(function (item) {
-      Object.keys(item).forEach(function (key) {
-        console.log(key);
-      });
+      Object.keys(item).forEach(function (key) {});
       el.innerHTML +=
-        "<p> Date: " +
+        '<p> Date: ' +
         item.valid_date +
-        "</p>" +
-        "<p> Description: " +
+        '</p>' +
+        '<p> Description: ' +
         item.weather.description +
-        "</p>" +
-        "<p>Temperature: " +
+        '</p>' +
+        '<p>Temperature: ' +
         item.temp +
-        "</p>" + "<hr>";
+        '</p>' +
+        '<img src="assets/img/weather_icons/' + item.weather.icon + '.png">' +
+        '<hr>';
     });
   });
 }
