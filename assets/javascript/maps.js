@@ -2,32 +2,32 @@
 var restaurants = [
   {
     position: { lat: 52.807589, lng: -2.117275 },
-    image: { url: "assets/img/marker1.png" },
+    image: { url: "assets/img/food.png" },
     content: { html: "<h1>Pizza Express</h1><p>Book a Table</p>" },
   },
   {
     position: { lat: 52.806043, lng: -2.116994 },
-    image: { url: "assets/img/marker1.png" },
+    image: { url: "assets/img/food.png" },
     content: { html: "<h1>The Swan</h1><p>Book a Table</p>" },
   },
   {
     position: { lat: 52.80706, lng: -2.116824 },
-    image: { url: "assets/img/marker1.png" },
+    image: { url: "assets/img/food.png" },
     content: { html: "<h1>The Market Vaults</h1><p>Book a Table</p>" },
   },
   {
     position: { lat: 52.80589, lng: -2.118329 },
-    image: { url: "assets/img/marker1.png" },
+    image: { url: "assets/img/food.png" },
     content: { html: "<h1>The Soup Kitchen</h1><p>Book a Table</p>" },
   },
   {
     position: { lat: 52.806442, lng: -2.116837 },
-    image: { url: "assets/img/marker1.png" },
+    image: { url: "assets/img/food.png" },
     content: { html: "<h1>The Bear</h1><p>Book a Table</p>" },
   },
   {
     position: { lat: 52.803788, lng: -2.11429 },
-    image: { url: "assets/img/marker1.png" },
+    image: { url: "assets/img/food.png" },
     content: { html: "<h1>The Sun</h1><p>Book a Table</p>" },
   },
 ];
@@ -44,6 +44,7 @@ function initMap() {
     zoom: 16,
     center: { lat: 52.8072076, lng: -2.1173127 },
   });
+  infowindow = new google.maps.InfoWindow();
 }
 
 // Function Read data to Pre-Plot Marker
@@ -53,7 +54,7 @@ function drop() {
     addMarkerWithTimeout(
       restaurants[i].position,
       restaurants[i].image,
-      i * 400,
+      i * 200,
       restaurants[i].content.html
     );
   }
@@ -62,7 +63,7 @@ function drop() {
 // Function Plot Marker with animation
 function addMarkerWithTimeout(position, image, timeout, content) {
   var marker;
-  
+  console.log(content);
   window.setTimeout(function () {
     marker = new google.maps.Marker({
       position: position,
