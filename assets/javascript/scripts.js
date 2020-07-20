@@ -337,3 +337,4 @@ let stay6 =
 '<button id="cameron-lodge-marker">View On Map</button>';;
 let hotel6 = document.getElementById("cameron-lodge");
 hotel6.innerHTML = stay6;
+
