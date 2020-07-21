@@ -1,7 +1,7 @@
 let weather;
 
 const baseURL =
-  'https://api.weatherbit.io/v2.0/forecast/daily?postal_code=ST162RP&days=7&key=8adc9c07736e467cb1e8ef7497ddc0f8';
+  'https://api.weatherbit.io/v2.0/forecast/daily?postal_code=ST162RP&days=8&key=8adc9c07736e467cb1e8ef7497ddc0f8';
 
 function getWeather(cb) {
   var xhr = new XMLHttpRequest();
@@ -26,7 +26,7 @@ function writeToDocument() {
     weather.forEach(function (item) {
       Object.keys(item).forEach(function (key) {});
       el.innerHTML +=
-        '<p> Date: ' +
+        '<div class="col-12 col-md-3 weatherbox"><p> Date: ' +
         item.valid_date +
         '</p>' +
         '<p> Description: ' +
@@ -35,8 +35,7 @@ function writeToDocument() {
         '<p>Temperature: ' +
         item.temp +
         '</p>' +
-        '<img src="assets/img/weather_icons/' + item.weather.icon + '.png">' +
-        '<hr>';
+        '<img src="assets/img/weather_icons/' + item.weather.icon + '.png">';
     });
   });
 }

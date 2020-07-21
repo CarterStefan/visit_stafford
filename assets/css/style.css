@@ -155,5 +155,11 @@ body {
     display: none;
 }
 
-
+.weatherbox{
+    margin: 0px;
+    padding: 20px;
+    width: 25%;
+    font-size: 70%;
+    border: 1px solid black;
+}
 
