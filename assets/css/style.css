@@ -18,7 +18,7 @@ body {
 
 #introduction-box {
   background-color: #f2bd1d;
-  
+
   text-align: center;
   padding: 100px;
 }
@@ -43,8 +43,6 @@ body {
   text-align: center;
   padding: 100px;
 }
-
-
 
 /* ------------------------------ COLORS  */
 
@@ -108,9 +106,6 @@ body {
 
 /* ------------------------------- NAV  */
 
-
-
-
 /* ------------------------- HERO IMAGE */
 
 .main-image-container {
@@ -138,28 +133,28 @@ body {
 
 /* ------------------------- MAP  */
 #map {
-    height: 500px;
+  height: 500px;
 }
-
 
 /* ------------------------- DIVS  */
 #places-to-eat {
-    display: none;
+  display: none;
 }
 
 #places-to-see {
-    display: none;
+  display: none;
 }
 
 #places-to-stay {
-    display: none;
+  display: none;
 }
 
-.weatherbox{
-    margin: 0px;
-    padding: 20px;
-    width: 25%;
-    font-size: 70%;
-    border: 1px solid black;
+.weatherbox1 {
+  background-color: #f2921d;
+  margin: 0px;
+  padding: 20px;
+  width: 25%;
+  font-size: 70%;
+  border: 1px solid black;
+  text-align: center;
 }
-

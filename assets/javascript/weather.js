@@ -47,7 +47,7 @@ function writeToDocument() {
       }
 
       el.innerHTML +=
-        '<div class="col-12 col-md-3 weatherbox"><p> Date: ' +
+        '<div class="col-12 col-md-3 weatherbox1"><p> Date: ' +
         item.valid_date +
         "</p>" +
         item.weather.description +
