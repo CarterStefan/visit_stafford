@@ -205,8 +205,44 @@ function addAttractionsMarkersWithTimeout(position, image, timeout, content) {
   }, timeout);
 }
 
-// ATTRACTIONS FUNCTION
+// HOTELS FUNCTION
 function addHotelsMarkersWithTimeout(position, image, timeout, content) {
+  var marker;
+  console.log(content);
+  window.setTimeout(function () {
+    marker = new google.maps.Marker({
+      position: position,
+      map: map,
+      icon: image,
+      animation: google.maps.Animation.DROP,
+    });
+    google.maps.event.addListener(marker, "click", function () {
+      // Add listener on click to marker
+      infowindow.open(map, marker); // Show Infowindow
+      infowindow.setContent(content); // Set Content to Infowindow
+    });
+    markers.push(marker);
+  }, timeout);
+}
+
+
+
+
+// SINGLE MARKERS
+// PIZZA EXPRESS
+
+function dropSingleMarker(name) {
+  clearMarkers();{
+    addSingleMarkerWithTimeout(
+      name.position,
+      name.image,
+      1 * 200,
+      name.content.html
+    );
+  }
+}
+
+function addSingleMarkerWithTimeout(position, image, timeout, content) {
   var marker;
   console.log(content);
   window.setTimeout(function () {
