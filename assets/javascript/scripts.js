@@ -334,7 +334,7 @@ let stay6 =
 '<p>' + cameronLodge.name + '</p>' +
 '<p>' + cameronLodge.type + '</p>' +
 '<p> <a target=_blank href="' + cameronLodge.website +'">See Website</a></p>' + 
-'<button id="cameron-lodge-marker onclick="dropSingleMarker(hotels[5])"">View On Map</button>';;
+'<button id="cameron-lodge-marker" onclick="dropSingleMarker(hotels[5])">View On Map</button>';;
 let hotel6 = document.getElementById("cameron-lodge");
 hotel6.innerHTML = stay6;
 
