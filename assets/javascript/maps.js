@@ -1,8 +1,15 @@
+// Declare Global Variables
+var image;
+var markers = [];
+var map;
+var infowindow;
+let stafford = { lat: 52.8072076, lng: -2.1173127 };
+
 // INITIALISE GOOGLE MAP
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 16,
-    center: { lat: 52.8072076, lng: -2.1173127 },
+    zoom: 15,
+    center: stafford,
   });
   infowindow = new google.maps.InfoWindow();
 }
@@ -41,7 +48,7 @@ var restaurants = [
   },
 ];
 
-// ATTRACTIONS 
+// ATTRACTIONS
 
 var attractions = [
   {
@@ -111,21 +118,6 @@ var hotels = [
   },
 ];
 
-// Declare Global Variable
-var image;
-var markers = [];
-var map;
-var infowindow;
-
-// INITIALISE GOOGLE MAP
-function initMap() {
-  map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 16,
-    center: { lat: 52.8072076, lng: -2.1173127 },
-  });
-  infowindow = new google.maps.InfoWindow();
-}
-
 // FUNCTION TO ADD INFO TO RESTAURANT MARKERS
 function dropRestaurants() {
   clearMarkers();
@@ -142,7 +134,7 @@ function dropRestaurants() {
 // FUNCTION TO ADD INFO TO ATTRACTION MARKERS
 function dropAttractions() {
   clearMarkers();
-  for (var i = 0; i < restaurants.length; i++) {
+  for (var i = 0; i < attractions.length; i++) {
     addAttractionsMarkersWithTimeout(
       attractions[i].position,
       attractions[i].image,
@@ -155,7 +147,7 @@ function dropAttractions() {
 // FUNCTION TO ADD INFO TO HOTEL MARKERS
 function dropHotels() {
   clearMarkers();
-  for (var i = 0; i < restaurants.length; i++) {
+  for (var i = 0; i < hotels.length; i++) {
     addHotelsMarkersWithTimeout(
       hotels[i].position,
       hotels[i].image,
@@ -220,19 +212,18 @@ function addHotelsMarkersWithTimeout(position, image, timeout, content) {
       // Add listener on click to marker
       infowindow.open(map, marker); // Show Infowindow
       infowindow.setContent(content); // Set Content to Infowindow
+      map.setZoom(14);
+      map.setCenter(marker.getPosition());
     });
     markers.push(marker);
   }, timeout);
 }
 
-
-
-
 // SINGLE MARKERS
-// PIZZA EXPRESS
 
 function dropSingleMarker(name) {
-  clearMarkers();{
+  clearMarkers();
+  {
     addSingleMarkerWithTimeout(
       name.position,
       name.image,

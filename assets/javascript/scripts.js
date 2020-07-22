@@ -276,7 +276,7 @@ let see5 =
 '<p>' + shireHallGallery.name + '</p>' +
 '<p>' + shireHallGallery.type + '</p>' +
 '<p> <a target=_blank href="' + shireHallGallery.website +'">See Website</a></p>' + 
-'<button id="shire-hall-gallery-marker onclick="dropSingleMarker(attractions[4])"">View On Map</button>';;
+'<button id="shire-hall-gallery-marker" onclick="dropSingleMarker(attractions[4])">View On Map</button>';
 let attraction5 = document.getElementById("shire-hall-gallery");
 attraction5.innerHTML = see5;
 
