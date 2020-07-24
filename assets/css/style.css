@@ -5,7 +5,8 @@
 body {
   font-family: "Bebas Neue", cursive;
   font-size: 150%;
-}
+  background-color: #f2f2f2;
+  }
 
 /* ------------------------------ COLORS  */
 
@@ -70,7 +71,7 @@ body {
 }
 
 #introduction-box {
-  background-color: #f2bd1d;
+  background-color: #f2f2f2;
   text-align: justify;
   padding: 30px;
 }
@@ -83,7 +84,7 @@ body {
 }
 
 #weather-box {
-  background-color: #f2921d;
+  background-color: #f2f2f2;
   height: 300px;
   text-align: center;
   padding: 100px;
@@ -99,11 +100,35 @@ body {
 /* ------------------------------ LOGO  */
 
 #logo {
-  height: 100px;
-  width: 100px;
+  height: 50px;
+  width: 50px;
 }
 
 /* ------------------------------- NAV BAR */
+
+.navbar{
+    
+    text-decoration: none;
+    font-size: 150%;
+    height: 70px;
+    color: #f2f2f2;
+    background-color: #f2f2f2;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #0d0d0d;
+    
+}
+
+.navbar-light .navbar-nav .active>.nav-link{
+    color: #0d0d0d;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: #0d0d0d;
+    border-bottom: 1px solid #0d0d0d;
+    padding-bottom: 1px;
+}
 
 /* ------------------------- HERO IMAGE */
 
@@ -113,9 +138,8 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding: 5px 0px;
   width: 100%;
-  height: 600px;
+  height: 450px;
 }
 
 .jumbotron {
@@ -126,8 +150,9 @@ body {
   padding-top: 150px;
   padding-left: 30px;
   font-size: 300%;
-  color: #f2921d;
+  color: #f2bd1d;
   font-weight: bold;
+  text-align: center;
 }
 
 /* ------------------------- PLACES TO BOXES */
@@ -139,8 +164,8 @@ body {
 }
 
 .ui-widget-header {
-  border: 1px solid #f2921d;
-  background: #f2921d;
+  border: 1px solid #0d0d0d;
+  background: #0d0d0d;
   color: #0d0d0d;
 }
 
@@ -170,18 +195,19 @@ body {
   text-align: center;
   height: 100px;
   width: 100%;
-  background: #f2921d;
+  background: #0d0d0d;
+  color: #f2f2f2;
 }
 
 /* ------------------------- MAP  */
 #map {
-  height: 500px;
+  height: 490px;
 }
 
 /* ------------------------- WEATHERBOX */
 
 .weatherbox1 {
-  background-color: #f2921d;
+  background-color: #f2f2f2;
   margin: 0px;
   padding: 20px;
   width: 25%;
