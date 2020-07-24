@@ -1,22 +1,5 @@
-// SCRIPTS TO CONTROL EXPANDING MENUS
-
-$("#eat").click(function () {
-  $("#places-to-see").hide();
-  $("#places-to-stay").hide();
-  $("#places-to-eat").toggle();
-});
-
-$("#see").click(function () {
-  $("#places-to-eat").hide();
-  $("#places-to-stay").hide();
-  $("#places-to-see").toggle();
-});
-
-$("#stay").click(function () {
-  $("#places-to-eat").hide();
-  $("#places-to-see").hide();
-  $("#places-to-stay").toggle();
-});
+//TABS
+$("#tabs").tabs();
 
 // HOTEL OBJECTS
 
@@ -45,9 +28,9 @@ function hotel(name, type, website, lat, lng) {
 }
 
 let pizzaExpress = new restaurant(
-  'Pizza Express',
-  'Italian',
-  'https://www.pizzaexpress.com/stafford',
+  "Pizza Express",
+  "Italian",
+  "https://www.pizzaexpress.com/stafford",
   52.807589,
   -2.117275
 );
@@ -190,151 +173,269 @@ let cameronLodge = new hotel(
 
 // RESTAURANTS
 
-let eat1 = 
-'<p>' + pizzaExpress.name + '</p>' +
-'<p>' + pizzaExpress.type + '</p>' +
-'<p> <a target=_blank href="' + pizzaExpress.website +'">Make a booking</a></p>' + 
-'<button id="pizza-express-marker" onclick="dropSingleMarker(restaurants[0])">View On Map</button>';
+let eat1 =
+  "<div class='places-to-box'><p>" +
+  pizzaExpress.name +
+  "</p>" +
+  "<p>" +
+  pizzaExpress.type +
+  "</p>" +
+  '<p> <a target=_blank href="' +
+  pizzaExpress.website +
+  '">Make a booking</a></p>' +
+  '<button class="view-on-map-marker" onclick="dropSingleMarker(restaurants[0])">View On Map</button></div>';
 let food1 = document.getElementById("pizza-express");
 food1.innerHTML = eat1;
 
-let eat2 = 
-'<p>' + theSwan.name + '</p>' +
-'<p>' + theSwan.type + '</p>' +
-'<p> <a target=_blank href="' + theSwan.website +'">Make a booking</a></p>' + 
-'<button id="the-swan-marker" onclick="dropSingleMarker(restaurants[1])">View On Map</button>';
+let eat2 =
+  "<div class='places-to-box'><p>" +
+  theSwan.name +
+  "</p>" +
+  "<p>" +
+  theSwan.type +
+  "</p>" +
+  '<p> <a target=_blank href="' +
+  theSwan.website +
+  '">Make a booking</a></p>' +
+  '<button class="view-on-map-marker" onclick="dropSingleMarker(restaurants[1])">View On Map</button></div>';
 let food2 = document.getElementById("the-swan");
 food2.innerHTML = eat2;
 
-let eat3 = 
-'<p>' + theMarketVaults.name + '</p>' +
-'<p>' + theMarketVaults.type + '</p>' +
-'<p> <a target=_blank href="' + theMarketVaults.website +'">Make a booking</a></p>' + 
-'<button id="the-market-vaults-marker" onclick="dropSingleMarker(restaurants[2])">View On Map</button>';
+let eat3 =
+  "<div class='places-to-box'><p>" +
+  theMarketVaults.name +
+  "</p>" +
+  "<p>" +
+  theMarketVaults.type +
+  "</p>" +
+  '<p> <a target=_blank href="' +
+  theMarketVaults.website +
+  '">Make a booking</a></p>' +
+  '<button class="view-on-map-marker" onclick="dropSingleMarker(restaurants[2])"  >View On Map</button></div>';
 let food3 = document.getElementById("the-market-vaults");
 food3.innerHTML = eat3;
 
-let eat4 = 
-'<p>' + theSoupKitchen.name + '</p>' +
-'<p>' + theSoupKitchen.type + '</p>' +
-'<p> <a target=_blank href="' + theSoupKitchen.website +'">Make a booking</a></p>' + 
-'<button id="the-soup-kitchen-marker" onclick="dropSingleMarker(restaurants[3])">View On Map</button>';;
+let eat4 =
+  "<div class='places-to-box'><p>" +
+  theSoupKitchen.name +
+  "</p>" +
+  "<p>" +
+  theSoupKitchen.type +
+  "</p>" +
+  '<p> <a target=_blank href="' +
+  theSoupKitchen.website +
+  '">Make a booking</a></p>' +
+  '<button class="view-on-map-marker" onclick="dropSingleMarker(restaurants[3])"  >View On Map</button></div>';
 let food4 = document.getElementById("the-soup-kitchen");
 food4.innerHTML = eat4;
 
-let eat5 = 
-'<p>' + theBear.name + '</p>' +
-'<p>' + theBear.type + '</p>' +
-'<p> <a target=_blank href="' + theBear.website +'">Make a booking</a></p>' + 
-'<button id="the-bear-marker" onclick="dropSingleMarker(restaurants[4])">View On Map</button>';;
+let eat5 =
+  "<div class='places-to-box'><p>" +
+  theBear.name +
+  "</p>" +
+  "<p>" +
+  theBear.type +
+  "</p>" +
+  '<p> <a target=_blank href="' +
+  theBear.website +
+  '">Make a booking</a></p>' +
+  '<button class="view-on-map-marker" onclick="dropSingleMarker(restaurants[4])"  >View On Map</button></div>';
 let food5 = document.getElementById("the-bear");
 food5.innerHTML = eat5;
 
-let eat6 = 
-'<p>' + theSunInn.name + '</p>' +
-'<p>' + theSunInn.type + '</p>' +
-'<p> <a target=_blank href="' + theSunInn.website +'">Make a booking</a></p>' + 
-'<button id="the-sun-inn-marker" onclick="dropSingleMarker(restaurants[5])">View On Map</button>';;
+let eat6 =
+  "<div class='places-to-box'><p>" +
+  theSunInn.name +
+  "</p>" +
+  "<p>" +
+  theSunInn.type +
+  "</p>" +
+  '<p> <a target=_blank href="' +
+  theSunInn.website +
+  '">Make a booking</a></p>' +
+  '<button class="view-on-map-marker" onclick="dropSingleMarker(restaurants[5])"  >View On Map</button></div>';
 let food6 = document.getElementById("the-sun");
 food6.innerHTML = eat6;
 
 // ATTRACTIONS
 
-let see1 = 
-'<p>' + theAncientHighHouse.name + '</p>' +
-'<p>' + theAncientHighHouse.type + '</p>' +
-'<p> <a target=_blank href="' + theAncientHighHouse.website +'">See Website</a></p>' + 
-'<button id="the-ancient-high-house-marker" onclick="dropSingleMarker(attractions[0])">View On Map</button>';;
+let see1 =
+  "<div class='places-to-box'><p>" +
+  theAncientHighHouse.name +
+  "</p>" +
+  "<p>" +
+  theAncientHighHouse.type +
+  "</p>" +
+  '<p> <a target=_blank href="' +
+  theAncientHighHouse.website +
+  '">See Website</a></p>' +
+  '<button class="view-on-map-marker" onclick="dropSingleMarker(attractions[0])"  >View On Map</button></div>';
 let attraction1 = document.getElementById("ancient-high-house");
 attraction1.innerHTML = see1;
 
-let see2 = 
-'<p>' + staffordCastle.name + '</p>' +
-'<p>' + staffordCastle.type + '</p>' +
-'<p> <a target=_blank href="' + staffordCastle.website +'">See Website</a></p>' + 
-'<button id="stafford-castle-marker" onclick="dropSingleMarker(attractions[1])">View On Map</button>';;
+let see2 =
+  "<div class='places-to-box'><p>" +
+  staffordCastle.name +
+  "</p>" +
+  "<p>" +
+  staffordCastle.type +
+  "</p>" +
+  '<p> <a target=_blank href="' +
+  staffordCastle.website +
+  '">See Website</a></p>' +
+  '<button class="view-on-map-marker" onclick="dropSingleMarker(attractions[1])"  >View On Map</button></div>';
 let attraction2 = document.getElementById("stafford-castle");
 attraction2.innerHTML = see2;
 
-let see3 = 
-'<p>' + victoriaPark.name + '</p>' +
-'<p>' + victoriaPark.type + '</p>' +
-'<p> <a target=_blank href="' + victoriaPark.website +'">See Website</a></p>' + 
-'<button id="victoria-park-marker" onclick="dropSingleMarker(attractions[2])">View On Map</button>';;
+let see3 =
+  "<div class='places-to-box'><p>" +
+  victoriaPark.name +
+  "</p>" +
+  "<p>" +
+  victoriaPark.type +
+  "</p>" +
+  '<p> <a target=_blank href="' +
+  victoriaPark.website +
+  '">See Website</a></p>' +
+  '<button class="view-on-map-marker" onclick="dropSingleMarker(attractions[2])"  >View On Map</button></div>';
 let attraction3 = document.getElementById("victoria-park");
 attraction3.innerHTML = see3;
 
-let see4 = 
-'<p>' + doxeyMarshes.name + '</p>' +
-'<p>' + doxeyMarshes.type + '</p>' +
-'<p> <a target=_blank href="' + doxeyMarshes.website +'">See Website</a></p>' + 
-'<button id="doxey-marshes-marker" onclick="dropSingleMarker(attractions[3])">View On Map</button>';;
+let see4 =
+  "<div class='places-to-box'><p>" +
+  doxeyMarshes.name +
+  "</p>" +
+  "<p>" +
+  doxeyMarshes.type +
+  "</p>" +
+  '<p> <a target=_blank href="' +
+  doxeyMarshes.website +
+  '">See Website</a></p>' +
+  '<button class="view-on-map-marker" onclick="dropSingleMarker(attractions[3])"  >View On Map</button></div>';
 let attraction4 = document.getElementById("doxey-marshes");
 attraction4.innerHTML = see4;
 
-let see5 = 
-'<p>' + shireHallGallery.name + '</p>' +
-'<p>' + shireHallGallery.type + '</p>' +
-'<p> <a target=_blank href="' + shireHallGallery.website +'">See Website</a></p>' + 
-'<button id="shire-hall-gallery-marker" onclick="dropSingleMarker(attractions[4])">View On Map</button>';
+let see5 =
+  "<div class='places-to-box'><p>" +
+  shireHallGallery.name +
+  "</p>" +
+  "<p>" +
+  shireHallGallery.type +
+  "</p>" +
+  '<p> <a target=_blank href="' +
+  shireHallGallery.website +
+  '">See Website</a></p>' +
+  '<button class="view-on-map-marker" onclick="dropSingleMarker(attractions[4])"  >View On Map</button></div>';
 let attraction5 = document.getElementById("shire-hall-gallery");
 attraction5.innerHTML = see5;
 
-let see6 = 
-'<p>' + gatehouseTheatre.name + '</p>' +
-'<p>' + gatehouseTheatre.type + '</p>' +
-'<p> <a target=_blank href="' + shireHallGallery.website +'">See Website</a></p>' + 
-'<button id="gatehouse-theatre-marker" onclick="dropSingleMarker(attractions[5])">View On Map</button>';;
+let see6 =
+  "<div class='places-to-box'><p>" +
+  gatehouseTheatre.name +
+  "</p>" +
+  "<p>" +
+  gatehouseTheatre.type +
+  "</p>" +
+  '<p> <a target=_blank href="' +
+  shireHallGallery.website +
+  '">See Website</a></p>' +
+  '<button class="view-on-map-marker" onclick="dropSingleMarker(attractions[5])"  >View On Map</button></div>';
 let attraction6 = document.getElementById("gatehouse-theatre");
 attraction6.innerHTML = see6;
 
 // HOTELS
 
-let stay1 = 
-'<p>' + theSwanHotel.name + '</p>' +
-'<p>' + theSwanHotel.type + '</p>' +
-'<p> <a target=_blank href="' + theSwanHotel.website +'">See Website</a></p>' + 
-'<button id="the-swan-hotel-marker" onclick="dropSingleMarker(hotels[0])">View On Map</button>';;
+let stay1 =
+  "<div class='places-to-box'><p>" +
+  theSwanHotel.name +
+  "</p>" +
+  "<p>" +
+  theSwanHotel.type +
+  "</p>" +
+  '<p> <a target=_blank href="' +
+  theSwanHotel.website +
+  '">See Website</a></p>' +
+  '<button class="view-on-map-marker" onclick="dropSingleMarker(hotels[0])"  >View On Map</button></div>';
 let hotel1 = document.getElementById("the-swan-hotel");
 hotel1.innerHTML = stay1;
 
-let stay2 = 
-'<p>' + theVine.name + '</p>' +
-'<p>' + theVine.type + '</p>' +
-'<p> <a target=_blank href="' + theVine.website +'">See Website</a></p>' + 
-'<button id="the-vine-marker" onclick="dropSingleMarker(hotels[1])">View On Map</button>';;
+let stay2 =
+  "<div class='places-to-box'><p>" +
+  theVine.name +
+  "</p>" +
+  "<p>" +
+  theVine.type +
+  "</p>" +
+  '<p> <a target=_blank href="' +
+  theVine.website +
+  '">See Website</a></p>' +
+  '<button class="view-on-map-marker" onclick="dropSingleMarker(hotels[1])"  >View On Map</button></div>';
 let hotel2 = document.getElementById("the-vine");
 hotel2.innerHTML = stay2;
 
-let stay3 = 
-'<p>' + tillingtonHall.name + '</p>' +
-'<p>' + tillingtonHall.type + '</p>' +
-'<p> <a target=_blank href="' + tillingtonHall.website +'">See Website</a></p>' + 
-'<button id="tillington-hall-marker" onclick="dropSingleMarker(hotels[2])">View On Map</button>';;
+let stay3 =
+  "<div class='places-to-box'><p>" +
+  tillingtonHall.name +
+  "</p>" +
+  "<p>" +
+  tillingtonHall.type +
+  "</p>" +
+  '<p> <a target=_blank href="' +
+  tillingtonHall.website +
+  '">See Website</a></p>' +
+  '<button class="view-on-map-marker" onclick="dropSingleMarker(hotels[2])"  >View On Map</button></div>';
 let hotel3 = document.getElementById("tillington-hall");
 hotel3.innerHTML = stay3;
 
-let stay4 = 
-'<p>' + theSpittalBrook.name + '</p>' +
-'<p>' + theSpittalBrook.type + '</p>' +
-'<p> <a target=_blank href="' + theSpittalBrook.website +'">See Website</a></p>' + 
-'<button id="the-spittal-brook-marker" onclick="dropSingleMarker(hotels[3])">View On Map</button>';;
+let stay4 =
+  "<div class='places-to-box'><p>" +
+  theSpittalBrook.name +
+  "</p>" +
+  "<p>" +
+  theSpittalBrook.type +
+  "</p>" +
+  '<p> <a target=_blank href="' +
+  theSpittalBrook.website +
+  '">See Website</a></p>' +
+  '<button class="view-on-map-marker" onclick="dropSingleMarker(hotels[3])"  >View On Map</button></div>';
 let hotel4 = document.getElementById("the-spittal-brook");
 hotel4.innerHTML = stay4;
 
-let stay5 = 
-'<p>' + abbeyHotel.name + '</p>' +
-'<p>' + abbeyHotel.type + '</p>' +
-'<p> <a target=_blank href="' + abbeyHotel.website +'">See Website</a></p>' + 
-'<button id="abbey-hotel-marker" onclick="dropSingleMarker(hotels[4])">View On Map</button>';;
+let stay5 =
+  "<div class='places-to-box'><p>" +
+  abbeyHotel.name +
+  "</p>" +
+  "<p>" +
+  abbeyHotel.type +
+  "</p>" +
+  '<p> <a target=_blank href="' +
+  abbeyHotel.website +
+  '">See Website</a></p>' +
+  '<button class="view-on-map-marker" onclick="dropSingleMarker(hotels[4])"  >View On Map</button></div>';
 let hotel5 = document.getElementById("abbey-hotel");
 hotel5.innerHTML = stay5;
 
-let stay6 = 
-'<p>' + cameronLodge.name + '</p>' +
-'<p>' + cameronLodge.type + '</p>' +
-'<p> <a target=_blank href="' + cameronLodge.website +'">See Website</a></p>' + 
-'<button id="cameron-lodge-marker" onclick="dropSingleMarker(hotels[5])">View On Map</button>';;
+let stay6 =
+  "<div class='places-to-box'><p>" +
+  cameronLodge.name +
+  "</p>" +
+  "<p>" +
+  cameronLodge.type +
+  "</p>" +
+  '<p> <a target=_blank href="' +
+  cameronLodge.website +
+  '">See Website</a></p>' +
+  '<button class="view-on-map-marker" onclick="dropSingleMarker(hotels[5])"  >View On Map</button></div> ';
 let hotel6 = document.getElementById("cameron-lodge");
 hotel6.innerHTML = stay6;
 
+//SCROLL
+
+$(".view-on-map-marker").click(function () {
+  $("html, body").animate(
+    {
+      scrollTop: $("#google-maps-box").offset().top,
+    },
+    600
+  );
+});

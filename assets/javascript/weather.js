@@ -47,18 +47,19 @@ function writeToDocument() {
       }
 
       el.innerHTML +=
-        '<div class="col-12 col-md-3 weatherbox1"><p> Date: ' +
+        '<div class="col-12 col-md-3 weatherbox1"><p class="weather-date">' +
         item.valid_date +
-        "</p>" +
-        item.weather.description +
-        "</p>" +
-        "<p>Temperature: " +
+        '</p>' +
+        '<p class="weather-temp">' +
         item.temp +
-        "</p>" +
+        '&#176 C</p>' +
+        '<p class="weather-description">' + 
+        item.weather.description +
+        '</p>' +        
         '<img src="assets/img/weather_icons/' +
         item.weather.icon +
         '.png">' +
-        '<p>' + msg + '</p>';      
+        '<p class="weather-message">' + msg + '</p>';      
     });
   });
 }

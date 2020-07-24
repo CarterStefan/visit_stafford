@@ -7,42 +7,6 @@ body {
   font-size: 150%;
 }
 
-/* -------------------- SETTING OUT PAGE LAYOUT */
-
-#hero-image-box {
-  background-color: #979fa6;
-  height: 300px;
-  text-align: center;
-  padding: 100px;
-}
-
-#introduction-box {
-  background-color: #f2bd1d;
-  text-align: center;
-  padding: 100px;
-}
-
-#google-maps-box {
-  background-color: #f2f2f2;
-  height: 510px;
-  text-align: center;
-  padding: 10px;
-}
-
-#weather-box {
-  background-color: #f2921d;
-  height: 300px;
-  text-align: center;
-  padding: 100px;
-}
-
-#footer-box {
-  background-color: #0d0d0d;
-  height: 300px;
-  text-align: center;
-  padding: 100px;
-}
-
 /* ------------------------------ COLORS  */
 
 /* Color Theme Swatches in Hex */
@@ -96,6 +60,42 @@ body {
   color: hsla(0, 0, 5, 1);
 }
 
+/* -------------------- SETTING OUT PAGE LAYOUT */
+
+#hero-image-box {
+  background-color: #979fa6;
+  height: 300px;
+  text-align: center;
+  padding: 100px;
+}
+
+#introduction-box {
+  background-color: #f2bd1d;
+  text-align: justify;
+  padding: 30px;
+}
+
+#google-maps-box {
+  background-color: #f2f2f2;
+  height: 510px;
+  text-align: center;
+  padding: 10px;
+}
+
+#weather-box {
+  background-color: #f2921d;
+  height: 300px;
+  text-align: center;
+  padding: 100px;
+}
+
+#footer-box {
+  background-color: #0d0d0d;
+  height: 300px;
+  text-align: center;
+  padding: 100px;
+}
+
 /* ------------------------------ LOGO  */
 
 #logo {
@@ -103,13 +103,14 @@ body {
   width: 100px;
 }
 
-/* ------------------------------- NAV  */
+/* ------------------------------- NAV BAR */
 
 /* ------------------------- HERO IMAGE */
 
 .main-image-container {
   padding: 5px 0px;
-  background: url("../img/high_house_bw.jpg") no-repeat center center;
+  background: url("../img/stafford_images/church_lane_bw.jpg") no-repeat center
+    center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -130,23 +131,55 @@ body {
   font-weight: bold;
 }
 
+/* ------------------------- PLACES TO BOXES */
+
+/* TAB WIDET */
+
+#tabs {
+  font-family: "Bebas Neue", cursive;
+}
+
+.ui-widget-header {
+  border: 1px solid #f2921d;
+  background: #f2921d;
+  color: #0d0d0d;
+}
+
+/*OPTION BOXES */
+
+.places-to-box {
+  border: 1px solid #0d0d0d;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  height: 300px;
+  width: 100%;
+  background: #f2f2f2;
+}
+
+/*MAP BUTTONS */
+
+.ui-widget button {
+  font-family: "Bebas Neue", cursive;
+  font-size: 100%;
+}
+
+.map-button {
+  border: 1px solid #0d0d0d;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  height: 100px;
+  width: 100%;
+  background: #f2921d
+}
+
 /* ------------------------- MAP  */
 #map {
   height: 500px;
 }
 
-/* ------------------------- DIVS  */
-#places-to-eat {
-  display: none;
-}
-
-#places-to-see {
-  display: none;
-}
-
-#places-to-stay {
-  display: none;
-}
+/* ------------------------- WEATHERBOX */
 
 .weatherbox1 {
   background-color: #f2921d;
@@ -154,6 +187,22 @@ body {
   padding: 20px;
   width: 25%;
   font-size: 70%;
-  border: 1px solid black;
+  border: 1px solid #0d0d0d;
   text-align: center;
+}
+
+.weather-date {
+  font-size: 200%;
+}
+
+.weather-temp {
+  font-size: 500%;
+}
+
+.weather-description {
+  font-size: 200%;
+}
+
+.weather-message {
+  font-size: 200%;
 }

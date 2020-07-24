@@ -7,6 +7,8 @@
 	<title>Stafford</title>
 
 	<!-----------------------------------------------EXTERNAL RESOURCES-->
+	<!------------------------------------JQUERY---------------------->
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css" />
 
 	<!------------------------------------BOOTSTRAP---------------------->
 
@@ -59,6 +61,8 @@
 		</nav>
 	</section>
 
+	<!-- JUMBOTRON  -->
+
 	<div class="container-fluid main-image-container">
 		<div class="row">
 			<div class="col-12">
@@ -99,112 +103,104 @@
 	<!------------------------------------WHAT TO DO------------------->
 
 	<section>
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-4">
-					<button id="eat">
-              <span>places to eat</span><br /><span
-                ><i class="fas fa-utensils"></i
-              ></span>
-            </button>
+		<div id="tabs">
+			<ul>
+				<li><a href="#tabs-1">Eat</a></li>
+				<li><a href="#tabs-2">See</a></li>
+				<li><a href="#tabs-3">Stay</a></li>
+			</ul>
+			<div id="tabs-1">
+				<div class="row" id="places-to-eat-first-row">
+					<div class="col-12 col-md-4 eat-box" id="pizza-express"></div>
+					<div class="col-12 col-md-4 eat-box" id="the-swan"></div>
+					<div class="col-12 col-md-4 eat-box" id="the-market-vaults"></div>
 				</div>
-				<div class="col-4">
-					<button id="see">
-              <span>places to see</span><br /><span
-                ><i class="fas fa-binoculars"></i
-              ></span>
-            </button>
+				<div class="row" id="places-to-eat-second-row">
+					<div class="col-12 col-md-4 eat-box" id="the-soup-kitchen"></div>
+					<div class="col-12 col-md-4 eat-box" id="the-bear"></div>
+					<div class="col-12 col-md-4 eat-box" id="the-sun"></div>
 				</div>
-				<div class="col-4">
-					<button id="stay">
-              <span>places to stay</span><br /><span
-                ><i class="fas fa-bed"></i
-              ></span>
-            </button>
+				<div class="row" id="places-to-eat-show-all">
+					<div class="col-12 col-md-4">
+						<button class="map-button" onclick="dropRestaurants()">
+                SHOW ALL RESTAURANTS ON MAP
+              </button> </div>
+					<div class="col-12 col-md-4"><button class="map-button"
+                onclick="dropRestaurants(); dropAttractions(); dropHotels()"
+              >
+                SHOW ALL
+              </button> </div>
+					<div class="col-12 col-md-4"><button class="map-button" onclick="clearMarkers()">
+                CLEAR ALL FROM MAP
+              </button></div>
 				</div>
 			</div>
+
+
+
+			<div id="tabs-2">
+				<div class="row">
+					<div class="col-12 col-md-4 see-box" id="ancient-high-house"></div>
+					<div class="col-12 col-md-4 see-box" id="stafford-castle"></div>
+					<div class="col-12 col-md-4 see-box" id="victoria-park"></div>
+				</div>
+				<div class="row" id="places-to-see-second-row">
+					<div class="col-12 col-md-4 see-box" id="doxey-marshes"></div>
+					<div class="col-12 col-md-4 see-box" id="shire-hall-gallery"></div>
+					<div class="col-12 col-md-4 see-box" id="gatehouse-theatre"></div>
+				</div>
+
+
+				<div class="row" id="places-to-see-show-all">
+					<div class="col-12 col-md-4">
+						<button class="map-button" onclick="dropAttractions()">
+                SHOW ALL ATTRACTIONS ON MAP
+              </button></div>
+					<div class="col-12 col-md-4"><button class="map-button"
+                onclick="dropRestaurants(); dropAttractions(); dropHotels()"
+              >
+                SHOW ALL
+              </button></div>
+					<div class="col-12 col-md-4"> <button class="map-button" onclick="clearMarkers()">
+                CLEAR ALL FROM MAP
+              </button></div>
+				</div>
+			</div>
+
+
+
+			<div id="tabs-3">
+				<div class="row">
+					<div class="col-12 col-md-4 see-box" id="the-swan-hotel"></div>
+					<div class="col-12 col-md-4 see-box" id="the-vine"></div>
+					<div class="col-12 col-md-4 see-box" id="tillington-hall"></div>
+				</div>
+
+				<div class="row" id="places-to-stay-second-row">
+					<div class="col-12 col-md-4 see-box" id="the-spittal-brook"></div>
+					<div class="col-12 col-md-4 see-box" id="abbey-hotel"></div>
+					<div class="col-12 col-md-4 see-box" id="cameron-lodge"></div>
+				</div>
+
+				<div class="row" id="places-to-stay-show-all">
+					<div class="col-12 col-md-4">
+						<button class="map-button" onclick="dropHotels()">
+                  SHOW ALL HOTELS ON MAP
+                </button> </div>
+					<div class="col-12 col-md-4"><button class="map-button"
+                  onclick="dropRestaurants(); dropAttractions(); dropHotels()"
+                >
+                  SHOW ALL
+                </button></div>
+					<div class="col-12 col-md-4"><button class="map-button" onclick="clearMarkers()">
+                  CLEAR ALL FROM MAP
+                </button></div>
+				</div>
+			</div>
+
 		</div>
 
-		<article id="places-to-eat">
-			<div class="row" id="places-to-eat-first-row">
-				<div class="col-4 eat-box" id="pizza-express"></div>
-				<div class="col-4 eat-box" id="the-swan"></div>
-				<div class="col-4 eat-box" id="the-market-vaults"></div>
-			</div>
-			<div class="row" id="places-to-eat-second-row">
-				<div class="col-4 eat-box" id="the-soup-kitchen"></div>
-				<div class="col-4 eat-box" id="the-bear"></div>
-				<div class="col-4 eat-box" id="the-sun"></div>
-				<div class="row" id="places-to-eat-show-all">
-					<div class="col-12">
-						<button onclick="dropRestaurants()">
-                SHOW ALL RESTAURANTS ON MAP
-              </button>
-						<button onclick="dropRestaurants(); dropAttractions(); dropHotels()">
-                SHOW ALL 
-              </button>
-						<button onclick="clearMarkers()">
-                CLEAR ALL FROM MAP
-              </button>
-					</div>
-				</div>
-			</div>
-		</article>
 
-		<article id="places-to-see">
-			<div class="row" id="places-to-see-first-row">
-				<div class="col-4 see-box" id="ancient-high-house"></div>
-				<div class="col-4 see-box" id="stafford-castle"></div>
-				<div class="col-4 see-box" id="victoria-park"></div>
-			</div>
-
-			<div class="row" id="places-to-see-second-row">
-				<div class="col-4 see-box" id="doxey-marshes"></div>
-				<div class="col-4 see-box" id="shire-hall-gallery"></div>
-				<div class="col-4 see-box" id="gatehouse-theatre"></div>
-				<div class="row" id="places-to-see-show-all">
-					<div class="col-12">
-						<button onclick="dropAttractions()">
-                SHOW ALL ATTRACTIONS ON MAP
-              </button>
-						<button onclick="dropRestaurants(); dropAttractions(); dropHotels()">
-                SHOW ALL 
-              </button>
-						<button onclick="clearMarkers()">
-                CLEAR ALL FROM MAP
-              </button>
-					</div>
-				</div>
-			</div>
-		</article>
-
-		<article id="places-to-stay">
-			<div class="row" id="places-to-stay-first-row">
-				<div class="col-4 see-box" id="the-swan-hotel"></div>
-				<div class="col-4 see-box" id="the-vine"></div>
-				<div class="col-4 see-box" id="tillington-hall"></div>
-			</div>
-
-			<div class="row" id="places-to-stay-second-row">
-				<div class="col-4 see-box" id="the-spittal-brook"></div>
-				<div class="col-4 see-box" id="abbey-hotel"></div>
-				<div class="col-4 see-box" id="cameron-lodge"></div>
-				<div class="row" id="places-to-stay-show-all">
-					<div class="col-12">
-						<button onclick="dropHotels()">
-                SHOW ALL Hotels ON MAP
-              </button>
-						<button onclick="dropRestaurants(); dropAttractions(); dropHotels()">
-                SHOW ALL 
-              </button>
-						<button onclick="clearMarkers()">
-                CLEAR ALL FROM MAP
-              </button>
-
-					</div>
-				</div>
-			</div>
-		</article>
 	</section>
 
 	<!------------------------------------GOOGLE MAPS------------------->
@@ -246,6 +242,10 @@
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
 	</script>
+
+	<script src="//code.jquery.com/jquery-1.12.4.js"></script>
+
+	<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
 	<!------------------------------------BOOTSTRAP---------------------->
 
