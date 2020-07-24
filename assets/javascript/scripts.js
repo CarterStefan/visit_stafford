@@ -1,6 +1,3 @@
-//TABS
-$("#tabs").tabs();
-
 // HOTEL OBJECTS
 
 function restaurant(name, type, website, lat, lng) {
@@ -428,6 +425,9 @@ let stay6 =
   '<button class="view-on-map-marker" onclick="dropSingleMarker(hotels[5])"  >View On Map</button></div> ';
 let hotel6 = document.getElementById("cameron-lodge");
 hotel6.innerHTML = stay6;
+
+//TABS
+$("#tabs").tabs();
 
 //SCROLL
 
