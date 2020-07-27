@@ -69,3 +69,9 @@ function writeToDocument() {
 }
 
 writeToDocument();
+
+/* FOLLOWED CODE INSTITUTE LESSON ON API / JSON TO EXTRACT DATA FROM WEATHER API */
+
+/* WEATHER API DATA EXTRACTED FROM https://www.weatherbit.io/api */
+
+/* WEATHER IMAGES TAKEN FROM https://www.weatherbit.io/api */
