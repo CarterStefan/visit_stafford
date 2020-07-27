@@ -214,10 +214,10 @@ let eat1 =
   "<p>" +
   pizzaExpress.type +
   "</p>" +
-  '<p> <a target=_blank href="' +
+  '<p> <a class="external_link" target=_blank href="' +
   pizzaExpress.website +
   '">Make a booking</a></p>' +
-  '<button class="view-on-map-marker" onclick="dropSingleMarker(restaurants[0])">View On Map</button></div>';
+  '<button id="view-on-map" class="view-on-map-marker" onclick="dropSingleMarker(restaurants[0])">View On Map</button></div>';
 let food1 = document.getElementById("pizza-express");
 food1.innerHTML = eat1;
 
@@ -462,3 +462,11 @@ let stay6 =
   '<button class="view-on-map-marker" onclick="dropSingleMarker(hotels[5])"  >View On Map</button></div> ';
 let hotel6 = document.getElementById("cameron-lodge");
 hotel6.innerHTML = stay6;
+
+
+// HOVER EFFECT ON BUTTONS
+$(".view-on-map-marker").hover(function(){
+  $(this).addClass("view-on-map-marker-hover");
+  }, function(){
+  $(this).removeClass("view-on-map-marker-hover");
+});

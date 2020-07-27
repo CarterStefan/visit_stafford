@@ -159,6 +159,26 @@ transition: top 0.5s;
   height: 300px;
   width: 100%;
   background: #f2f2f2;
+  color: #0d0d0d;
+}
+
+.places-to-box a{
+  color: #0d0d0d; 
+}
+
+.places-to-box a:hover{
+  color: #0d0d0d;
+  text-decoration: underline;
+}
+
+.view-on-map-marker{
+    background: #f2f2f2;
+    color: #0d0d0d;
+}
+
+.view-on-map-marker-hover{
+    background: #0d0d0d;
+    color: #f2f2f2;
 }
 
 /*MAP BUTTONS */
