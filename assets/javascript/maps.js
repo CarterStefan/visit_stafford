@@ -233,7 +233,11 @@ var hotels = [
   },
 ];
 
-// FUNCTION TO ADD INFO TO RESTAURANT MARKERS
+/* THE FOLLOWING FUNCTIONS WERE CREATED WITH THE HELP OF: 
+https://gist.github.com/Kusumoto/c2a73e9292590c510a47
+THIS HAS BEEN ADAPTED TO SUIT MY NEEDS */
+
+// FUNCTION TO PREPARE RESTAURANT MARKERS
 function dropRestaurants() {
   clearMarkers();
   for (var i = 0; i < restaurants.length; i++) {
@@ -248,7 +252,8 @@ function dropRestaurants() {
   }
 }
 
-// FUNCTION TO ADD INFO TO ATTRACTION MARKERS
+// FUNCTION TO PREPARE ATTRACTION MARKERS
+
 function dropAttractions() {
   clearMarkers();
   for (var i = 0; i < attractions.length; i++) {
@@ -263,7 +268,7 @@ function dropAttractions() {
   }
 }
 
-// FUNCTION TO ADD INFO TO HOTEL MARKERS
+// FUNCTION TO PREPARE HOTEL MARKERS
 function dropHotels() {
   clearMarkers();
   for (var i = 0; i < hotels.length; i++) {
@@ -397,3 +402,9 @@ function clearMarkers() {
   markers = [];
   map.setZoom(13);
 }
+
+// THE FOLLOWING CODE WAS IMPLEMENTED FROM DOCUMENTION FOUND AT:
+// https://developers.google.com/maps/documentation/javascript/overview
+// https://developers.google.com/maps/documentation/javascript/examples/marker-animations-iteration
+// https://developers.google.com/maps/documentation/javascript/infowindows
+// https://gist.github.com/Kusumoto/c2a73e9292590c510a47
