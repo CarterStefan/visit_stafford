@@ -23,7 +23,7 @@ function writeToDocument() {
   let el = document.getElementById("data");
   el.innerHTML = "";
   getWeather(function (weather) {
-    weather = weather.data;
+    weather = weather.data;    
 
     weather.forEach(function (item) {
       Object.keys(item).forEach(function (key) {});
@@ -46,9 +46,13 @@ function writeToDocument() {
         msg = "Enjoy Your Day";
       }
 
+      /*reversed date with help from https://stackoverflow.com/questions/40232218/how-to-reverse-date-format-yyyy-mm-dd-using-javascript-jquery*/
+      let date = item.valid_date.split('-');
+      var newDate = date[2] + '-' + date[1] + '-' + date[0];
+
       el.innerHTML +=
         '<div class="col-12 col-md-3 weatherbox1"><p class="weather-date">' +
-        item.valid_date +
+        newDate +
         '</p>' +
         '<p class="weather-temp">' +
         item.temp +

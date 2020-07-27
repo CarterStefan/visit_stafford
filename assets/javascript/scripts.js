@@ -2,7 +2,6 @@
 
 //SCRIPT TAKEN FROM W3SCHOOLS - HIDE NAVBAR ON SCROLL
 
-
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
 var currentScrollPos = window.pageYOffset;
@@ -13,6 +12,19 @@ var currentScrollPos = window.pageYOffset;
   }
   prevScrollpos = currentScrollPos;
 }
+
+//TABS
+$("#tabs").tabs();
+
+//SCROLL
+$(".view-on-map-marker").click(function () {
+  $("html, body").animate(
+    {
+      scrollTop: $("#google-maps-box").offset().top,
+    },
+    600
+  );
+});
 
 
 // HOTEL OBJECTS
@@ -443,16 +455,4 @@ let stay6 =
 let hotel6 = document.getElementById("cameron-lodge");
 hotel6.innerHTML = stay6;
 
-//TABS
-$("#tabs").tabs();
 
-//SCROLL
-
-$(".view-on-map-marker").click(function () {
-  $("html, body").animate(
-    {
-      scrollTop: $("#google-maps-box").offset().top,
-    },
-    600
-  );
-});
