@@ -1,3 +1,20 @@
+// NAVBAR SCRIPT
+
+//SCRIPT TAKEN FROM W3SCHOOLS - HIDE NAVBAR ON SCROLL
+
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-60px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
+
 // HOTEL OBJECTS
 
 function restaurant(name, type, website, lat, lng) {

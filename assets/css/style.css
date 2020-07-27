@@ -105,6 +105,9 @@ body {
 }
 
 /* ------------------------------- NAV BAR */
+#navbar{
+transition: top 0.5s;
+}
 
 
 
