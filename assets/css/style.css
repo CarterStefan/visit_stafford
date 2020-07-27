@@ -71,7 +71,8 @@ body {
 }
 
 #introduction-box {
-  background-color: #f2f2f2;
+  background-color:  #0d0d0d;
+  color: #f2f2f2;
   text-align: justify;
   padding: 30px;
 }
@@ -144,10 +145,8 @@ transition: top 0.5s;
   font-family: "Bebas Neue", cursive;
 }
 
-.ui-widget-header {
-  border: 1px solid #0d0d0d;
-  background: #0d0d0d;
-  color: #0d0d0d;
+.ui-tabs .ui-tabs-nav li.ui-tabs-active {
+    background: #0d0d0d;
 }
 
 /*OPTION BOXES */
@@ -170,7 +169,7 @@ transition: top 0.5s;
 }
 
 .map-button {
-  border: 1px solid #0d0d0d;
+  border: 1px solid#0d0d0d;
   margin: 10px;
   padding: 20px;
   text-align: center;
