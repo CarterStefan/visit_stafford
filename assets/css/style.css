@@ -231,3 +231,17 @@ transition: top 0.5s;
 .weather-message {
   font-size: 200%;
 }
+
+.info-window-link{
+    font-family: "Bebas Neue", cursive;
+    text-decoration: none;
+    font-size: 150%;
+    color: #0d0d0d;
+}
+
+.info-window-link:hover{
+    font-family: "Bebas Neue", cursive;
+    text-decoration: underline;
+    font-size: 150%;
+    color: #0d0d0d;
+}
