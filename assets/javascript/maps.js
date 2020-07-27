@@ -5,10 +5,35 @@ var map;
 var infowindow;
 let stafford = { lat: 52.8072076, lng: -2.1173127 };
 
+//Websites
+let pizzaExpressWebsite = "https://www.pizzaexpress.com/stafford";
+let theSwanWebsite = "https://www.theswanstafford.co.uk/";
+let theMarketVaultsWebsite = "https://www.themarketvaults.co.uk/";
+let theSoupKitchenWebsite = "http://www.thesoupkitchen.co.uk/home.htm";
+let theBearWebsite = "https://www.thebearpubstafford.co.uk/index";
+let theSunWebsite = "https://www.titanicbrewery.co.uk/our-pubs/the-sun/";
+
+let theAncientHighHouseWebsite =
+  "https://www.freedom-leisure.co.uk/centres/ancienthighhouse/";
+let staffordCastleWesbite =
+  "https://www.freedom-leisure.co.uk/centres/stafford-castle/";
+let victoriaParkWebsite = "https://www.staffordbc.gov.uk/victoriapark";
+let doxeyMarshesWebsite =
+  "https://www.staffs-wildlife.org.uk/nature-reserves/doxey-marshes";
+let shireHallGalleryWesbite =
+  "https://www.staffordshire.gov.uk/Business/Investment/Shire-Hall.aspx";
+let gateHouseTheatreWesbite = "https://staffordgatehousetheatre.co.uk/";
+
+let theVineWebsite = "https://www.vinehotelpub.co.uk/";
+let tillingtonHallWebsite = "https://www.tillingtonhall.co.uk/";
+let theSpittalBrookWebsite = "http://thespittalbrookstafford.co.uk/";
+let abbeyHotelWebsite = "http://www.abbeyhotelstafford.co.uk/";
+let cameronLodgeWebsite = "https://www.cameronlodgestafford.co.uk/";
+
 // INITIALISE GOOGLE MAP
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 15,
+    zoom: 13,
     center: stafford,
   });
   infowindow = new google.maps.InfoWindow();
@@ -19,32 +44,62 @@ var restaurants = [
   {
     position: { lat: 52.807589, lng: -2.117275 },
     image: { url: "assets/img/food.png" },
-    content: { html: "<h1>Pizza Express</h1><p>Book a Table</p>" },
+    content: {
+      html:
+        "<h1>Pizza Express</h1><p><a target=_blank href='" +
+        pizzaExpressWebsite +
+        "'> Book a Table</a></p>",
+    },
   },
   {
     position: { lat: 52.806043, lng: -2.116994 },
     image: { url: "assets/img/food.png" },
-    content: { html: "<h1>The Swan</h1><p>Book a Table</p>" },
+    content: {
+      html:
+        "<h1>The Swan</h1><p><a target=_blank href='" +
+        theSwanWebsite +
+        "'> Book a Table</a></p>",
+    },
   },
   {
     position: { lat: 52.80706, lng: -2.116824 },
     image: { url: "assets/img/food.png" },
-    content: { html: "<h1>The Market Vaults</h1><p>Book a Table</p>" },
+    content: {
+      html:
+        "<h1>The Market Vaults</h1><p><a target=_blank href='" +
+        theMarketVaultsWebsite +
+        "'> Book a Table</a></p>",
+    },
   },
   {
     position: { lat: 52.80589, lng: -2.118329 },
     image: { url: "assets/img/food.png" },
-    content: { html: "<h1>The Soup Kitchen</h1><p>Book a Table</p>" },
+    content: {
+      html:
+        "<h1>The Soup Kitchen</h1><p><a target=_blank href='" +
+        theSoupKitchenWebsite +
+        "'> Book a Table</a></p>",
+    },
   },
   {
     position: { lat: 52.806442, lng: -2.116837 },
     image: { url: "assets/img/food.png" },
-    content: { html: "<h1>The Bear</h1><p>Book a Table</p>" },
+    content: {
+      html:
+        "<h1>The Bear</h1><p><a target=_blank href='" +
+        theBearWebsite +
+        "'> Book a Table</a></p>",
+    },
   },
   {
     position: { lat: 52.803788, lng: -2.11429 },
     image: { url: "assets/img/food.png" },
-    content: { html: "<h1>The Sun</h1><p>Book a Table</p>" },
+    content: {
+      html:
+        "<h1>The Sun</h1><p><a target=_blank href='" +
+        theSunWebsite +
+        "'> Book a Table</a></p>",
+    },
   },
 ];
 
@@ -54,32 +109,62 @@ var attractions = [
   {
     position: { lat: 52.806302, lng: -2.117101 },
     image: { url: "assets/img/see.png" },
-    content: { html: "<h1>Ancient High House</h1><p>See Website</p>" },
+    content: {
+      html:
+        "<h1>Ancient High House</h1><p><a target=_blank href='" +
+        theAncientHighHouseWebsite +
+        "'> See Website </a></p>",
+    },
   },
   {
     position: { lat: 52.798038, lng: -2.147365 },
     image: { url: "assets/img/see.png" },
-    content: { html: "<h1>Stafford Castle</h1><p>See Website</p>" },
+    content: {
+      html:
+        "<h1>Stafford Castle</h1><p><a target=_blank href='" +
+        staffordCastleWesbite +
+        "'> See Website</a></p>",
+    },
   },
   {
     position: { lat: 52.804004, lng: -2.120334 },
     image: { url: "assets/img/see.png" },
-    content: { html: "<h1>Victoria Park</h1><p>See Webiste</p>" },
+    content: {
+      html:
+        "<h1>Victoria Park</h1><p><a target=_blank href='" +
+        victoriaParkWebsite +
+        "'> See Website</a></p>",
+    },
   },
   {
     position: { lat: 52.820263, lng: -2.145788 },
     image: { url: "assets/img/see.png" },
-    content: { html: "<h1>Doxey Marshes</h1><p>See Website</p>" },
+    content: {
+      html:
+        "<h1>Doxey Marshes</h1><p><a target=_blank href='" +
+        doxeyMarshesWebsite +
+        "'> See Website</a></p>",
+    },
   },
   {
     position: { lat: 52.807201, lng: -2.11675 },
     image: { url: "assets/img/see.png" },
-    content: { html: "<h1>Shire Hall Gallery</h1><p>See Website</p>" },
+    content: {
+      html:
+        "<h1>Shire Hall Gallery</h1><p><a target=_blank href='" +
+        shireHallGalleryWesbite +
+        "'> See Website </a></p>",
+    },
   },
   {
     position: { lat: 52.807243, lng: -2.115737 },
     image: { url: "assets/img/see.png" },
-    content: { html: "<h1>Gatehouse Theatre</h1><p>See Website</p>" },
+    content: {
+      html:
+        "<h1>Gatehouse Theatre</h1><p><a target=_blank href='" +
+        gateHouseTheatreWesbite +
+        "'> See Wesbite </a></p>",
+    },
   },
 ];
 
@@ -89,32 +174,62 @@ var hotels = [
   {
     position: { lat: 52.806075, lng: -2.116975 },
     image: { url: "assets/img/hotel.png" },
-    content: { html: "<h1>The Swan Hotel</h1><p>Book A Room</p>" },
+    content: {
+      html:
+        "<h1>The Swan Hotel</h1><p><a target=_blank href='" +
+        theSwanWebsite +
+        "'> Book a Room</a></p>",
+    },
   },
   {
     position: { lat: 52.808092, lng: -2.116838 },
     image: { url: "assets/img/hotel.png" },
-    content: { html: "<h1>The Vine</h1><p>Book A Room</p>" },
+    content: {
+      html:
+        "<h1>The Vine</h1><p><a target=_blank href='" +
+        theVineWebsite +
+        "'> Book a Room</a></p>",
+    },
   },
   {
     position: { lat: 52.822411, lng: -2.134624 },
     image: { url: "assets/img/hotel.png" },
-    content: { html: "<h1>Tillington Hall</h1><p>Book A Room</p>" },
+    content: {
+      html:
+        "<h1>Tillington Hall</h1><p><a target=_blank href='" +
+        tillingtonHallWebsite +
+        "'> Book a Room </a></p>",
+    },
   },
   {
     position: { lat: 52.797033, lng: -2.100978 },
     image: { url: "assets/img/hotel.png" },
-    content: { html: "<h1>Spittal Brook</h1><p>Book A Room</p>" },
+    content: {
+      html:
+        "<h1>Spittal Brook</h1><p><a target=_blank href='" +
+        theSpittalBrookWebsite +
+        "'> Book a Room</a></p>",
+    },
   },
   {
     position: { lat: 52.799386, lng: -2.104048 },
     image: { url: "assets/img/hotel.png" },
-    content: { html: "<h1>Abbey Hotel</h1><p>Book A Room</p>" },
+    content: {
+      html:
+        "<h1>Abbey Hotel</h1><p><a target=_blank href='" +
+        abbeyHotelWebsite +
+        "'> Book a Room</a></p>",
+    },
   },
   {
     position: { lat: 52.800163, lng: -2.106002 },
     image: { url: "assets/img/hotel.png" },
-    content: { html: "<h1>Cameron Lodge</h1><p>Book A Room</p>" },
+    content: {
+      html:
+        "<h1>Cameron Lodge</h1><p><a target=_blank href='" +
+        cameronLodgeWebsite +
+        "'> Book a Room</a></p>",
+    },
   },
 ];
 
@@ -170,6 +285,8 @@ function addRestaurantMarkersWithTimeout(position, image, timeout, content) {
     });
     google.maps.event.addListener(marker, "click", function () {
       // Add listener on click to marker
+      map.setZoom(16);
+      map.panTo(marker.getPosition());
       infowindow.open(map, marker); // Show Infowindow
       infowindow.setContent(content); // Set Content to Infowindow
     });
@@ -190,6 +307,8 @@ function addAttractionsMarkersWithTimeout(position, image, timeout, content) {
     });
     google.maps.event.addListener(marker, "click", function () {
       // Add listener on click to marker
+      map.setZoom(16);
+      map.panTo(marker.getPosition());
       infowindow.open(map, marker); // Show Infowindow
       infowindow.setContent(content); // Set Content to Infowindow
     });
@@ -210,10 +329,12 @@ function addHotelsMarkersWithTimeout(position, image, timeout, content) {
     });
     google.maps.event.addListener(marker, "click", function () {
       // Add listener on click to marker
+      map.setZoom(16);
+      map.panTo(marker.getPosition());
+
       infowindow.open(map, marker); // Show Infowindow
       infowindow.setContent(content); // Set Content to Infowindow
-      map.setZoom(14);
-      map.setCenter(marker.getPosition());
+      
     });
     markers.push(marker);
   }, timeout);
@@ -243,8 +364,12 @@ function addSingleMarkerWithTimeout(position, image, timeout, content) {
       icon: image,
       animation: google.maps.Animation.DROP,
     });
+    map.setZoom(16);
+    map.panTo(marker.getPosition());
+
     google.maps.event.addListener(marker, "click", function () {
       // Add listener on click to marker
+
       infowindow.open(map, marker); // Show Infowindow
       infowindow.setContent(content); // Set Content to Infowindow
     });
@@ -258,4 +383,5 @@ function clearMarkers() {
     markers[i].setMap(null);
   }
   markers = [];
+  map.setZoom(14);
 }

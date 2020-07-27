@@ -1,7 +1,6 @@
 // NAVBAR SCRIPT
 
 //SCRIPT TAKEN FROM W3SCHOOLS - HIDE NAVBAR ON SCROLL
-
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
   var currentScrollPos = window.pageYOffset;
@@ -16,7 +15,7 @@ window.onscroll = function () {
 //TABS
 $("#tabs").tabs();
 
-/*SCROLL - SCRIPT TAKEN FROM https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll*/
+/*SCRIPT TAKEN FROM W3SCHOOLS - SMOOTH SCROLL TO ELEMENT*/
 $(document).ready(function () {
   $(".view-on-map-marker").on("click", function (event) {
     if (this.hash !== "") {
@@ -36,7 +35,6 @@ $(document).ready(function () {
 });
 
 // HOTEL OBJECTS
-
 function restaurant(name, type, website, lat, lng) {
   this.name = name;
   this.type = type;
@@ -80,7 +78,7 @@ let theMarketVaults = new restaurant(
 let theSoupKitchen = new restaurant(
   "The Soup Kitchen",
   "British",
-  "http://www.thesoupkitchen.co.uk/home.htm",
+  "http://www.thesoupkitchen.co.uk/home.html",
   52.805889,
   -2.118376
 );
@@ -109,6 +107,7 @@ let theSunInn = new restaurant(
   -2.116867
 );
 
+//ATTRACTION OBJECTS
 let theAncientHighHouse = new attraction(
   "The Ancient High House",
   "Museum",
@@ -157,6 +156,7 @@ let gatehouseTheatre = new attraction(
   -2.115686
 );
 
+//HOTEL OBJECTS
 let theSwanHotel = new hotel(
   "The Swan",
   "Hotel",
@@ -182,7 +182,7 @@ let tillingtonHall = new hotel(
 );
 
 let theSpittalBrook = new hotel(
-  "The SpittalBrook",
+  "The Spittal Brook",
   "B&B",
   "http://thespittalbrookstafford.co.uk/",
   52.79706,
@@ -205,8 +205,7 @@ let cameronLodge = new hotel(
   -2.105996
 );
 
-// RESTAURANTS
-
+// SHOW RESTAURANTS ON PAGE 
 let eat1 =
   "<div class='places-to-box'><p>" +
   pizzaExpress.name +
@@ -291,8 +290,7 @@ let eat6 =
 let food6 = document.getElementById("the-sun");
 food6.innerHTML = eat6;
 
-// ATTRACTIONS
-
+// SHOW ATTRACTIONS ON PAGE 
 let see1 =
   "<div class='places-to-box'><p>" +
   theAncientHighHouse.name +
@@ -377,8 +375,7 @@ let see6 =
 let attraction6 = document.getElementById("gatehouse-theatre");
 attraction6.innerHTML = see6;
 
-// HOTELS
-
+// SHOW HOTELS ON PAGE 
 let stay1 =
   "<div class='places-to-box'><p>" +
   theSwanHotel.name +
