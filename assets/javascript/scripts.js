@@ -17,7 +17,6 @@ $("#tabs").tabs();
 
 /*SCRIPT TAKEN FROM W3SCHOOLS - SMOOTH SCROLL TO ELEMENT*/
 $(document).ready(function () {
-  var windowSize = $(window).width();
   $(".view-on-map-marker").on("click", function (event) {
     if (this.hash !== "") {
       event.preventDefault();
