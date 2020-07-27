@@ -32,7 +32,19 @@ The website will be focused on adults, so will need a professional and clean fee
   
 ## Features
 
-Contents of all the pages which are on the site and a brief description of the page.
+This is a one page website. I opted for this as I wanted the page to be a one stop place for all information, which I felt a multi page wesbite would take away this concept. The webpage consists of:
+
+- Jumbotron - Stand-out picture and "Welcome to Stafford Tagline".
+
+- Introcution - A short introduction about the town.
+
+- What's on - This section features a small selection of places to eat / see and stay. Each of these items offers an external link ot the website, or the option to view on the map.
+
+- Map controls - There is also some additonal buttons which will have added control for the map. This includes show all of one category, show all of all categories and clear the map.
+
+- Map - This is where the above controls are visualised. Once markers appear on the map, they can be clicked to show info windows with another link to the website.
+
+- Weather - This section of the website is linked to a weather API to show a 8 day range of the weather in Stafford. It shows the date, temperature and a description of the weather that day, along with an image.
 
 ### Fonts
 
@@ -50,8 +62,9 @@ I have used the Google Fonts library to make the text on my page visually appeal
 I chose this color theme as it tied in well with the colors of Stafford. Many of the iconic buildings of stafford are old Tudor houses, and are painted balck and white. As well as this, the two main sports teams in Stafford, Stafford Rugby Club and Stafford Rangers FC play in yellow/black and white/black respectively. 
 
 ### Images 
+The Jumbotron image of Mill Street was 
 
-Source of images used.
+The icons on the weather section were taken from [weatherbit](https://www.weatherbit.io/api) - These were then linked to weather code in the API data.
 
 ## Technologies Used
 
@@ -62,8 +75,6 @@ Source of images used.
 - [Bootstrap](https://getbootstrap.com/) This project used Bootstrap as a framework. The main use of this will be for the layout and grid of the page.
 
 - [Google-Fonts](https://fonts.google.com/) I have used range of fonts from Google to make the page more visually appealing.
-
-- [Fontawsome](https://fontawesome.com/)I will have used FontAwesome for the pictograms on my site.
 
 - [JQuery](https://jquery.com) This was used for the mobile menu in the navbar.
 
@@ -77,14 +88,29 @@ How does the site work compared to your user stories.
 
 ## Project Reviews
 ### Project Review 1
+
+- In my inital project review, I discussed my project idea of having a what to do in my Hometown of Stafford and a weather report feature also. My mentor said this would be a good idea to base my project on.
+
 ### Project Review 2
+
+- In my second project review, we discussed the project development so far. I was pleased to hear it all looked / worked okay, with some improvements to be made. These included: 
+Reducing the color scheme, I went from having a equal variation of orange, black and white, to just having black / white with a hint of orange.
+A fixed nav bar - as page was very long to have to scroll all the way back up to the top, especially on mobile.
+Correct formatting of my scripts / HTML/
+
+These changes have been implemented and the whole page updated to give a better design of the page to make it more user friendly.
+
 ### Project Review 3
 
-### Manual Testing
+## User Story Testing
+
+Comparison of all user stories to the final site.
+
+## Fuctionality Testing
 
 Description of the testing done on each feature on the site.
 
-### Device Testing
+## Device Testing
 
 Description of which browsers and which devices were used to test the site.
 
