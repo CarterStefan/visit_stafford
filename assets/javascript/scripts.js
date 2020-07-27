@@ -17,13 +17,14 @@ $("#tabs").tabs();
 
 /*SCRIPT TAKEN FROM W3SCHOOLS - SMOOTH SCROLL TO ELEMENT*/
 $(document).ready(function () {
+  var windowSize = $(window).width();
   $(".view-on-map-marker").on("click", function (event) {
     if (this.hash !== "") {
       event.preventDefault();
       var hash = "google-maps-box";
       $("html, body").animate(
         {
-          scrollTop: $("#google-maps-box").offset().top,
+          scrollTop: $("#google-maps-box").offset().top - 160,
         },
         800,
         function () {
@@ -205,7 +206,7 @@ let cameronLodge = new hotel(
   -2.105996
 );
 
-// SHOW RESTAURANTS ON PAGE 
+// SHOW RESTAURANTS ON PAGE
 let eat1 =
   "<div class='places-to-box'><p>" +
   pizzaExpress.name +
@@ -290,7 +291,7 @@ let eat6 =
 let food6 = document.getElementById("the-sun");
 food6.innerHTML = eat6;
 
-// SHOW ATTRACTIONS ON PAGE 
+// SHOW ATTRACTIONS ON PAGE
 let see1 =
   "<div class='places-to-box'><p>" +
   theAncientHighHouse.name +
@@ -375,7 +376,7 @@ let see6 =
 let attraction6 = document.getElementById("gatehouse-theatre");
 attraction6.innerHTML = see6;
 
-// SHOW HOTELS ON PAGE 
+// SHOW HOTELS ON PAGE
 let stay1 =
   "<div class='places-to-box'><p>" +
   theSwanHotel.name +
@@ -460,10 +461,12 @@ let stay6 =
 let hotel6 = document.getElementById("cameron-lodge");
 hotel6.innerHTML = stay6;
 
-
 // HOVER EFFECT ON BUTTONS
-$(".view-on-map-marker").hover(function(){
-  $(this).addClass("view-on-map-marker-hover");
-  }, function(){
-  $(this).removeClass("view-on-map-marker-hover");
-});
+$(".view-on-map-marker").hover(
+  function () {
+    $(this).addClass("view-on-map-marker-hover");
+  },
+  function () {
+    $(this).removeClass("view-on-map-marker-hover");
+  }
+);

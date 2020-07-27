@@ -243,6 +243,8 @@ function dropRestaurants() {
       i * 200,
       restaurants[i].content.html
     );
+    map.setZoom(16);
+    map.panTo(stafford);
   }
 }
 
@@ -256,6 +258,8 @@ function dropAttractions() {
       i * 200,
       attractions[i].content.html
     );
+    map.setZoom(13);
+    map.panTo(stafford);
   }
 }
 
@@ -269,6 +273,8 @@ function dropHotels() {
       i * 200,
       hotels[i].content.html
     );
+    map.setZoom(13);
+    map.panTo(stafford);
   }
 }
 
@@ -285,8 +291,10 @@ function addRestaurantMarkersWithTimeout(position, image, timeout, content) {
     });
     google.maps.event.addListener(marker, "click", function () {
       // Add listener on click to marker
+
       map.setZoom(16);
       map.panTo(marker.getPosition());
+
       infowindow.open(map, marker); // Show Infowindow
       infowindow.setContent(content); // Set Content to Infowindow
     });
@@ -307,8 +315,10 @@ function addAttractionsMarkersWithTimeout(position, image, timeout, content) {
     });
     google.maps.event.addListener(marker, "click", function () {
       // Add listener on click to marker
+
       map.setZoom(16);
       map.panTo(marker.getPosition());
+
       infowindow.open(map, marker); // Show Infowindow
       infowindow.setContent(content); // Set Content to Infowindow
     });
@@ -329,12 +339,12 @@ function addHotelsMarkersWithTimeout(position, image, timeout, content) {
     });
     google.maps.event.addListener(marker, "click", function () {
       // Add listener on click to marker
+
       map.setZoom(16);
       map.panTo(marker.getPosition());
 
       infowindow.open(map, marker); // Show Infowindow
       infowindow.setContent(content); // Set Content to Infowindow
-      
     });
     markers.push(marker);
   }, timeout);
@@ -385,5 +395,5 @@ function clearMarkers() {
     markers[i].setMap(null);
   }
   markers = [];
-  map.setZoom(14);
+  map.setZoom(13);
 }
