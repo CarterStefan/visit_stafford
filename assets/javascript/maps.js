@@ -408,3 +408,4 @@ function clearMarkers() {
 // https://developers.google.com/maps/documentation/javascript/examples/marker-animations-iteration
 // https://developers.google.com/maps/documentation/javascript/infowindows
 // https://gist.github.com/Kusumoto/c2a73e9292590c510a47
+// MAP ICONS COLLECTION - https://mapicons.mapsmarker.com
