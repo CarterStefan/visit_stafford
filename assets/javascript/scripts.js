@@ -3,38 +3,34 @@
 //SCRIPT TAKEN FROM W3SCHOOLS - HIDE NAVBAR ON SCROLL
 
 var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
+window.onscroll = function () {
+  var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("navbar").style.top = "0";
   } else {
     document.getElementById("navbar").style.top = "-60px";
   }
   prevScrollpos = currentScrollPos;
-}
+};
 
 //TABS
 $("#tabs").tabs();
 
-//SCROLL
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $(".view-on-map-marker").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
+/*SCROLL - SCRIPT TAKEN FROM https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll*/
+$(document).ready(function () {
+  $(".view-on-map-marker").on("click", function (event) {
     if (this.hash !== "") {
-      // Prevent default anchor click behavior
       event.preventDefault();
-      // Store hash
-      var hash = this.hash;
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $("#google-maps-box").offset().top
-      }, 800, function(){   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
+      var hash = "google-maps-box";
+      $("html, body").animate(
+        {
+          scrollTop: $("#google-maps-box").offset().top,
+        },
+        800,
+        function () {
+          window.location.hash = hash;
+        }
+      );
     } // End if
   });
 });
@@ -466,5 +462,3 @@ let stay6 =
   '<button class="view-on-map-marker" onclick="dropSingleMarker(hotels[5])"  >View On Map</button></div> ';
 let hotel6 = document.getElementById("cameron-lodge");
 hotel6.innerHTML = stay6;
-
-
