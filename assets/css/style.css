@@ -130,11 +130,11 @@ transition: top 0.5s;
 
 .hero-image-text {
   padding-top: 75px;
-  padding-left: 30px;
   font-size: 300%;
   color: #f2bd1d;
   font-weight: bold;
   text-align: center;
+  letter-spacing: 0.2em;
 }
 
 /* ------------------------- PLACES TO BOXES */
@@ -251,6 +251,7 @@ transition: top 0.5s;
     text-align: center;
     color: #f2f2f2;
     text-decoration: none;
+    
 }
 
 .footer-text:hover{
