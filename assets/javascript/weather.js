@@ -1,6 +1,6 @@
-let weather;
-let el;
-let item;
+var weather;
+var el;
+var item;
 
 const baseURL =
   "https://api.weatherbit.io/v2.0/forecast/daily?postal_code=ST162RP&days=8&key=8adc9c07736e467cb1e8ef7497ddc0f8";
@@ -20,7 +20,7 @@ function getWeather(cb) {
 }
 
 function writeToDocument() {
-  let el = document.getElementById("data");
+  var el = document.getElementById("data");
   el.innerHTML = "";
   getWeather(function (weather) {
     weather = weather.data;    
@@ -47,7 +47,7 @@ function writeToDocument() {
       }
 
       /*reversed date with help from https://stackoverflow.com/questions/40232218/how-to-reverse-date-format-yyyy-mm-dd-using-javascript-jquery*/
-      let date = item.valid_date.split('-');
+      var date = item.valid_date.split('-');
       var newDate = date[2] + '-' + date[1] + '-' + date[0];
 
       el.innerHTML +=

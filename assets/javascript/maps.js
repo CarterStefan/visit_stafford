@@ -1,34 +1,34 @@
-// Declare Global Variables
+// Declare Global variables
 var image;
 var markers = [];
 var map;
 var infowindow;
-let stafford = { lat: 52.8072076, lng: -2.1173127 };
+var stafford = { lat: 52.8072076, lng: -2.1173127 };
 
 //Websites
-let pizzaExpressWebsite = "https://www.pizzaexpress.com/stafford";
-let theSwanWebsite = "https://www.theswanstafford.co.uk/";
-let theMarketVaultsWebsite = "https://www.themarketvaults.co.uk/";
-let theSoupKitchenWebsite = "http://www.thesoupkitchen.co.uk/home.htm";
-let theBearWebsite = "https://www.thebearpubstafford.co.uk/index";
-let theSunWebsite = "https://www.titanicbrewery.co.uk/our-pubs/the-sun/";
+var pizzaExpressWebsite = "https://www.pizzaexpress.com/stafford";
+var theSwanWebsite = "https://www.theswanstafford.co.uk/";
+var theMarketVaultsWebsite = "https://www.themarketvaults.co.uk/";
+var theSoupKitchenWebsite = "http://www.thesoupkitchen.co.uk/home.htm";
+var theBearWebsite = "https://www.thebearpubstafford.co.uk/index";
+var theSunWebsite = "https://www.titanicbrewery.co.uk/our-pubs/the-sun/";
 
-let theAncientHighHouseWebsite =
+var theAncientHighHouseWebsite =
   "https://www.freedom-leisure.co.uk/centres/ancienthighhouse/";
-let staffordCastleWesbite =
+var staffordCastleWesbite =
   "https://www.freedom-leisure.co.uk/centres/stafford-castle/";
-let victoriaParkWebsite = "https://www.staffordbc.gov.uk/victoriapark";
-let doxeyMarshesWebsite =
+var victoriaParkWebsite = "https://www.staffordbc.gov.uk/victoriapark";
+var doxeyMarshesWebsite =
   "https://www.staffs-wildlife.org.uk/nature-reserves/doxey-marshes";
-let shireHallGalleryWesbite =
+var shireHallGalleryWesbite =
   "https://www.staffordshire.gov.uk/Business/Investment/Shire-Hall.aspx";
-let gateHouseTheatreWesbite = "https://staffordgatehousetheatre.co.uk/";
+var gateHouseTheatreWesbite = "https://staffordgatehousetheatre.co.uk/";
 
-let theVineWebsite = "https://www.vinehotelpub.co.uk/";
-let tillingtonHallWebsite = "https://www.tillingtonhall.co.uk/";
-let theSpittalBrookWebsite = "http://thespittalbrookstafford.co.uk/";
-let abbeyHotelWebsite = "http://www.abbeyhotelstafford.co.uk/";
-let cameronLodgeWebsite = "https://www.cameronlodgestafford.co.uk/";
+var theVineWebsite = "https://www.vinehotelpub.co.uk/";
+var tillingtonHallWebsite = "https://www.tillingtonhall.co.uk/";
+var theSpittalBrookWebsite = "http://thespittalbrookstafford.co.uk/";
+var abbeyHotelWebsite = "http://www.abbeyhotelstafford.co.uk/";
+var cameronLodgeWebsite = "https://www.cameronlodgestafford.co.uk/";
 
 // INITIALISE GOOGLE MAP
 function initMap() {
