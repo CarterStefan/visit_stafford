@@ -97,7 +97,7 @@ var theMarketVaults = new restaurant(
 var theSoupKitchen = new restaurant(
   "The Soup Kitchen",
   "British",
-  "http://www.thesoupkitchen.co.uk/home.html",
+  "http://www.thesoupkitchen.co.uk/home.htm",
   52.805889,
   -2.118376
 );

@@ -9,7 +9,7 @@ var stafford = { lat: 52.8072076, lng: -2.1173127 };
 var pizzaExpressWebsite = "https://www.pizzaexpress.com/stafford";
 var theSwanWebsite = "https://www.theswanstafford.co.uk/";
 var theMarketVaultsWebsite = "https://www.themarketvaults.co.uk/";
-var theSoupKitchenWebsite = "http://www.thesoupkitchen.co.uk/";
+var theSoupKitchenWebsite = "http://www.thesoupkitchen.co.uk/home.htm";
 var theBearWebsite = "https://www.thebearpubstafford.co.uk/index";
 var theSunWebsite = "https://www.titanicbrewery.co.uk/our-pubs/the-sun/";
 
