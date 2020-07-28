@@ -15,7 +15,26 @@ window.onscroll = function () {
 //TABS
 $("#tabs").tabs();
 
-/*SCRIPT TAKEN FROM W3SCHOOLS - SMOOTH SCROLL TO ELEMENT*/
+/*SCRIPT TAKEN FROM W3SCHOOLS - SMOOTH SCROLL FOR WHOLE PAGE*/
+$(document).ready(function () {
+  $("a").on("click", function (event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $("html, body").animate(
+        {
+          scrollTop: $(hash).offset().top,
+        },
+        400,
+        function () {
+          window.location.hash = hash;
+        }
+      );
+    } // End if
+  });
+});
+
+/*SCRIPT TAKEN FROM W3SCHOOLS - SMOOTH SCROLL TO ELEMENT AMENDED TO ONLY SCROLL TO GOOGLE MAP BOX*/
 $(document).ready(function () {
   $(".view-on-map-marker").on("click", function (event) {
     if (this.hash !== "") {
@@ -25,7 +44,7 @@ $(document).ready(function () {
         {
           scrollTop: $("#google-maps-box").offset().top - 160,
         },
-        800,
+        400,
         function () {
           window.location.hash = hash;
         }
