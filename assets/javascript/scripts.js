@@ -39,7 +39,7 @@ $(document).ready(function () {
   $(".view-on-map-marker").on("click", function (event) {
     if (this.hash !== "") {
       event.preventDefault();
-      var hash = "google-maps-box";
+      var hash = this.hash;
       $("html, body").animate(
         {
           scrollTop: $("#google-maps-box").offset().top - 160,
