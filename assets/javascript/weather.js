@@ -51,12 +51,12 @@ function writeToDocument() {
       var newDate = date[2] + '-' + date[1] + '-' + date[0];
 
       el.innerHTML +=
-        '<div class="col-12 col-md-3 weatherbox1"><p class="weather-date">' +
+        '<div class="col-12 col-sm-6 col-md-3 weatherbox1"><p class="weather-date">' +
         newDate +
         '</p>' +
-        '<p class="weather-temp">' +
+        '<p><span class="weather-temp">' +
         item.temp +
-        '&#176 C</p>' +
+        '</span><span class="celsius">&#176 C</span></p>' +
         '<p class="weather-description">' + 
         item.weather.description +
         '</p>' +        

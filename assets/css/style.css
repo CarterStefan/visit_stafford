@@ -225,6 +225,10 @@ transition: top 0.5s;
   font-size: 500%;
 }
 
+.celsius{
+    font-size: 200%;
+}
+
 .weather-description {
   font-size: 200%;
 }
