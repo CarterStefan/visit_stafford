@@ -46,7 +46,7 @@ var restaurants = [
     image: { url: "assets/img/food.png" },
     content: {
       html:
-        "<h1>Pizza Express</h1><p><a target=_blank class='info-window-link' href='" +
+        "<h3>Pizza Express</h3><p><a target=_blank class='info-window-link' href='" +
         pizzaExpressWebsite +
         "'> Book a Table</a></p>",
     },
@@ -56,7 +56,7 @@ var restaurants = [
     image: { url: "assets/img/food.png" },
     content: {
       html:
-        "<h1>The Swan</h1><p><a target=_blank class='info-window-link' href='" +
+        "<h3>The Swan</h3><p><a target=_blank class='info-window-link' href='" +
         theSwanWebsite +
         "'> Book a Table</a></p>",
     },
@@ -66,7 +66,7 @@ var restaurants = [
     image: { url: "assets/img/food.png" },
     content: {
       html:
-        "<h1>The Market Vaults</h1><p><a target=_blank class='info-window-link' href='" +
+        "<h3>The Market Vaults</h3><p><a target=_blank class='info-window-link' href='" +
         theMarketVaultsWebsite +
         "'> Book a Table</a></p>",
     },
@@ -76,7 +76,7 @@ var restaurants = [
     image: { url: "assets/img/food.png" },
     content: {
       html:
-        "<h1>The Soup Kitchen</h1><p><a target=_blank class='info-window-link' href='" +
+        "<h3>The Soup Kitchen</h3><p><a target=_blank class='info-window-link' href='" +
         theSoupKitchenWebsite +
         "'> Book a Table</a></p>",
     },
@@ -86,7 +86,7 @@ var restaurants = [
     image: { url: "assets/img/food.png" },
     content: {
       html:
-        "<h1>The Bear</h1><p><a target=_blank class='info-window-link' href='" +
+        "<h3>The Bear</h3><p><a target=_blank class='info-window-link' href='" +
         theBearWebsite +
         "'> Book a Table</a></p>",
     },
@@ -96,7 +96,7 @@ var restaurants = [
     image: { url: "assets/img/food.png" },
     content: {
       html:
-        "<h1>The Sun</h1><p><a target=_blank class='info-window-link' href='" +
+        "<h3>The Sun</h3><p><a target=_blank class='info-window-link' href='" +
         theSunWebsite +
         "'> Book a Table</a></p>",
     },
@@ -111,7 +111,7 @@ var attractions = [
     image: { url: "assets/img/see.png" },
     content: {
       html:
-        "<h1>Ancient High House</h1><p><a target=_blank class='info-window-link' href='" +
+        "<h3>Ancient High House</h3><p><a target=_blank class='info-window-link' href='" +
         theAncientHighHouseWebsite +
         "'> See Website </a></p>",
     },
@@ -121,7 +121,7 @@ var attractions = [
     image: { url: "assets/img/see.png" },
     content: {
       html:
-        "<h1>Stafford Castle</h1><p><a target=_blank class='info-window-link' href='" +
+        "<h3>Stafford Castle</h3><p><a target=_blank class='info-window-link' href='" +
         staffordCastleWesbite +
         "'> See Website</a></p>",
     },
@@ -131,7 +131,7 @@ var attractions = [
     image: { url: "assets/img/see.png" },
     content: {
       html:
-        "<h1>Victoria Park</h1><p><a target=_blank class='info-window-link' href='" +
+        "<h3>Victoria Park</h3><p><a target=_blank class='info-window-link' href='" +
         victoriaParkWebsite +
         "'> See Website</a></p>",
     },
@@ -141,7 +141,7 @@ var attractions = [
     image: { url: "assets/img/see.png" },
     content: {
       html:
-        "<h1>Doxey Marshes</h1><p><a target=_blank class='info-window-link' href='" +
+        "<h3>Doxey Marshes</h3><p><a target=_blank class='info-window-link' href='" +
         doxeyMarshesWebsite +
         "'> See Website</a></p>",
     },
@@ -151,7 +151,7 @@ var attractions = [
     image: { url: "assets/img/see.png" },
     content: {
       html:
-        "<h1>Shire Hall Gallery</h1><p><a target=_blank class='info-window-link' href='" +
+        "<h3>Shire Hall Gallery</h3><p><a target=_blank class='info-window-link' href='" +
         shireHallGalleryWesbite +
         "'> See Website </a></p>",
     },
@@ -161,7 +161,7 @@ var attractions = [
     image: { url: "assets/img/see.png" },
     content: {
       html:
-        "<h1>Gatehouse Theatre</h1><p><a target=_blank class='info-window-link' href='" +
+        "<h3>Gatehouse Theatre</h3><p><a target=_blank class='info-window-link' href='" +
         gateHouseTheatreWesbite +
         "'> See Wesbite </a></p>",
     },
@@ -176,7 +176,7 @@ var hotels = [
     image: { url: "assets/img/hotel.png" },
     content: {
       html:
-        "<h1>The Swan Hotel</h1><p><a target=_blank class='info-window-link' href='" +
+        "<h3>The Swan Hotel</h3><p><a target=_blank class='info-window-link' href='" +
         theSwanWebsite +
         "'> Book a Room</a></p>",
     },
@@ -186,7 +186,7 @@ var hotels = [
     image: { url: "assets/img/hotel.png" },
     content: {
       html:
-        "<h1>The Vine</h1><p><a target=_blank class='info-window-link' href='" +
+        "<h3>The Vine</h3><p><a target=_blank class='info-window-link' href='" +
         theVineWebsite +
         "'> Book a Room</a></p>",
     },
@@ -196,7 +196,7 @@ var hotels = [
     image: { url: "assets/img/hotel.png" },
     content: {
       html:
-        "<h1>Tillington Hall</h1><p><a target=_blank class='info-window-link' href='" +
+        "<h3>Tillington Hall</h3><p><a target=_blank class='info-window-link' href='" +
         tillingtonHallWebsite +
         "'> Book a Room </a></p>",
     },
@@ -206,7 +206,7 @@ var hotels = [
     image: { url: "assets/img/hotel.png" },
     content: {
       html:
-        "<h1>Spittal Brook</h1><p><a target=_blank class='info-window-link' href='" +
+        "<h3>Spittal Brook</h3><p><a target=_blank class='info-window-link' href='" +
         theSpittalBrookWebsite +
         "'> Book a Room</a></p>",
     },
@@ -216,7 +216,7 @@ var hotels = [
     image: { url: "assets/img/hotel.png" },
     content: {
       html:
-        "<h1>Abbey Hotel</h1><p><a target=_blank class='info-window-link' href='" +
+        "<h3>Abbey Hotel</h3><p><a target=_blank class='info-window-link' href='" +
         abbeyHotelWebsite +
         "'> Book a Room</a></p>",
     },
@@ -226,7 +226,7 @@ var hotels = [
     image: { url: "assets/img/hotel.png" },
     content: {
       html:
-        "<h1>Cameron Lodge</h1><p><a target=_blank class='info-window-link' href='" +
+        "<h3>Cameron Lodge</h3><p><a target=_blank class='info-window-link' href='" +
         cameronLodgeWebsite +
         "'> Book a Room</a></p>",
     },
