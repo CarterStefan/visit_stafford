@@ -6,7 +6,7 @@ body {
   font-family: "Bebas Neue", cursive;
   font-size: 150%;
   background-color: #f2f2f2;
-  }
+}
 
 /* ------------------------------ COLORS  */
 
@@ -37,7 +37,7 @@ body {
 }
 
 #introduction-box {
-  background-color:  #0d0d0d;
+  background-color: #0d0d0d;
   color: #f2f2f2;
   text-align: justify;
   padding: 30px;
@@ -72,16 +72,15 @@ body {
 }
 
 /* ------------------------------- NAV BAR */
-#navbar{
-transition: top 0.5s;
+#navbar {
+  transition: top 0.5s;
 }
-
-
 
 /* ------------------------- HERO IMAGE */
 
 #main-image-container {
-  background: url("../img/stafford_images/church_lane_bw.jpg") no-repeat center center;
+  background: url("../img/stafford_images/church_lane_bw.jpg") no-repeat center
+    center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -112,7 +111,7 @@ transition: top 0.5s;
 }
 
 .ui-tabs .ui-tabs-nav li.ui-tabs-active {
-    background: #0d0d0d;
+  background: #0d0d0d;
 }
 
 /*OPTION BOXES */
@@ -128,23 +127,23 @@ transition: top 0.5s;
   color: #0d0d0d;
 }
 
-.places-to-box a{
-  color: #0d0d0d; 
+.places-to-box a {
+  color: #0d0d0d;
 }
 
-.places-to-box a:hover{
+.places-to-box a:hover {
   color: #0d0d0d;
   text-decoration: underline;
 }
 
-.view-on-map-marker{
-    background: #f2f2f2;
-    color: #0d0d0d;
+.view-on-map-marker {
+  background: #f2f2f2;
+  color: #0d0d0d;
 }
 
-.view-on-map-marker-hover{
-    background: #0d0d0d;
-    color: #f2f2f2;
+.view-on-map-marker-hover {
+  background: #0d0d0d;
+  color: #f2f2f2;
 }
 
 /*MAP BUTTONS */
@@ -164,7 +163,6 @@ transition: top 0.5s;
   background: #0d0d0d;
   color: #f2f2f2;
 }
-
 
 /* ------------------------- MAP  */
 #map {
@@ -191,8 +189,8 @@ transition: top 0.5s;
   font-size: 500%;
 }
 
-.celsius{
-    font-size: 200%;
+.celsius {
+  font-size: 200%;
 }
 
 .weather-description {
@@ -203,29 +201,28 @@ transition: top 0.5s;
   font-size: 200%;
 }
 
-.info-window-link{
-    font-family: "Bebas Neue", cursive;
-    text-decoration: none;
-    font-size: 150%;
-    color: #0d0d0d;
+.info-window-link {
+  font-family: "Bebas Neue", cursive;
+  text-decoration: none;
+  font-size: 150%;
+  color: #0d0d0d;
 }
 
-.info-window-link:hover{
-    font-family: "Bebas Neue", cursive;
-    text-decoration: underline;
-    font-size: 150%;
-    color: #0d0d0d;
+.info-window-link:hover {
+  font-family: "Bebas Neue", cursive;
+  text-decoration: underline;
+  font-size: 150%;
+  color: #0d0d0d;
 }
 
-.footer-text{
-    text-align: center;
-    color: #f2f2f2;
-    text-decoration: none;
-    
+.footer-text {
+  text-align: center;
+  color: #f2f2f2;
+  text-decoration: none;
 }
 
-.footer-text:hover{
-    text-align: center;
-    color: #f2f2f2;
-    text-decoration: underline;
+.footer-text:hover {
+  text-align: center;
+  color: #f2f2f2;
+  text-decoration: underline;
 }
