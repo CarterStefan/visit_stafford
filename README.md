@@ -78,6 +78,8 @@ The icons on the weather section were taken from [weatherbit](https://www.weathe
 
 - [Javascript](https://en.wikipedia.org/wiki/JavaScript) I used Javascript to create functionality for this site. The Google Map feature relies heavily on this, and the functionality was created using documentation from the Google Maps API site. I also got great help from a Git Hub repo I found - https://gist.github.com/Kusumoto/c2a73e9292590c510a47 - This added the functionality to the map which I was looking for when adapting the code to suit my personal needs, in adding personal info windows with different content, and also dropping the markers on the map.
 
+- [Fontawsome](https://fontawesome.com/) I have used fontawsome for the pictograms in the footer of my page.
+
 - [JQuery](https://jquery.com) I used some JQuery around my site. This was used to create the functionality of the nav bar on mobile site. Also, for helping the page scroll smoothly.
 
 - [GitPod](https://www.gitpod.io/) This was used to create all the code for the site.
@@ -145,6 +147,11 @@ Clicking 'Show all' will drop 18 markers on the map and zoom out to fit them all
 
 Clicking 'Clear all from map' will remove all markers currently on the map.
 
+### Weather Forecast
+This area of the website does not require the user to click anywhere as all the information is already returned from the API and displayed on the screen. This section is interactive in the sense that it will show an 8 day forecast from the date the user visits the site, so the date / temperature and descriptions will change upon each visit. Also, depending on the description returned from the API the description will use an if statement to display a more playful message depending on the code returned.
+
+### Footer 
+The footer features four links to further expand the users knowledge of Stafford. They link up to Tripadvisor, Facebook, Twitter and Instagram
 
 ## Device Testing
 
