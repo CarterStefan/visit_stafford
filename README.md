@@ -121,10 +121,16 @@ Clicking on any of the links in the nav bar from any of the sections will scroll
 
 The nav bar will also reduce in height when scrolling down the page, but will appear when scrolling up. This was due to the page being very long on mobile, so you can still easily navigate around the page without having to scroll all the way back to the top of the page to do so.
 
+![nav_bar](https://user-images.githubusercontent.com/64138643/88782906-0cdf3900-d186-11ea-931b-e04cffe5d1a1.PNG)
+
+![nav_bar_collapsed](https://user-images.githubusercontent.com/64138643/88783098-4dd74d80-d186-11ea-85c1-70fa19672786.PNG)
+
 ### Eat See Stay
 Clicking Eat - This will show you the 6 options of places to eat.
 Clicking See - This will show you the 6 options of places to see.
 Clicking Stay - This will show you the 6 options of places to stay.
+
+![eat_see_stay](https://user-images.githubusercontent.com/64138643/88783326-88d98100-d186-11ea-9c6d-8abe40001c59.PNG)
 
 You can navigate between the three tabs easily and the background will change to show you which tab you are currently on. 
 
@@ -132,14 +138,22 @@ Clicking on any of the 'make booking' / 'see website' will take you to an extern
 
 Clicking on the 'view on map' buttons of the particular restaurant / attraction / hotel you clicked on will scroll down to the map deature and drop a single marker on the map zooming in and panning to that location. 
 
+![map_single_marker](https://user-images.githubusercontent.com/64138643/88783463-b7575c00-d186-11ea-8740-3b5e690d6946.PNG)
+
 Clicking 'Show all (restaurants / attractions / hotels) on map' will drop 6 markers on the map, and zoom out to fit them all on the map. Clicking on a marker will zoom in and pan to that location - opening an info window where you can then click through ot make a booking / see the website. 
 
+![map_restaurant_markers](https://user-images.githubusercontent.com/64138643/88783597-e40b7380-d186-11ea-8ae6-24a22f37272a.PNG)
+
 Clicking 'Show all' will drop 18 markers on the map and zoom out to fit them all in the window. The 3 different categories will have a different marker image to differenciate for the user. Again, clicking on each individual marker will show an info window with the name and a link to make a booking / view website. 
+
+![map_all_markers](https://user-images.githubusercontent.com/64138643/88783700-08675000-d187-11ea-9596-12d0ac64004b.PNG)
 
 Clicking 'Clear all from map' will remove all markers currently on the map.
 
 ### Weather Forecast
 This area of the website does not require the user to click anywhere as all the information is already returned from the API and displayed on the screen. This section is interactive in the sense that it will show an 8 day forecast from the date the user visits the site, so the date / temperature and descriptions will change upon each visit. Also, depending on the description returned from the API the description will use an if statement to display a more playful message depending on the code returned.
+
+![weather](https://user-images.githubusercontent.com/64138643/88783818-2e8cf000-d187-11ea-88e7-03e5d30eae06.PNG)
 
 ### Footer 
 The footer features four links to further expand the users knowledge of Stafford. They link up to Tripadvisor, Facebook, Twitter and Instagram.
@@ -166,6 +180,8 @@ I checked the following devices:
 These were tested both landscape and portrait.
 
 As well as this, I used my Huawei P20 to test the page on mobile.
+
+An issue was encountered where the nnav bar did not collapse on clicking the item. This was fixed with a solution I found on [Stack Overflow](https://stackoverflow.com/a/45818711)
 
 ## Validating Code
 
