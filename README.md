@@ -22,7 +22,7 @@ The website will be focused on adults, so will need a professional and clean fee
   
 - I am visiting Stafford on part of a business trip having never been to the town before. 
 
-  As part of my expenses from work, I get a meal and drink included for each night. Not wanting to eat in the hotel room, I am looking for somewhere to eat   and find out a little about the town. As well as food, I would like to see more of the town than just the office and hotel room, so I would benefit from   suggestions of local places to walk and attractions to see in my free time while I am here.
+  As part of my expenses from work, I get a meal and drink included for each night. Not wanting to eat in the hotel room, I am looking for somewhere to eat   and find out a little about the town. As well as food, I would like to see more of the town than just the office and hotel room, so I would benefit from   suggestions of local places to walk to and attractions to see in my free time while I am here.
   
   
 - I am visiting Stafford for a wedding on Sunday. I will be staying from Friday - Monday. 
@@ -62,9 +62,9 @@ I have used the Google Fonts library to make the text on my page visually appeal
 I chose this color theme as it tied in well with the colors of Stafford. Many of the iconic buildings of stafford are old Tudor houses, and are painted balck and white. As well as this, the two main sports teams in Stafford, Stafford Rugby Club and Stafford Rangers FC play in yellow/black and white/black respectively. 
 
 ### Images 
-The Jumbotron image of Mill Street was 
+The Jumbotron image of Mill Street was taken by myself.
 
-The icons on the weather section were taken from [weatherbit](https://www.weatherbit.io/api) - These were then linked to weather code in the API data.
+The icons on the weather section were taken from [weatherbit](https://www.weatherbit.io/api) - These were then linked to weather code in the API data to show a particular image based on what the weather is that day.
 
 ## Technologies Used
 
@@ -72,19 +72,19 @@ The icons on the weather section were taken from [weatherbit](https://www.weathe
 
 - [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) This was used to make the page more visually appealing.
 
-- [Bootstrap](https://getbootstrap.com/) This project used Bootstrap as a framework. The main use of this will be for the layout and grid of the page.
+- [Bootstrap](https://getbootstrap.com/) This project used Bootstrap as a framework. The main use of this was for the layout and grid structure of the page.
 
-- [Google-Fonts](https://fonts.google.com/) I have used range of fonts from Google to make the page more visually appealing.
+- [Google-Fonts](https://fonts.google.com/) I used only one font on this page. This was taken from Google Fonts to make the page more visually appealing.
 
-- [JQuery](https://jquery.com) This was used for the mobile menu in the navbar.
+- [Javascript](https://en.wikipedia.org/wiki/JavaScript) I used Javascript to create functionality for this site. The Google Map feature relies heavily on this, and the functionality was created using documentation from the Google Maps API site. I also got great help from a Git Hub repo I found - https://gist.github.com/Kusumoto/c2a73e9292590c510a47 - This added the functionality to the map which I was looking for when adapting the code to suit my personal needs, in adding personal info windows with different content, and also dropping the markers on the map.
 
-- [GitPod](https://www.gitpod.io/) This was used to create the HTML and CSS for the site.
+- [Fontawsome](https://fontawesome.com/) I have used fontawsome for the pictograms in the footer of my page.
+
+- [JQuery](https://jquery.com) I used some JQuery around my site. This was used to create the functionality of the nav bar on mobile site. Also, for helping the page scroll smoothly.
+
+- [GitPod](https://www.gitpod.io/) This was used to create all the code for the site.
 
 - [GitHub](https://github.com/) This was used for hosting and version control of the website. From here, I also used the Code Institute template to begin the coding of my site.
-
-## Testing
-
-How does the site work compared to your user stories.
 
 ## Project Reviews
 ### Project Review 1
@@ -104,11 +104,54 @@ These changes have been implemented and the whole page updated to give a better 
 
 ## User Story Testing
 
-Comparison of all user stories to the final site.
-
+My First User Story was - I am a current resident of stafford looking for somewhere to eat this weekend. 
+  - This is achieved through the 'what-to-do' section of the site. Here there is a suggestion of six places to eat, with a description of the type of food the restaurant offers. From here, the user can either see the location on the map, or view the restaurants website to book a table. This can also be achieved through the info window on the map itself.
+  
+The second user story was - I am visiting Stafford on part of a business trip having never been to the town before.
+  - This user story is accomodated for by offering more than just suggestions for places to eat. There is also a tab to show local attractions and places to see, as well as various hotels should they wish to change hotels for the next time they stay. Again, these are all visible on the map, either by being shown individually, or shown all at once to compare locations.
+  
+The third user story was - I am visiting Stafford for a wedding on Sunday. I will be staying from Friday - Monday.  
+  - For this user story I have created a section on the site which links up to a weather API. The area is automatically added to show the weather for Stafford over an 8 day period. This will give people visiting a good idea on what to pack, based on the temperature and weather description. I added a persoanl / playful touch ot this byt adding a sign off message for each day based on the weather description code returned from the weather API. for example the weather code "800" will show the message "bring your sunglasses".
+  
+  Also, this user would make use of the map and suggestions feature for creating a plan on where to eat and stay each night, along with what to do on the days around the wedding.
+  
 ## Fuctionality Testing
+I have tested each function of the site, by generally using the page as a user would, as well as extensively testing every individual button on the page to ensure it does what I want it to do.
 
-Description of the testing done on each feature on the site.
+### Nav Bar
+Clicking the logo - This will take you to the top of the page.
+Clicking Home - This will take you to the top of the page.
+Clciking About - This will scroll to the introduction section.
+Clicking Visit - This will scroll to the what to do section of the page.
+Clicking Map - This will scroll to the google map section of the page.
+Clicking Weather - This will take you to the weathe report section of the page.
+
+Clicking on any of the links in the nav bar from any of the sections will scroll to the desired location. 
+
+The nav bar will also reduce in height when scrolling down the page, but will appear when scrolling up. This was due to the page being very long on mobile, so you can still easily navigate around the page without having to scroll all the way back to the top of the page to do so.
+
+### Eat See Stay
+Clicking Eat - This will show you the 6 options of places to eat.
+Clicking See - This will show you the 6 options of places to see.
+Clicking Stay - This will show you the 6 options of places to stay.
+
+You can navigate between the three tabs easily and the background will change to show you which tab you are currently on. 
+
+Clicking on any of the 'make booking' / 'see website' will take you to an external page of the particular restaurant / attraction / hotel you clicked on.
+
+Clicking on the 'view on map' buttons of the particular restaurant / attraction / hotel you clicked on will scroll down to the map deature and drop a single marker on the map zooming in and panning to that location. 
+
+Clicking 'Show all (restaurants / attractions / hotels) on map' will drop 6 markers on the map, and zoom out to fit them all on the map. Clicking on a marker will zoom in and pan to that location - opening an info window where you can then click through ot make a booking / see the website. 
+
+Clicking 'Show all' will drop 18 markers on the map and zoom out to fit them all in the window. The 3 different categories will have a different marker image to differenciate for the user. Again, clicking on each individual marker will show an info window with the name and a link to make a booking / view website. 
+
+Clicking 'Clear all from map' will remove all markers currently on the map.
+
+### Weather Forecast
+This area of the website does not require the user to click anywhere as all the information is already returned from the API and displayed on the screen. This section is interactive in the sense that it will show an 8 day forecast from the date the user visits the site, so the date / temperature and descriptions will change upon each visit. Also, depending on the description returned from the API the description will use an if statement to display a more playful message depending on the code returned.
+
+### Footer 
+The footer features four links to further expand the users knowledge of Stafford. They link up to Tripadvisor, Facebook, Twitter and Instagram
 
 ## Device Testing
 
