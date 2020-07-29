@@ -6,14 +6,12 @@ This is my second milestone project towards my full-stack web developer course w
 
 The main user of the website will be residents who live here looking for something to do, as well as people who have never been to the town before who may be planning a visit.
 
-## UX
- 
+## UX 
 The users of this website can be split into two simple groups, those who live in Stafford and those who don't. The aim of the website will be to inform people of what there is to do around stafford. This will include places to eat and drink, places of interest to visit, and places to shop. Due to this, despite the two groups of users being split, they share a common purpose to visit the site in the fact they are looking for something to do in Stafford.
 
 The website will be focused on adults, so will need a professional and clean feel to the site, encouraging people to visit the area. It should be informative and easy to use.
 
 ### User Stories
-
 - I am a current resident of stafford looking for somewhere to eat this weekend. 
 
   Having lived here for a few years, I do know of the restaurants here, although I am unable to choose which one to go to for a meal out on the weekend.  
@@ -31,7 +29,6 @@ The website will be focused on adults, so will need a professional and clean fee
   
   
 ## Features
-
 This is a one page website. I opted for this as I wanted the page to be a one stop place for all information, which I felt a multi page wesbite would take away this concept. The webpage consists of:
 
 - Jumbotron - Stand-out picture and "Welcome to Stafford Tagline".
@@ -47,7 +44,6 @@ This is a one page website. I opted for this as I wanted the page to be a one st
 - Weather - This section of the website is linked to a weather API to show a 8 day range of the weather in Stafford. It shows the date, temperature and a description of the weather that day, along with an image.
 
 ### Fonts
-
 I have used the Google Fonts library to make the text on my page visually appealing.
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
@@ -56,7 +52,6 @@ I have used the Google Fonts library to make the text on my page visually appeal
 
 
 ### Color
-
 ![color_theme](https://user-images.githubusercontent.com/64138643/87045675-106b4a00-c1f0-11ea-8c87-82c5c3c3fa2a.PNG)
 
 I chose this color theme as it tied in well with the colors of Stafford. Many of the iconic buildings of stafford are old Tudor houses, and are painted balck and white. As well as this, the two main sports teams in Stafford, Stafford Rugby Club and Stafford Rangers FC play in yellow/black and white/black respectively. 
@@ -67,7 +62,6 @@ The Jumbotron image of Mill Street was taken by myself.
 The icons on the weather section were taken from [weatherbit](https://www.weatherbit.io/api) - These were then linked to weather code in the API data to show a particular image based on what the weather is that day.
 
 ## Technologies Used
-
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)  This was used to create the structure of the site.
 
 - [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) This was used to make the page more visually appealing.
@@ -88,11 +82,9 @@ The icons on the weather section were taken from [weatherbit](https://www.weathe
 
 ## Project Reviews
 ### Project Review 1
-
 - In my inital project review, I discussed my project idea of having a what to do in my Hometown of Stafford and a weather report feature also. My mentor said this would be a good idea to base my project on.
 
 ### Project Review 2
-
 - In my second project review, we discussed the project development so far. I was pleased to hear it all looked / worked okay, with some improvements to be made. These included: 
 Reducing the color scheme, I went from having a equal variation of orange, black and white, to just having black / white with a hint of orange.
 A fixed nav bar - as page was very long to have to scroll all the way back up to the top, especially on mobile.
@@ -103,7 +95,6 @@ These changes have been implemented and the whole page updated to give a better 
 ### Project Review 3
 
 ## User Story Testing
-
 My First User Story was - I am a current resident of stafford looking for somewhere to eat this weekend. 
   - This is achieved through the 'what-to-do' section of the site. Here there is a suggestion of six places to eat, with a description of the type of food the restaurant offers. From here, the user can either see the location on the map, or view the restaurants website to book a table. This can also be achieved through the info window on the map itself.
   
@@ -151,11 +142,30 @@ Clicking 'Clear all from map' will remove all markers currently on the map.
 This area of the website does not require the user to click anywhere as all the information is already returned from the API and displayed on the screen. This section is interactive in the sense that it will show an 8 day forecast from the date the user visits the site, so the date / temperature and descriptions will change upon each visit. Also, depending on the description returned from the API the description will use an if statement to display a more playful message depending on the code returned.
 
 ### Footer 
-The footer features four links to further expand the users knowledge of Stafford. They link up to Tripadvisor, Facebook, Twitter and Instagram
+The footer features four links to further expand the users knowledge of Stafford. They link up to Tripadvisor, Facebook, Twitter and Instagram.
+These links open up the window in a new tab, and also underline on hover.
 
-## Device Testing
+### Cross Platform Testing
 
-Description of which browsers and which devices were used to test the site.
+I have used the following browsers to test my site:
+1. Google Chrome - Version 84.0.4147.89
+2. Mozilla Firefox - Version 79.0
+3. Microsoft Edge - Version 84.0.522.44  
+
+### Device Testing
+I have used Chromes device similator to test how it looked on different devices and at different sizes. 
+I checked the following devices:
+1. iPad pro
+2. iPad
+3. iPhone X
+4. iPhone 6/7/8 Plus
+5. iPhone 6/7/8
+6. Kindle Fire HDX
+7. Galaxy S5
+
+These were tested both landscape and portrait.
+
+As well as this, I used my Huawei P20 to test the page on mobile.
 
 ## Validating Code
 
@@ -163,18 +173,37 @@ List of websites used to validate the code:
 E.G
 1. [W3C HTML Validator](https://validator.w3.org/)
 2. [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+3. [JSHINT](https://jshint.com/)
 
 ### Future Features
 
-A list of anything further you wish to include in your project which you were unable to now.
+If I was to expand on this website, I would add more imagery, maybe through a gallery section of the site.
+
+I think it would also be a good idea to add more restaurants / attractions / hotels and maybe show a random selection of 6 each time, or 'show 6 more' through pagination. 
+
+In time, it could be good to add the feature of booking a table / room through the page itself, rather than going to the external page to book.
+
+This site could also be expanded to show information about different towns and cities, not just my town of Stafford.
 
 ## Deployment
 
+I used GitHub and Gitpod to create all pages and css on my site. This was initially started with the Code Institute Template.
+
+This was used for version control and regularly pushed changes using the terminal in Gitpod.
+
+To deploy the page and make it viewable to others, I used Github pages:
+1. In the Visit Stafford project I clicked on the settings tab.
+2. I scrolled down to Github Pages and changed the Source to Master Branch.
+3. This meant I could then share my page with others using the following link: [Visit Stafford](https://carterstefan.github.io/visit_stafford)
 
 ### Content
-
+The introduction paragraph was taken from a [Visit Staffordshire](https://www.enjoystaffordshire.com/information/product-catch-all/stafford-p736161) site. 
 
 ### Acknowledgements
+
+- I would like to thank my mentor Adegbenga Adeye for his help in my mentoring sessions and input in some valuable advice with the development of my website. 
+
+- I would also like to thank the Code Institute team in helping with the learning new skills used to create this page.
 
 
 
