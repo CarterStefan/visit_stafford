@@ -1,5 +1,6 @@
 // NAVBAR SCRIPT
 
+
 //SCRIPT TAKEN FROM W3SCHOOLS - HIDE NAVBAR ON SCROLL
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
