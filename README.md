@@ -1,10 +1,22 @@
 # VISIT STAFFORD
 
-This is my second milestone project towards my full-stack web developer course with the Code Institute. 
+### [GitHub](https://github.com/CarterStefan/visit_stafford)
+(https://user-images.githubusercontent.com/64138643/88920640-19868e80-d265-11ea-8b65-59ec215c043e.PNG)
 
-"I will create a website for my hometown of Stafford. This will feature information about the town, images of the area, along with a map feature showing places to eat as well as local attractions. I also plan to incorporate a weather forecast feature to update people who may be planning a visit what the weather will be like in the town."
+### [GitHub Pages](https://carterstefan.github.io/visit_stafford)
+
+## Contents
+1. [Project Overview](Project-Overview)
+2. [UX](ux)
+
+## Project Overview
+This is my second milestone project towards my full-stack web developer course with the [Code Institute](https://codeinstitute.net/). The website will be created using HTML, CSS and JAVASCRIPT / JQuery.
+
+I will create a website for my hometown of Stafford. This will feature information about the town, images of the area, along with a map feature showing places to eat as well as local attractions. I also plan to incorporate a weather forecast feature to update people who may be planning a visit what the weather will be like in the town.
 
 The main user of the website will be residents who live here looking for something to do, as well as people who have never been to the town before who may be planning a visit.
+
+
 
 ## UX 
 The users of this website can be split into two simple groups, those who live in Stafford and those who don't. The aim of the website will be to inform people of what there is to do around stafford. This will include places to eat and drink, places of interest to visit, and places to shop. Due to this, despite the two groups of users being split, they share a common purpose to visit the site in the fact they are looking for something to do in Stafford.
@@ -207,6 +219,7 @@ The introduction paragraph was taken from a [Visit Staffordshire](https://www.en
 #### Scripts.js
 - FUNCTION TO SMOOTH SCROLL FOR WHOLE PAGE - This was taken from W3Schools.
 - FUNCTION TO SMOOTH SCROLL TO GOOGLE MAP BOX - This was taken from W3Schools.
+- NAVBAR COLLAPSE ON CLOSE - Fix taken from [mdbootstrap](https://mdbootstrap.com/support/general/auto-close-navbar-when-click-on-link-responsive-mode/).
 
 #### Maps.js
 - THE FOLLOWING FUNCTIONS 'dropRestaurants, dropAttractions, dropHotels, addRestaurantMarkersWithTimeout, addAttractionsMarkersWithTimeout, addHotelsMarkersWithTimeout & clearMarkers' were created by referencing [This repository](https://gist.github.com/Kusumoto/c2a73e9292590c510a47). The functions were then adapted to suit my needs.
