@@ -194,8 +194,6 @@ These were tested both landscape and portrait.
 
 As well as this, I used my Huawei P20 to test the page on mobile.
 
-An issue was encountered where the nav bar did not collapse on clicking the item. This was fixed with a solution I found on [Stack Overflow](https://stackoverflow.com/a/45818711)
-
 ## Validating Code
 
 List of websites used to validate the code:
@@ -213,6 +211,11 @@ I think it would also be a good idea to add more restaurants / attractions / hot
 In time, it could be good to add the feature of booking a table / room through the page itself, rather than going to the external page to book.
 
 This site could also be expanded to show information about different towns and cities, not just my town of Stafford.
+
+### Bugs
+One bug which was found was when testing the page using the iPhone 5s option on Google Dev Tools. This created a blank vertical line down the right side of the whole page. As this was only on the iPhone 5s, and all other devices displayed with no issues, I did not fix the issue, with the 5s being virtually obselete.
+
+Another bug I found upon testing was the Info Windows on the Maps feature. When opening an info window and then clicking close, the page would jump down by a few pixels. This only occured on Chrome and Edge, the issue did not occur on Firefox. However, the issue was also present on the default Google Info Windows (not just my markers). Unfortunately, I was unable to find a solution to this issue.
 
 ## Deployment
 
