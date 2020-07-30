@@ -1,6 +1,11 @@
 //TABS
 $("#tabs").tabs();
 
+//NAVAR COLLAPSE
+$(".navbar-collapse a").click(function () {
+  $(".navbar-collapse").collapse("hide");
+});
+
 /* FUNCTION TO SMOOTH SCROLL TO ELEMENT AMENDED TO ONLY SCROLL TO GOOGLE MAP BOX*/
 $(document).ready(function () {
   $(".view-on-map-marker").on("click", function (event) {
