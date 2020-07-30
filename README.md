@@ -1,13 +1,12 @@
 # VISIT STAFFORD
 
 ### [GitHub](https://github.com/CarterStefan/visit_stafford)
-(https://user-images.githubusercontent.com/64138643/88920640-19868e80-d265-11ea-8b65-59ec215c043e.PNG)
 
 ### [GitHub Pages](https://carterstefan.github.io/visit_stafford)
 
 ## Contents
-1. [Project Overview](Project-Overview)
-2. [UX](ux)
+1. [Project Overview](#Project-Overview)
+2. [UX](#ux)
 
 ## Project Overview
 This is my second milestone project towards my full-stack web developer course with the [Code Institute](https://codeinstitute.net/). The website will be created using HTML, CSS and JAVASCRIPT / JQuery.
