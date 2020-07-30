@@ -70,6 +70,8 @@ The icons on the weather section were taken from [weatherbit](https://www.weathe
 
 - [Google-Fonts](https://fonts.google.com/) I used only one font on this page. This was taken from Google Fonts to make the page more visually appealing.
 
+- [Adobe Color](https://color.adobe.com/create/color-wheel) I used only one font on this page. This was taken from Google Fonts to make the page more visually appealing.
+
 - [Javascript](https://en.wikipedia.org/wiki/JavaScript) I used Javascript to create functionality for this site. The Google Map feature relies heavily on this, and the functionality was created using documentation from the Google Maps API site. I also got great help from a Git Hub repo I found - https://gist.github.com/Kusumoto/c2a73e9292590c510a47 - This added the functionality to the map which I was looking for when adapting the code to suit my personal needs, in adding personal info windows with different content, and also dropping the markers on the map.
 
 - [Fontawsome](https://fontawesome.com/) I have used Fontawsome for the pictograms in the footer of my page.
@@ -79,20 +81,6 @@ The icons on the weather section were taken from [weatherbit](https://www.weathe
 - [GitPod](https://www.gitpod.io/) This was used to create all the code for the site.
 
 - [GitHub](https://github.com/) This was used for hosting and version control of the website. From here, I also used the Code Institute template to begin the coding of my site.
-
-## Project Reviews
-### Project Review 1
-- In my initial project review, I discussed my project idea of having a what to do in my Hometown of Stafford and a weather report feature also. My mentor said this would be a good idea to base my project on.
-
-### Project Review 2
-- In my second project review, we discussed the project development so far. I was pleased to hear it all looked / worked okay, with some improvements to be made. These included: 
-Reducing the color scheme, I went from having an equal variation of orange, black and white, to just having black / white with a hint of orange.
-A fixed nav bar - as the page was very long to have to scroll all the way back up to the top, especially on mobile.
-Correct formatting of my scripts / HTML/
-
-These changes have been implemented and the whole page updated to give a better design of the page to make it more user friendly.
-
-### Project Review 3
 
 ## User Story Testing
 My First User Story was - I am a current resident of stafford looking for somewhere to eat this weekend. 
@@ -215,11 +203,33 @@ To deploy the page and make it viewable to others, I used Github pages:
 ### Content
 The introduction paragraph was taken from a [Visit Staffordshire](https://www.enjoystaffordshire.com/information/product-catch-all/stafford-p736161) site. 
 
+### Credits
+#### Scripts.js
+- FUNCTION TO SMOOTH SCROLL FOR WHOLE PAGE - This was taken from W3Schools.
+- FUNCTION TO SMOOTH SCROLL TO GOOGLE MAP BOX - This was taken from W3Schools.
+
+#### Maps.js
+- THE FOLLOWING FUNCTIONS 'dropRestaurants, dropAttractions, dropHotels, addRestaurantMarkersWithTimeout, addAttractionsMarkersWithTimeout, addHotelsMarkersWithTimeout & clearMarkers' were created by referencing [This repository](https://gist.github.com/Kusumoto/c2a73e9292590c510a47). The functions were then adapted to suit my needs.
+
+- THE CODE WAS ALSO CRETED WITH THE HELP OF THE GOOGLE MAPS DOCUMENTATION: 
+[Overview](https://developers.google.com/maps/documentation/javascript/overview).
+[Marker Animations](https://developers.google.com/maps/documentation/javascript/examples/marker-animations-iteration).
+[Info Windows](https://developers.google.com/maps/documentation/javascript/infowindows).
+
+- THE MAP MARKERS WERE TAKEN FROM [Map Icons Collection](https://mapicons.mapsmarker.com).
+
+#### Weather.js
+- FOLLOWED CODE INSTITUTE LESSON ON API / JSON TO EXTRACT DATA FROM WEATHER API.
+- WEATHER API DATA EXTRACTED FROM [WeatherBit](https://www.weatherbit.io/api).
+- WEATHER IMAGES TAKEN FROM [WeatherBit](https://www.weatherbit.io/api).
+- REVERSED DATE USING [Stack Overflow](https://stackoverflow.com/questions/40232218/how-to-reverse-date-format-yyyy-mm-dd-using-javascript-jquery).
+
+#### INDEX
+- NAVBAR - Created using Bootstrap Documentation.
+- INTRODUCTION PARAGRAPH - Taken from [Enjoy Stafford](https://www.enjoystaffordshire.com/information/product-catch-all/stafford-p736161).
+
 ### Acknowledgements
 
 - I would like to thank my mentor Adegbenga Adeye for his help in my mentoring sessions and input in some valuable advice with the development of my website. 
 
 - I would also like to thank the Code Institute team in helping with the learning new skills used to create this page.
-
-
-
