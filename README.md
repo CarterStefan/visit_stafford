@@ -4,9 +4,26 @@
 
 ### [GitHub Pages](https://carterstefan.github.io/visit_stafford)
 
+![Am_I_Responsive](https://user-images.githubusercontent.com/64138643/88920640-19868e80-d265-11ea-8b65-59ec215c043e.PNG)
+
 ## Contents
 1. [Project Overview](#Project-Overview)
 2. [UX](#ux)
+3. [User Stories](#User-Stories)
+4. [Features](#Features)
+5. [Fonts](#Fonts)
+6. [Color](#Color)
+7. [Images](#Images)
+8. [Technologies Used](#Technologies-Used)
+9. [User Story Testing](#User-Story-Testing)
+10. [Functionality Testing](#Functionality-Testing)
+11. [Validating Code](#Validating-Code)
+12. [Future Features](#Future-Features)
+13. [Deployment](#Deployment)
+14. [Content](#Content)
+15. [Credits](#Credits)
+16. [Acknowledgements](#Acknowledgments)
+
 
 ## Project Overview
 This is my second milestone project towards my full-stack web developer course with the [Code Institute](https://codeinstitute.net/). The website will be created using HTML, CSS and JAVASCRIPT / JQuery.
@@ -14,8 +31,6 @@ This is my second milestone project towards my full-stack web developer course w
 I will create a website for my hometown of Stafford. This will feature information about the town, images of the area, along with a map feature showing places to eat as well as local attractions. I also plan to incorporate a weather forecast feature to update people who may be planning a visit what the weather will be like in the town.
 
 The main user of the website will be residents who live here looking for something to do, as well as people who have never been to the town before who may be planning a visit.
-
-
 
 ## UX 
 The users of this website can be split into two simple groups, those who live in Stafford and those who don't. The aim of the website will be to inform people of what there is to do around stafford. This will include places to eat and drink, places of interest to visit, and places to shop. Due to this, despite the two groups of users being split, they share a common purpose to visit the site in the fact they are looking for something to do in Stafford.
