@@ -36,7 +36,7 @@ The users of this website can be split into two simple groups, those who live in
 
 The website will be focused on adults, so will need a professional and clean feel to the site, encouraging people to visit the area. It should be informative and easy to use.
 
-### User Stories
+## User Stories
 - I am a current resident of Stafford looking for somewhere to eat this weekend. 
 
   Having lived here for a few years, I do know of the restaurants here, although I am unable to choose which one to go to for a meal out on the weekend.  
@@ -68,7 +68,7 @@ This is a one page website. I opted for this as I wanted the page to be a one st
 
 - Weather - This section of the website is linked to a weather API to show a 8 day range of the weather in Stafford. It shows the date, temperature and a description of the weather that day, along with an image.
 
-### Fonts
+## Fonts
 I have used the Google Fonts library to make the text on my page visually appealing.
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
@@ -76,12 +76,12 @@ I have used the Google Fonts library to make the text on my page visually appeal
 -   Bebas - This was a striking font, which is easy on the eye also. I did not want anything that applied to a specific target audience (nothing too childish or playful). This font will appeal to all that use the site, and wont take away anything from the content of the page.
 
 
-### Color
+## Color
 ![color_theme](https://user-images.githubusercontent.com/64138643/87045675-106b4a00-c1f0-11ea-8c87-82c5c3c3fa2a.PNG)
 
 I chose this color theme as it tied in well with the colors of Stafford. Many of the iconic buildings of Stafford are old Tudor houses, and are painted balck and white. As well as this, the two main sports teams in Stafford, Stafford Rugby Club and Stafford Rangers FC play in yellow/black and white/black respectively. 
 
-### Images 
+## Images 
 The Jumbotron image of Mill Street was taken by myself.
 
 The icons on the weather section were taken from [weatherbit](https://www.weatherbit.io/api) - These were then linked to weather code in the API data to show a particular image based on what the weather is that day.
@@ -171,7 +171,6 @@ The footer features four links to further expand the users knowledge of Stafford
 These links open up the window in a new tab, and also underline on hover.
 
 ### Cross Platform Testing
-
 I have used the following browsers to test my site:
 1. Google Chrome - Version 84.0.4147.89
 2. Mozilla Firefox - Version 79.0
@@ -193,15 +192,13 @@ These were tested both landscape and portrait.
 As well as this, I used my Huawei P20 to test the page on mobile.
 
 ## Validating Code
-
 List of websites used to validate the code:
 E.G
 1. [W3C HTML Validator](https://validator.w3.org/)
 2. [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
 3. [JSHINT](https://jshint.com/)
 
-### Future Features
-
+## Future Features
 If I was to expand on this website, I would add more imagery, maybe through a gallery section of the site.
 
 I think it would also be a good idea to add more restaurants / attractions / hotels and maybe show a random selection of 6 each time, or 'show 6 more' through pagination. 
@@ -216,7 +213,6 @@ One bug which was found was when testing the page using the iPhone 5s option on 
 Another bug I found upon testing was the Info Windows on the Maps feature. When opening an info window and then clicking close, the page would jump down by a few pixels. This only occured on Chrome and Edge, the issue did not occur on Firefox. However, the issue was also present on the default Google Info Windows (not just my markers). Unfortunately, I was unable to find a solution to this issue.
 
 ## Deployment
-
 I used GitHub and Gitpod to create all pages and css on my site. This was initially started with the Code Institute Template.
 
 This was used for version control and regularly pushed changes using the terminal in Gitpod.
@@ -253,7 +249,6 @@ To deploy the page and make it viewable to others, I used Github pages:
 - INTRODUCTION PARAGRAPH - Taken from [Enjoy Stafford](https://www.enjoystaffordshire.com/information/product-catch-all/stafford-p736161).
 
 ## Acknowledgements
-
 - I would like to thank my mentor Adegbenga Adeye for his help in my mentoring sessions and input in some valuable advice with the development of my website. 
 
 - I would also like to thank the Code Institute team in helping with the learning new skills used to create this page.
