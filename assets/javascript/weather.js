@@ -45,7 +45,6 @@ function writeToDocument() {
         msg = "Enjoy Your Day";
       }
 
-      /*reversed date with help from https://stackoverflow.com/questions/40232218/how-to-reverse-date-format-yyyy-mm-dd-using-javascript-jquery*/
       var date = item.valid_date.split("-");
       var newDate = date[2] + "-" + date[1] + "-" + date[0];
 
@@ -61,7 +60,7 @@ function writeToDocument() {
         "</p>" +
         '<img src="assets/img/weather_icons/' +
         item.weather.icon +
-        '.png">' +
+        '.png" alt="weather_icon">' +
         '<p class="weather-message">' +
         msg +
         "</p>";
