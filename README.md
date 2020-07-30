@@ -115,7 +115,7 @@ The second user story was - I am visiting Stafford on part of a business trip ha
   - This user story is accommodated for by offering more than just suggestions for places to eat. There is also a tab to show local attractions and places to see, as well as various hotels should they wish to change hotels for the next time they stay. Again, these are all visible on the map, either by being shown individually, or shown all at once to compare locations.
   
 The third user story was - I am visiting Stafford for a wedding on Sunday. I will be staying from Friday - Monday.  
-  - For this user story I have created a section on the site which links up to a weather API. The area is automatically added to show the weather for Stafford over an 8 day period. This will give people visiting a good idea on what to pack, based on the temperature and weather description. I added a personal / playful touch to this byt adding a sign off message for each day based on the weather description code returned from the weather API. for example the weather code "800" will show the message "bring your sunglasses".
+  - For this user story I have created a section on the site which links up to a weather API. The area is automatically added to show the weather for Stafford over an 8 day period. This will give people visiting a good idea on what to pack, based on the temperature and weather description. I added a personal / playful touch to this by adding a sign off message for each day based on the weather description code returned from the weather API. for example the weather code "800" will show the message "bring your sunglasses".
   
   Also, this user would make use of the map and suggestions feature for creating a plan on where to eat and stay each night, along with what to do on the days around the wedding.
   
@@ -213,7 +213,7 @@ In time, it could be good to add the feature of booking a table / room through t
 This site could also be expanded to show information about different towns and cities, not just my town of Stafford.
 
 ### Bugs
-One bug which was found was when testing the page using the iPhone 5s option on Google Dev Tools. This created a blank vertical line down the right side of the whole page. As this was only on the iPhone 5s, and all other devices displayed with no issues, I did not fix the issue, with the 5s being virtually obselete.
+One bug which was found was when testing the page using the iPhone 5s option on Google Dev Tools. This created a blank vertical line down the right side of the whole page. As this was only on the iPhone 5s, and all other devices displayed with no issues, I did not fix the issue, with the 5s being virtually obsolete.
 
 Another bug I found upon testing was the Info Windows on the Maps feature. When opening an info window and then clicking close, the page would jump down by a few pixels. This only occured on Chrome and Edge, the issue did not occur on Firefox. However, the issue was also present on the default Google Info Windows (not just my markers). Unfortunately, I was unable to find a solution to this issue.
 
@@ -237,7 +237,7 @@ To deploy the page and make it viewable to others, I used Github pages:
 #### Maps.js
 - THE FOLLOWING FUNCTIONS 'dropRestaurants, dropAttractions, dropHotels, addRestaurantMarkersWithTimeout, addAttractionsMarkersWithTimeout, addHotelsMarkersWithTimeout & clearMarkers' were created by referencing [This repository](https://gist.github.com/Kusumoto/c2a73e9292590c510a47). The functions were then adapted to suit my needs.
 
-- THE CODE WAS ALSO CRETED WITH THE HELP OF THE GOOGLE MAPS DOCUMENTATION: 
+- THE CODE WAS ALSO CREATED WITH THE HELP OF THE GOOGLE MAPS DOCUMENTATION: 
 [Overview](https://developers.google.com/maps/documentation/javascript/overview).
 [Marker Animations](https://developers.google.com/maps/documentation/javascript/examples/marker-animations-iteration).
 [Info Windows](https://developers.google.com/maps/documentation/javascript/infowindows).
