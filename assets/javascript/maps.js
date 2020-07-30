@@ -5,7 +5,7 @@ var map;
 var infowindow;
 var stafford = { lat: 52.8072076, lng: -2.1173127 };
 
-//Websites
+// Declare Websites
 var pizzaExpressWebsite = "https://www.pizzaexpress.com/stafford";
 var theSwanWebsite = "https://www.theswanstafford.co.uk/";
 var theMarketVaultsWebsite = "https://www.themarketvaults.co.uk/";
@@ -233,10 +233,6 @@ var hotels = [
   },
 ];
 
-/* THE FOLLOWING FUNCTIONS WERE CREATED WITH THE HELP OF: 
-https://gist.github.com/Kusumoto/c2a73e9292590c510a47
-THIS HAS BEEN ADAPTED TO SUIT MY NEEDS */
-
 // FUNCTION TO PREPARE RESTAURANT MARKERS
 function dropRestaurants() {
   clearMarkers();
@@ -253,7 +249,6 @@ function dropRestaurants() {
 }
 
 // FUNCTION TO PREPARE ATTRACTION MARKERS
-
 function dropAttractions() {
   clearMarkers();
   for (var i = 0; i < attractions.length; i++) {
@@ -295,10 +290,8 @@ function addRestaurantMarkersWithTimeout(position, image, timeout, content) {
     });
     google.maps.event.addListener(marker, "click", function () {
       // Add listener on click to marker
-
       map.setZoom(16);
       map.panTo(marker.getPosition());
-
       infowindow.open(map, marker); // Show Infowindow
       infowindow.setContent(content); // Set Content to Infowindow
     });
@@ -318,10 +311,8 @@ function addAttractionsMarkersWithTimeout(position, image, timeout, content) {
     });
     google.maps.event.addListener(marker, "click", function () {
       // Add listener on click to marker
-
       map.setZoom(16);
       map.panTo(marker.getPosition());
-
       infowindow.open(map, marker); // Show Infowindow
       infowindow.setContent(content); // Set Content to Infowindow
     });
@@ -341,10 +332,8 @@ function addHotelsMarkersWithTimeout(position, image, timeout, content) {
     });
     google.maps.event.addListener(marker, "click", function () {
       // Add listener on click to marker
-
       map.setZoom(16);
       map.panTo(marker.getPosition());
-
       infowindow.open(map, marker); // Show Infowindow
       infowindow.setContent(content); // Set Content to Infowindow
     });
@@ -377,10 +366,8 @@ function addSingleMarkerWithTimeout(position, image, timeout, content) {
     });
     map.setZoom(16);
     map.panTo(marker.getPosition());
-
     google.maps.event.addListener(marker, "click", function () {
       // Add listener on click to marker
-
       infowindow.open(map, marker); // Show Infowindow
       infowindow.setContent(content); // Set Content to Infowindow
       map.setZoom(16);
@@ -398,10 +385,3 @@ function clearMarkers() {
   markers = [];
   map.setZoom(13);
 }
-
-// THE FOLLOWING CODE WAS IMPLEMENTED FROM DOCUMENTION FOUND AT:
-// https://developers.google.com/maps/documentation/javascript/overview
-// https://developers.google.com/maps/documentation/javascript/examples/marker-animations-iteration
-// https://developers.google.com/maps/documentation/javascript/infowindows
-// https://gist.github.com/Kusumoto/c2a73e9292590c510a47
-// MAP ICONS COLLECTION - https://mapicons.mapsmarker.com

@@ -1,25 +1,6 @@
 //TABS
 $("#tabs").tabs();
 
-/*FUNCTION TO SMOOTH SCROLL FOR WHOLE PAGE
-$(document).ready(function () {
-  $(".nav-link").on("click", function (event) {
-    if (this.hash !== "") {
-      event.preventDefault();
-      var hash = this.hash;
-      $("html, body").animate(
-        {
-          scrollTop: $(hash).offset().top -60,
-        },
-        400,
-        function () {
-          window.location.hash = hash;
-        }
-      );
-    } // End if
-  });
-});*/
-
 /* FUNCTION TO SMOOTH SCROLL TO ELEMENT AMENDED TO ONLY SCROLL TO GOOGLE MAP BOX*/
 $(document).ready(function () {
   $(".view-on-map-marker").on("click", function (event) {
@@ -30,7 +11,6 @@ $(document).ready(function () {
         {
           scrollTop: $("#google-maps-box").offset().top - 225,
         },
-        
         function () {
           window.location.hash = hash;
         }
@@ -39,7 +19,7 @@ $(document).ready(function () {
   });
 });
 
-// HOTEL OBJECTS
+// NEW RESTAURANT OBJECT
 function restaurant(name, type, website, lat, lng) {
   this.name = name;
   this.type = type;
@@ -48,6 +28,7 @@ function restaurant(name, type, website, lat, lng) {
   this.lng = lng;
 }
 
+// NEW ATTRACTIONS OBJECT
 function attraction(name, type, website, lat, lng) {
   this.name = name;
   this.type = type;
@@ -56,6 +37,7 @@ function attraction(name, type, website, lat, lng) {
   this.lng = lng;
 }
 
+// NEW HOTEL OBJECT
 function hotel(name, type, website, lat, lng) {
   this.name = name;
   this.type = type;
@@ -64,6 +46,7 @@ function hotel(name, type, website, lat, lng) {
   this.lng = lng;
 }
 
+// RESTAURANT OBJECTS
 var pizzaExpress = new restaurant(
   "Pizza Express",
   "Italian",
@@ -112,7 +95,7 @@ var theSunInn = new restaurant(
   -2.116867
 );
 
-//ATTRACTION OBJECTS
+// ATTRACTION OBJECTS
 var theAncientHighHouse = new attraction(
   "The Ancient High House",
   "Museum",
@@ -161,7 +144,7 @@ var gatehouseTheatre = new attraction(
   -2.115686
 );
 
-//HOTEL OBJECTS
+// HOTEL OBJECTS
 var theSwanHotel = new hotel(
   "The Swan",
   "Hotel",
