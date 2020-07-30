@@ -1,22 +1,7 @@
-// NAVBAR SCRIPT
-
-
-//SCRIPT TAKEN FROM W3SCHOOLS - HIDE NAVBAR ON SCROLL
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function () {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
-    document.getElementById("navbar").style.top = "-60px";
-  }
-  prevScrollpos = currentScrollPos;
-};
-
 //TABS
 $("#tabs").tabs();
 
-/*SCRIPT TAKEN FROM W3SCHOOLS - SMOOTH SCROLL FOR WHOLE PAGE*/
+/*FUNCTION TO SMOOTH SCROLL FOR WHOLE PAGE*/
 $(document).ready(function () {
   $("a").on("click", function (event) {
     if (this.hash !== "") {
@@ -24,7 +9,7 @@ $(document).ready(function () {
       var hash = this.hash;
       $("html, body").animate(
         {
-          scrollTop: $(hash).offset().top,
+          scrollTop: $(hash).offset().top -60,
         },
         400,
         function () {
@@ -35,7 +20,7 @@ $(document).ready(function () {
   });
 });
 
-/*SCRIPT TAKEN FROM W3SCHOOLS - SMOOTH SCROLL TO ELEMENT AMENDED TO ONLY SCROLL TO GOOGLE MAP BOX*/
+/* FUNCTION TO SMOOTH SCROLL TO ELEMENT AMENDED TO ONLY SCROLL TO GOOGLE MAP BOX*/
 $(document).ready(function () {
   $(".view-on-map-marker").on("click", function (event) {
     if (this.hash !== "") {
@@ -43,7 +28,7 @@ $(document).ready(function () {
       var hash = this.hash;
       $("html, body").animate(
         {
-          scrollTop: $("#google-maps-box").offset().top - 160,
+          scrollTop: $("#google-maps-box").offset().top - 225,
         },
         400,
         function () {
