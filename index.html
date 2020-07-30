@@ -1,47 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Stafford</title>
 
-    <!-- EXTERNAL RESOURCES -->
-    <!-- FONT AWESOME -->
-    <script
-      src="https://kit.fontawesome.com/3dcc7a92aa.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- JQUERY STYLESHEET -->
-    <link
-      rel="stylesheet"
-      href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
-    />
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Stafford</title>
 
-    <!-- BOOTSTRAP -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
+	<!-- EXTERNAL RESOURCES -->
+	<!-- FONT AWESOME -->
+	<script src="https://kit.fontawesome.com/3dcc7a92aa.js" crossorigin="anonymous"></script>
+	<!-- JQUERY STYLESHEET -->
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
 
-    <!-- INTERNAL RESOURCES -->
-    <!-- CSS -->
-    <link href="assets/css/style.css" type="text/css" rel="stylesheet" />
-  </head>
+	<!-- BOOTSTRAP -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
 
-  <body>
-    <!-- NAVBAR -->
-    <!-- NAVBAR - CREATED WITH HELP USING BOOTSTRAP DOCUMENTATION-->
+	<!-- INTERNAL RESOURCES -->
+	<!-- CSS -->
+	<link href="assets/css/style.css" type="text/css" rel="stylesheet" />
+</head>
 
-    <nav
-      id="navbar"
-      class="navbar navbar-dark bg-dark navbar-expand-md fixed-top"
-    >
-      <a href="index.html"
-        ><img src="assets/img/stafford_knot.png" alt="stafford_knot" id="logo"
+<body>
+	<!-- NAVBAR -->
+	<!-- NAVBAR - CREATED WITH HELP USING BOOTSTRAP DOCUMENTATION-->
+
+	<nav id="navbar" class="navbar navbar-dark bg-dark navbar-expand-md fixed-top">
+		<a href="index.html"><img src="assets/img/stafford_knot.png" alt="stafford_knot" id="logo"
       /></a>
-      <button
+			<button
         class="navbar-toggler"
         type="button"
         data-toggle="collapse"
@@ -52,337 +39,296 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              href="#jumbotron"
-              data-toggle="collapse"
-              data-target=".navbar-collapse.show"
-              >HOME</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              href="#introduction-box"
-              data-toggle="collapse"
-              data-target=".navbar-collapse.show"
-              >ABOUT</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              href="#what-to-do"
-              data-toggle="collapse"
-              data-target=".navbar-collapse.show"
-              >VISIT</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              href="#google-maps-box"
-              data-toggle="collapse"
-              data-target=".navbar-collapse.show"
-              >MAP</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              href="#weather"
-              data-toggle="collapse"
-              data-target=".navbar-collapse.show"
-              >WEATHER</a
-            >
-          </li>
-        </ul>
-      </div>
-    </nav>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#jumbotron">HOME</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#introduction-box">ABOUT</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#what-to-do">VISIT</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#google-maps-box">MAP</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#weather">WEATHER</a>
+					</li>
+				</ul>
+			</div>
+	</nav>
 
-    <!-- JUMBOTRON  -->
-    <section id="jumbotron">
-      <div class="container-fluid" id="main-image-container">
-        <div class="row">
-          <div class="col-12">
-            <section class="jumbotron">
-              <div class="row">
-                <div class="col-12">
-                  <h1 class="hero-image-text">Welcome To Stafford</h1>
-                </div>
-              </div>
-            </section>
-          </div>
-        </div>
-      </div>
-    </section>
+	<!-- JUMBOTRON  -->
+	<section id="jumbotron">
+		<div class="container-fluid" id="main-image-container">
+			<div class="row">
+				<div class="col-12">
+					<section class="jumbotron">
+						<div class="row">
+							<div class="col-12">
+								<h1 class="hero-image-text">Welcome To Stafford</h1>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+	</section>
 
-    <!-- INTRODUCTION -->
-    <section id="introduction">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12" id="introduction-box">
-            <!-- INTRODUCTION PARAGARAPH TAKEN FROM https://www.enjoystaffordshire.com/information/product-catch-all/stafford-p736161 -->
-            <p>
-              Staffordshire's historic County Town with its castle and visitor
-              centre and the Ancient High House, the largest timber framed town
-              house in England and one of the finest Tudor buildings in the
-              country, where King Charles I stayed. Enjoy the vibrant market
-              square, location for many of the town centre events, the Gatehouse
-              theatre, the fantastic restaurant and shopping offer and of course
-              the renowned friendliness of Stafford's population. For centuries,
-              travellers by stageoach and narrowboat have broken their journeys
-              to enjoy all that Stafford has to offer. Today you'll find it even
-              easier to reach by road, rail and air from every corner of the
-              globe.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+	<!-- INTRODUCTION -->
+	<section id="introduction">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12" id="introduction-box">
+					<h2 class="section-header">ABOUT THE TOWN</h2>
+					<!-- INTRODUCTION PARAGARAPH TAKEN FROM https://www.enjoystaffordshire.com/information/product-catch-all/stafford-p736161 -->
+					<p>
+						Staffordshire's historic County Town with its castle and visitor
+						centre and the Ancient High House, the largest timber framed town
+						house in England and one of the finest Tudor buildings in the
+						country, where King Charles I stayed. Enjoy the vibrant market
+						square, location for many of the town centre events, the Gatehouse
+						theatre, the fantastic restaurant and shopping offer and of course
+						the renowned friendliness of Stafford's population. For centuries,
+						travellers by stageoach and narrowboat have broken their journeys
+						to enjoy all that Stafford has to offer. Today you'll find it even
+						easier to reach by road, rail and air from every corner of the
+						globe.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
 
-    <!-- WHAT TO DO -->
-    <section id="what-to-do">
-      <div id="tabs">
-        <ul>
-          <li>
-            <a href="#tabs-1">Eat <i class="fas fa-utensils"></i></a>
-          </li>
-          <li>
-            <a href="#tabs-2">See <i class="fas fa-binoculars"></i></a>
-          </li>
-          <li>
-            <a href="#tabs-3">Stay <i class="fas fa-bed"></i></a>
-          </li>
-        </ul>
-        <div id="tabs-1">
-          <div class="row" id="places-to-eat-first-row">
-            <div class="col-12 col-md-4 eat-box" id="pizza-express"></div>
-            <div class="col-12 col-md-4 eat-box" id="the-swan"></div>
-            <div class="col-12 col-md-4 eat-box" id="the-market-vaults"></div>
-          </div>
-          <div class="row" id="places-to-eat-second-row">
-            <div class="col-12 col-md-4 eat-box" id="the-soup-kitchen"></div>
-            <div class="col-12 col-md-4 eat-box" id="the-bear"></div>
-            <div class="col-12 col-md-4 eat-box" id="the-sun"></div>
-          </div>
-          <div class="row map-options" id="places-to-eat-show-all">
-            <div class="col-12 col-md-4">
-              <button
+	<!-- WHAT TO DO -->
+	<section id="what-to-do">
+		<div id="tabs">
+			<ul>
+				<li>
+					<a href="#tabs-1">Eat <i class="fas fa-utensils"></i></a>
+				</li>
+				<li>
+					<a href="#tabs-2">See <i class="fas fa-binoculars"></i></a>
+				</li>
+				<li>
+					<a href="#tabs-3">Stay <i class="fas fa-bed"></i></a>
+				</li>
+			</ul>
+			<div id="tabs-1">
+				<div class="row" id="places-to-eat-first-row">
+					<div class="col-12">
+						<h2 class="section-header">PLACES TO EAT</h2>
+					</div>
+					<div class="col-12 col-md-4 eat-box" id="pizza-express"></div>
+					<div class="col-12 col-md-4 eat-box" id="the-swan"></div>
+					<div class="col-12 col-md-4 eat-box" id="the-market-vaults"></div>
+				</div>
+				<div class="row" id="places-to-eat-second-row">
+					<div class="col-12 col-md-4 eat-box" id="the-soup-kitchen"></div>
+					<div class="col-12 col-md-4 eat-box" id="the-bear"></div>
+					<div class="col-12 col-md-4 eat-box" id="the-sun"></div>
+				</div>
+				<div class="row map-options" id="places-to-eat-show-all">
+					<div class="col-12 col-md-4">
+						<button
                 class="map-button view-on-map-marker"
                 onclick="dropRestaurants()"
               >
                 SHOW ALL RESTAURANTS ON MAP
               </button>
-            </div>
-            <div class="col-12 col-md-4">
-              <button
+					</div>
+					<div class="col-12 col-md-4">
+						<button
                 class="map-button view-on-map-marker"
                 onclick="dropRestaurants(); dropAttractions(); dropHotels()"
               >
                 SHOW ALL
               </button>
-            </div>
-            <div class="col-12 col-md-4">
-              <button
+					</div>
+					<div class="col-12 col-md-4">
+						<button
                 class="map-button view-on-map-marker"
                 onclick="clearMarkers()"
               >
                 CLEAR ALL FROM MAP
               </button>
-            </div>
-          </div>
-        </div>
+					</div>
+				</div>
+			</div>
 
-        <div id="tabs-2">
-          <div class="row">
-            <div class="col-12 col-md-4 see-box" id="ancient-high-house"></div>
-            <div class="col-12 col-md-4 see-box" id="stafford-castle"></div>
-            <div class="col-12 col-md-4 see-box" id="victoria-park"></div>
-          </div>
-          <div class="row" id="places-to-see-second-row">
-            <div class="col-12 col-md-4 see-box" id="doxey-marshes"></div>
-            <div class="col-12 col-md-4 see-box" id="shire-hall-gallery"></div>
-            <div class="col-12 col-md-4 see-box" id="gatehouse-theatre"></div>
-          </div>
+			<div id="tabs-2">
+				<div class="row">
+                <div class="col-12">
+						<h2 class="section-header">PLACES TO SEE</h2>
+					</div>
+					<div class="col-12 col-md-4 see-box" id="ancient-high-house"></div>
+					<div class="col-12 col-md-4 see-box" id="stafford-castle"></div>
+					<div class="col-12 col-md-4 see-box" id="victoria-park"></div>
+				</div>
+				<div class="row" id="places-to-see-second-row">
+					<div class="col-12 col-md-4 see-box" id="doxey-marshes"></div>
+					<div class="col-12 col-md-4 see-box" id="shire-hall-gallery"></div>
+					<div class="col-12 col-md-4 see-box" id="gatehouse-theatre"></div>
+				</div>
 
-          <div class="row" id="places-to-see-show-all">
-            <div class="col-12 col-md-4">
-              <button
+				<div class="row" id="places-to-see-show-all">
+					<div class="col-12 col-md-4">
+						<button
                 class="map-button view-on-map-marker"
                 onclick="dropAttractions()"
               >
                 SHOW ALL ATTRACTIONS ON MAP
               </button>
-            </div>
-            <div class="col-12 col-md-4">
-              <button
+					</div>
+					<div class="col-12 col-md-4">
+						<button
                 class="map-button view-on-map-marker"
                 onclick="dropRestaurants(); dropAttractions(); dropHotels()"
               >
                 SHOW ALL
               </button>
-            </div>
-            <div class="col-12 col-md-4">
-              <button
+					</div>
+					<div class="col-12 col-md-4">
+						<button
                 class="map-button view-on-map-marker"
                 onclick="clearMarkers()"
               >
                 CLEAR ALL FROM MAP
               </button>
-            </div>
-          </div>
-        </div>
+					</div>
+				</div>
+			</div>
 
-        <div id="tabs-3">
-          <div class="row">
-            <div class="col-12 col-md-4 see-box" id="the-swan-hotel"></div>
-            <div class="col-12 col-md-4 see-box" id="the-vine"></div>
-            <div class="col-12 col-md-4 see-box" id="tillington-hall"></div>
-          </div>
+			<div id="tabs-3">
+				<div class="row">
+                <div class="col-12">
+						<h2 class="section-header">PLACES TO STAY</h2>
+					</div>
+					<div class="col-12 col-md-4 see-box" id="the-swan-hotel"></div>
+					<div class="col-12 col-md-4 see-box" id="the-vine"></div>
+					<div class="col-12 col-md-4 see-box" id="tillington-hall"></div>
+				</div>
 
-          <div class="row" id="places-to-stay-second-row">
-            <div class="col-12 col-md-4 see-box" id="the-spittal-brook"></div>
-            <div class="col-12 col-md-4 see-box" id="abbey-hotel"></div>
-            <div class="col-12 col-md-4 see-box" id="cameron-lodge"></div>
-          </div>
+				<div class="row" id="places-to-stay-second-row">
+					<div class="col-12 col-md-4 see-box" id="the-spittal-brook"></div>
+					<div class="col-12 col-md-4 see-box" id="abbey-hotel"></div>
+					<div class="col-12 col-md-4 see-box" id="cameron-lodge"></div>
+				</div>
 
-          <div class="row" id="places-to-stay-show-all">
-            <div class="col-12 col-md-4">
-              <button
+				<div class="row" id="places-to-stay-show-all">
+					<div class="col-12 col-md-4">
+						<button
                 class="map-button view-on-map-marker view-on-map-marker"
                 onclick="dropHotels()"
               >
                 SHOW ALL HOTELS ON MAP
               </button>
-            </div>
-            <div class="col-12 col-md-4">
-              <button
+					</div>
+					<div class="col-12 col-md-4">
+						<button
                 class="map-button view-on-map-marker view-on-map-marker"
                 onclick="dropRestaurants(); dropAttractions(); dropHotels()"
               >
                 SHOW ALL
               </button>
-            </div>
-            <div class="col-12 col-md-4">
-              <button
+					</div>
+					<div class="col-12 col-md-4">
+						<button
                 class="map-button view-on-map-marker view-on-map-marker"
                 onclick="clearMarkers()"
               >
                 CLEAR ALL FROM MAP
               </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-    <!-- GOOGLE MAPS -->
-    <section id="google-maps">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12" id="google-maps-box">
-            <div id="map"></div>
-          </div>
-        </div>
-      </div>
-    </section>
+	<!-- GOOGLE MAPS -->
+	<section id="google-maps">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12" id="google-maps-box">
+					<div id="map"></div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-    <!-- WEATHER API -->
-    <section id="weather">
-      <div class="container-fluid">
-        <div class="row" id="data"></div>
-      </div>
-    </section>
+	<!-- WEATHER API -->
+	<section id="weather">
+		<div class="container-fluid">
+			<div class="row" id="data"></div>
+		</div>
+	</section>
 
-    <!-- FOOTER -->
-    <footer id="footer">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12" id="footer-box">
-            <div class="row">
-              <div class="col-6 col-md-3">
-                <a
-                  target="_blank"
-                  href="https://www.tripadvisor.co.uk/Tourism-g186377-Stafford_Staffordshire_England-Vacations.html"
-                  ><span class="footer-text"
+	<!-- FOOTER -->
+	<footer id="footer">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12" id="footer-box">
+					<div class="row">
+						<div class="col-6 col-md-3">
+							<a target="_blank"
+								href="https://www.tripadvisor.co.uk/Tourism-g186377-Stafford_Staffordshire_England-Vacations.html"><span class="footer-text"
                     ><i class="fab fa-tripadvisor" aria-hidden="true"></i>
-                    TRIPADVISOR</span
-                  >
-                </a>
-              </div>
-              <div class="col-6 col-md-3">
-                <a
-                  target="_blank"
-                  href="https://www.facebook.com/yourstaffordshire/"
-                  ><span class="footer-text"
+                    TRIPADVISOR</span>
+							</a>
+						</div>
+						<div class="col-6 col-md-3">
+							<a target="_blank" href="https://www.facebook.com/yourstaffordshire/"><span class="footer-text"
                     ><i class="fab fa-facebook-f" aria-hidden="true"></i>
-                    FACEBOOK</span
-                  >
-                </a>
-              </div>
-              <div class="col-6 col-md-3">
-                <a target="_blank" href="https://twitter.com/StaffordshireCC"
-                  ><span class="footer-text"
+                    FACEBOOK</span>
+							</a>
+						</div>
+						<div class="col-6 col-md-3">
+							<a target="_blank" href="https://twitter.com/StaffordshireCC"><span class="footer-text"
                     ><i class="fab fa-twitter" aria-hidden="true"></i>
-                    TWITTER</span
-                  >
-                </a>
-              </div>
-              <div class="col-6 col-md-3">
-                <a
-                  target="_blank"
-                  href="https://www.instagram.com/staffordshirecountycouncil/"
-                  ><span class="footer-text"
+                    TWITTER</span>
+							</a>
+						</div>
+						<div class="col-6 col-md-3">
+							<a target="_blank" href="https://www.instagram.com/staffordshirecountycouncil/"><span class="footer-text"
                     ><i class="fab fa-instagram" aria-hidden="true"></i>
-                    INSTAGRAM</span
-                  >
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
+                    INSTAGRAM</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 
-    <!-- SCRIPTS -->
-    <!-- JQUERY -->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.min.js"
-      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<!-- SCRIPTS -->
+	<!-- JQUERY -->
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"
+		integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
-    <!-- GOOGLE MAP SCRIPT -->
-    <script type="text/javascript" src="assets/javascript/maps.js"></script>
+	<!-- GOOGLE MAP SCRIPT -->
+	<script type="text/javascript" src="assets/javascript/maps.js"></script>
 
-    <!-- GOOGLE MAPS API -->
-    <script
-      async
-      defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6Mtga96rxT7bdX2-ufaC_gJ80zqE9fLc&callback=initMap"
-    ></script>
+	<!-- GOOGLE MAPS API -->
+	<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6Mtga96rxT7bdX2-ufaC_gJ80zqE9fLc&callback=initMap">
+	</script>
 
-    <!-- BOOTSTRAP -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-      crossorigin="anonymous"
-    ></script>
+	<!-- BOOTSTRAP -->
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+	</script>
 
-    <!-- WEATHER API -->
-    <script type="text/javascript" src="assets/javascript/weather.js"></script>
+	<!-- WEATHER API -->
+	<script type="text/javascript" src="assets/javascript/weather.js"></script>
 
-    <!-- MY SCRIPT -->
-    <script src="assets/javascript/scripts.js"></script>
-  </body>
+	<!-- MY SCRIPT -->
+	<script src="assets/javascript/scripts.js"></script>
+</body>
+
 </html>

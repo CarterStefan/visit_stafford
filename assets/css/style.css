@@ -8,6 +8,11 @@ body {
   background-color: #f2f2f2;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 60px;
+}
+
 /* ------------------------------ COLORS  */
 
 /* Color Theme Swatches in Hex */
@@ -100,6 +105,12 @@ body {
   font-weight: bold;
   text-align: center;
   letter-spacing: 0.2em;
+}
+
+/* ------------------------- Section Headers */
+.section-header{
+    text-align: center;
+    font-size: 200%;
 }
 
 /* ------------------------- PLACES TO BOXES */

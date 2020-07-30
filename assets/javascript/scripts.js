@@ -1,9 +1,9 @@
 //TABS
 $("#tabs").tabs();
 
-/*FUNCTION TO SMOOTH SCROLL FOR WHOLE PAGE*/
+/*FUNCTION TO SMOOTH SCROLL FOR WHOLE PAGE
 $(document).ready(function () {
-  $("a").on("click", function (event) {
+  $(".nav-link").on("click", function (event) {
     if (this.hash !== "") {
       event.preventDefault();
       var hash = this.hash;
@@ -18,7 +18,7 @@ $(document).ready(function () {
       );
     } // End if
   });
-});
+});*/
 
 /* FUNCTION TO SMOOTH SCROLL TO ELEMENT AMENDED TO ONLY SCROLL TO GOOGLE MAP BOX*/
 $(document).ready(function () {
@@ -30,7 +30,7 @@ $(document).ready(function () {
         {
           scrollTop: $("#google-maps-box").offset().top - 225,
         },
-        400,
+        
         function () {
           window.location.hash = hash;
         }
