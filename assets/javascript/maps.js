@@ -286,7 +286,6 @@ function dropHotels() {
 // RESTAURANT FUNCTION
 function addRestaurantMarkersWithTimeout(position, image, timeout, content) {
   var marker;
-  console.log(content);
   window.setTimeout(function () {
     marker = new google.maps.Marker({
       position: position,
@@ -310,7 +309,6 @@ function addRestaurantMarkersWithTimeout(position, image, timeout, content) {
 // ATTRACTIONS FUNCTION
 function addAttractionsMarkersWithTimeout(position, image, timeout, content) {
   var marker;
-  console.log(content);
   window.setTimeout(function () {
     marker = new google.maps.Marker({
       position: position,
@@ -334,7 +332,6 @@ function addAttractionsMarkersWithTimeout(position, image, timeout, content) {
 // HOTELS FUNCTION
 function addHotelsMarkersWithTimeout(position, image, timeout, content) {
   var marker;
-  console.log(content);
   window.setTimeout(function () {
     marker = new google.maps.Marker({
       position: position,
@@ -371,7 +368,6 @@ function dropSingleMarker(name) {
 
 function addSingleMarkerWithTimeout(position, image, timeout, content) {
   var marker;
-  console.log(content);
   window.setTimeout(function () {
     marker = new google.maps.Marker({
       position: position,
