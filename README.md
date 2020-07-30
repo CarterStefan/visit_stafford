@@ -132,11 +132,9 @@ Clicking Weather - This will take you to the weather report section of the page.
 
 Clicking on any of the links in the nav bar from any of the sections will scroll to the desired location. 
 
-The nav bar will also reduce in height when scrolling down the page, but will appear when scrolling up. This was due to the page being very long on mobile, so you can still easily navigate around the page without having to scroll all the way back to the top of the page to do so.
+The nav bar is also fixed to the top of the page. This was due to the page being so long when viewed on mobile, giving the user more functionality without having to scroll to the top of the page to get back to the top.
 
 ![nav_bar](https://user-images.githubusercontent.com/64138643/88782906-0cdf3900-d186-11ea-931b-e04cffe5d1a1.PNG)
-
-![nav_bar_collapsed](https://user-images.githubusercontent.com/64138643/88783098-4dd74d80-d186-11ea-85c1-70fa19672786.PNG)
 
 ### Eat See Stay
 Clicking Eat - This will show you the 6 options of places to eat.
