@@ -20,9 +20,8 @@
 11. [Validating Code](#Validating-Code)
 12. [Future Features](#Future-Features)
 13. [Deployment](#Deployment)
-14. [Content](#Content)
-15. [Credits](#Credits)
-16. [Acknowledgements](#Acknowledgments)
+14. [Credits](#Credits)
+15. [Acknowledgements](#Acknowledgements)
 
 
 ## Project Overview
@@ -98,7 +97,7 @@ The icons on the weather section were taken from [weatherbit](https://www.weathe
 
 - [Adobe Color](https://color.adobe.com/create/color-wheel) I used only one font on this page. This was taken from Google Fonts to make the page more visually appealing.
 
-- [Javascript](https://en.wikipedia.org/wiki/JavaScript) I used Javascript to create functionality for this site. The Google Map feature relies heavily on this, and the functionality was created using documentation from the Google Maps API site. I also got great help from a Git Hub repo I found - https://gist.github.com/Kusumoto/c2a73e9292590c510a47 - This added the functionality to the map which I was looking for when adapting the code to suit my personal needs, in adding personal info windows with different content, and also dropping the markers on the map.
+- [Javascript](https://en.wikipedia.org/wiki/JavaScript) I used Javascript to create functionality for this site. The Google Map feature relies heavily on this, and the functionality was created using documentation from the Google Maps API site. 
 
 - [Fontawsome](https://fontawesome.com/) I have used Fontawsome for the pictograms in the footer of my page.
 
@@ -224,12 +223,9 @@ This was used for version control and regularly pushed changes using the termina
 To deploy the page and make it viewable to others, I used Github pages:
 1. In the Visit Stafford project I clicked on the settings tab.
 2. I scrolled down to Github Pages and changed the Source to Master Branch.
-3. This meant I could then share my page with others using the following link: [Visit Stafford](https://carterstefan.github.io/visit_stafford)
+3. This meant I could then share my page with others using the following link: [Visit Stafford](https://carterstefan.github.io/visit_stafford) 
 
-### Content
-The introduction paragraph was taken from a [Visit Staffordshire](https://www.enjoystaffordshire.com/information/product-catch-all/stafford-p736161) site. 
-
-### Credits
+## Credits
 #### Scripts.js
 - FUNCTION TO SMOOTH SCROLL FOR WHOLE PAGE - This was taken from W3Schools.
 - FUNCTION TO SMOOTH SCROLL TO GOOGLE MAP BOX - This was taken from W3Schools.
@@ -255,8 +251,10 @@ The introduction paragraph was taken from a [Visit Staffordshire](https://www.en
 - NAVBAR - Created using Bootstrap Documentation.
 - INTRODUCTION PARAGRAPH - Taken from [Enjoy Stafford](https://www.enjoystaffordshire.com/information/product-catch-all/stafford-p736161).
 
-### Acknowledgements
+## Acknowledgements
 
 - I would like to thank my mentor Adegbenga Adeye for his help in my mentoring sessions and input in some valuable advice with the development of my website. 
 
 - I would also like to thank the Code Institute team in helping with the learning new skills used to create this page.
+
+##### [Back To Top](#Visit-Stafford)
