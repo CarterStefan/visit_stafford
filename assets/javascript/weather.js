@@ -1,13 +1,13 @@
-var weather;
-var el;
-var item;
+let weather;
+let el;
+let item;
 
 const baseURL =
   "https://api.weatherbit.io/v2.0/forecast/daily?postal_code=ST162RP&days=8&key=8adc9c07736e467cb1e8ef7497ddc0f8";
 
 // FUNCTION CALL TO WEATHER API
 function getWeather(cb) {
-  var xhr = new XMLHttpRequest();
+  let xhr = new XMLHttpRequest();
   xhr.open("GET", baseURL);
   xhr.send();
   xhr.onreadystatechange = function () {
@@ -19,7 +19,7 @@ function getWeather(cb) {
 
 // FUNCTION TO DISPLAY INFORMATION ON PAGE
 function writeToDocument() {
-  var el = document.getElementById("data");
+  let el = document.getElementById("data");
   el.innerHTML = "";
   getWeather(function (weather) {
     weather = weather.data;
@@ -45,8 +45,8 @@ function writeToDocument() {
         msg = "Enjoy Your Day";
       }
 
-      var date = item.valid_date.split("-");
-      var newDate = date[2] + "-" + date[1] + "-" + date[0];
+      let date = item.valid_date.split("-");
+      let newDate = date[2] + "-" + date[1] + "-" + date[0];
 
       el.innerHTML +=
         '<div class="col-12 col-sm-6 col-md-3 weatherbox1"><p class="weather-date">' +

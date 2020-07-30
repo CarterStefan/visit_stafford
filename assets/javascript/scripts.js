@@ -1,7 +1,7 @@
 //TABS
 $("#tabs").tabs();
 
-//NAVAR COLLAPSE
+//NAVBAR COLLAPSE
 $(".navbar-collapse a").click(function () {
   $(".navbar-collapse").collapse("hide");
 });
@@ -11,7 +11,7 @@ $(document).ready(function () {
   $(".view-on-map-marker").on("click", function (event) {
     if (this.hash !== "") {
       event.preventDefault();
-      var hash = this.hash;
+      let hash = this.hash;
       $("html, body").animate(
         {
           scrollTop: $("#google-maps-box").offset().top - 225,
@@ -52,7 +52,7 @@ function hotel(name, type, website, lat, lng) {
 }
 
 // RESTAURANT OBJECTS
-var pizzaExpress = new restaurant(
+let pizzaExpress = new restaurant(
   "Pizza Express",
   "Italian",
   "https://www.pizzaexpress.com/stafford",
@@ -60,7 +60,7 @@ var pizzaExpress = new restaurant(
   -2.117275
 );
 
-var theMarketVaults = new restaurant(
+let theMarketVaults = new restaurant(
   "The Market Vaults",
   "Burgers + Fries",
   "https://www.themarketvaults.co.uk/",
@@ -68,7 +68,7 @@ var theMarketVaults = new restaurant(
   -2.116683
 );
 
-var theSoupKitchen = new restaurant(
+let theSoupKitchen = new restaurant(
   "The Soup Kitchen",
   "British",
   "http://www.thesoupkitchen.co.uk/home.htm",
@@ -76,7 +76,7 @@ var theSoupKitchen = new restaurant(
   -2.118376
 );
 
-var theSwan = new restaurant(
+let theSwan = new restaurant(
   "The Swan",
   "British",
   "https://www.theswanstafford.co.uk/",
@@ -84,7 +84,7 @@ var theSwan = new restaurant(
   -2.116994
 );
 
-var theBear = new restaurant(
+let theBear = new restaurant(
   "The Bear",
   "Grill",
   "https://www.thebearpubstafford.co.uk/index",
@@ -92,7 +92,7 @@ var theBear = new restaurant(
   -2.116485
 );
 
-var theSunInn = new restaurant(
+let theSunInn = new restaurant(
   "The Sun",
   "Traditional",
   "https://www.titanicbrewery.co.uk/our-pubs/the-sun/",
@@ -101,7 +101,7 @@ var theSunInn = new restaurant(
 );
 
 // ATTRACTION OBJECTS
-var theAncientHighHouse = new attraction(
+let theAncientHighHouse = new attraction(
   "The Ancient High House",
   "Museum",
   "https://www.freedom-leisure.co.uk/centres/ancienthighhouse/",
@@ -109,7 +109,7 @@ var theAncientHighHouse = new attraction(
   -2.117098
 );
 
-var staffordCastle = new attraction(
+let staffordCastle = new attraction(
   "Stafford Castle",
   "Castle",
   "https://www.freedom-leisure.co.uk/centres/stafford-castle/",
@@ -117,7 +117,7 @@ var staffordCastle = new attraction(
   -2.147409
 );
 
-var victoriaPark = new attraction(
+let victoriaPark = new attraction(
   "Victoria Park",
   "Park",
   "https://www.staffordbc.gov.uk/victoriapark",
@@ -125,7 +125,7 @@ var victoriaPark = new attraction(
   -2.120343
 );
 
-var doxeyMarshes = new attraction(
+let doxeyMarshes = new attraction(
   "Doxey Marshes",
   "Nature Reserve",
   "https://www.staffs-wildlife.org.uk/nature-reserves/doxey-marshes",
@@ -133,7 +133,7 @@ var doxeyMarshes = new attraction(
   -2.145383
 );
 
-var shireHallGallery = new attraction(
+let shireHallGallery = new attraction(
   "Shire Hall Gallery",
   "Art Gallery",
   "https://www.staffordshire.gov.uk/Business/Investment/Shire-Hall.aspx",
@@ -141,7 +141,7 @@ var shireHallGallery = new attraction(
   -2.11675
 );
 
-var gatehouseTheatre = new attraction(
+let gatehouseTheatre = new attraction(
   "Gatehouse Theatre",
   "Theatre",
   "https://staffordgatehousetheatre.co.uk/",
@@ -150,7 +150,7 @@ var gatehouseTheatre = new attraction(
 );
 
 // HOTEL OBJECTS
-var theSwanHotel = new hotel(
+let theSwanHotel = new hotel(
   "The Swan",
   "Hotel",
   "https://www.theswanstafford.co.uk/",
@@ -158,7 +158,7 @@ var theSwanHotel = new hotel(
   -2.116994
 );
 
-var theVine = new hotel(
+let theVine = new hotel(
   "The Vine",
   "Hotel",
   "https://www.vinehotelpub.co.uk/",
@@ -166,7 +166,7 @@ var theVine = new hotel(
   -2.116839
 );
 
-var tillingtonHall = new hotel(
+let tillingtonHall = new hotel(
   "Tillington Hall",
   "Hotel",
   "https://www.tillingtonhall.co.uk/",
@@ -174,7 +174,7 @@ var tillingtonHall = new hotel(
   -2.134698
 );
 
-var theSpittalBrook = new hotel(
+let theSpittalBrook = new hotel(
   "The Spittal Brook",
   "B&B",
   "http://thespittalbrookstafford.co.uk/",
@@ -182,7 +182,7 @@ var theSpittalBrook = new hotel(
   -2.100965
 );
 
-var abbeyHotel = new hotel(
+let abbeyHotel = new hotel(
   "Abbey Hotel",
   "B&B",
   "http://www.abbeyhotelstafford.co.uk/",
@@ -190,7 +190,7 @@ var abbeyHotel = new hotel(
   -2.104049
 );
 
-var cameronLodge = new hotel(
+let cameronLodge = new hotel(
   "Cameron Lodge",
   "B&B",
   "https://www.cameronlodgestafford.co.uk/",
@@ -199,7 +199,7 @@ var cameronLodge = new hotel(
 );
 
 // SHOW RESTAURANTS ON PAGE
-var eat1 =
+let eat1 =
   "<div class='places-to-box'><p>" +
   pizzaExpress.name +
   "</p>" +
@@ -210,10 +210,10 @@ var eat1 =
   pizzaExpress.website +
   '">Make a booking</a></p>' +
   '<button id="view-on-map" class="view-on-map-marker" onclick="dropSingleMarker(restaurants[0])">View On Map</button></div>';
-var food1 = document.getElementById("pizza-express");
+let food1 = document.getElementById("pizza-express");
 food1.innerHTML = eat1;
 
-var eat2 =
+let eat2 =
   "<div class='places-to-box'><p>" +
   theSwan.name +
   "</p>" +
@@ -224,10 +224,10 @@ var eat2 =
   theSwan.website +
   '">Make a booking</a></p>' +
   '<button class="view-on-map-marker" onclick="dropSingleMarker(restaurants[1])">View On Map</button></div>';
-var food2 = document.getElementById("the-swan");
+let food2 = document.getElementById("the-swan");
 food2.innerHTML = eat2;
 
-var eat3 =
+let eat3 =
   "<div class='places-to-box'><p>" +
   theMarketVaults.name +
   "</p>" +
@@ -238,10 +238,10 @@ var eat3 =
   theMarketVaults.website +
   '">Make a booking</a></p>' +
   '<button class="view-on-map-marker" onclick="dropSingleMarker(restaurants[2])"  >View On Map</button></div>';
-var food3 = document.getElementById("the-market-vaults");
+let food3 = document.getElementById("the-market-vaults");
 food3.innerHTML = eat3;
 
-var eat4 =
+let eat4 =
   "<div class='places-to-box'><p>" +
   theSoupKitchen.name +
   "</p>" +
@@ -252,10 +252,10 @@ var eat4 =
   theSoupKitchen.website +
   '">Make a booking</a></p>' +
   '<button class="view-on-map-marker" onclick="dropSingleMarker(restaurants[3])"  >View On Map</button></div>';
-var food4 = document.getElementById("the-soup-kitchen");
+let food4 = document.getElementById("the-soup-kitchen");
 food4.innerHTML = eat4;
 
-var eat5 =
+let eat5 =
   "<div class='places-to-box'><p>" +
   theBear.name +
   "</p>" +
@@ -266,10 +266,10 @@ var eat5 =
   theBear.website +
   '">Make a booking</a></p>' +
   '<button class="view-on-map-marker" onclick="dropSingleMarker(restaurants[4])"  >View On Map</button></div>';
-var food5 = document.getElementById("the-bear");
+let food5 = document.getElementById("the-bear");
 food5.innerHTML = eat5;
 
-var eat6 =
+let eat6 =
   "<div class='places-to-box'><p>" +
   theSunInn.name +
   "</p>" +
@@ -280,11 +280,11 @@ var eat6 =
   theSunInn.website +
   '">Make a booking</a></p>' +
   '<button class="view-on-map-marker" onclick="dropSingleMarker(restaurants[5])"  >View On Map</button></div>';
-var food6 = document.getElementById("the-sun");
+let food6 = document.getElementById("the-sun");
 food6.innerHTML = eat6;
 
 // SHOW ATTRACTIONS ON PAGE
-var see1 =
+let see1 =
   "<div class='places-to-box'><p>" +
   theAncientHighHouse.name +
   "</p>" +
@@ -295,10 +295,10 @@ var see1 =
   theAncientHighHouse.website +
   '">See Website</a></p>' +
   '<button class="view-on-map-marker" onclick="dropSingleMarker(attractions[0])"  >View On Map</button></div>';
-var attraction1 = document.getElementById("ancient-high-house");
+let attraction1 = document.getElementById("ancient-high-house");
 attraction1.innerHTML = see1;
 
-var see2 =
+let see2 =
   "<div class='places-to-box'><p>" +
   staffordCastle.name +
   "</p>" +
@@ -309,10 +309,10 @@ var see2 =
   staffordCastle.website +
   '">See Website</a></p>' +
   '<button class="view-on-map-marker" onclick="dropSingleMarker(attractions[1])"  >View On Map</button></div>';
-var attraction2 = document.getElementById("stafford-castle");
+let attraction2 = document.getElementById("stafford-castle");
 attraction2.innerHTML = see2;
 
-var see3 =
+let see3 =
   "<div class='places-to-box'><p>" +
   victoriaPark.name +
   "</p>" +
@@ -323,10 +323,10 @@ var see3 =
   victoriaPark.website +
   '">See Website</a></p>' +
   '<button class="view-on-map-marker" onclick="dropSingleMarker(attractions[2])"  >View On Map</button></div>';
-var attraction3 = document.getElementById("victoria-park");
+let attraction3 = document.getElementById("victoria-park");
 attraction3.innerHTML = see3;
 
-var see4 =
+let see4 =
   "<div class='places-to-box'><p>" +
   doxeyMarshes.name +
   "</p>" +
@@ -337,10 +337,10 @@ var see4 =
   doxeyMarshes.website +
   '">See Website</a></p>' +
   '<button class="view-on-map-marker" onclick="dropSingleMarker(attractions[3])"  >View On Map</button></div>';
-var attraction4 = document.getElementById("doxey-marshes");
+let attraction4 = document.getElementById("doxey-marshes");
 attraction4.innerHTML = see4;
 
-var see5 =
+let see5 =
   "<div class='places-to-box'><p>" +
   shireHallGallery.name +
   "</p>" +
@@ -351,10 +351,10 @@ var see5 =
   shireHallGallery.website +
   '">See Website</a></p>' +
   '<button class="view-on-map-marker" onclick="dropSingleMarker(attractions[4])"  >View On Map</button></div>';
-var attraction5 = document.getElementById("shire-hall-gallery");
+let attraction5 = document.getElementById("shire-hall-gallery");
 attraction5.innerHTML = see5;
 
-var see6 =
+let see6 =
   "<div class='places-to-box'><p>" +
   gatehouseTheatre.name +
   "</p>" +
@@ -365,11 +365,11 @@ var see6 =
   shireHallGallery.website +
   '">See Website</a></p>' +
   '<button class="view-on-map-marker" onclick="dropSingleMarker(attractions[5])"  >View On Map</button></div>';
-var attraction6 = document.getElementById("gatehouse-theatre");
+let attraction6 = document.getElementById("gatehouse-theatre");
 attraction6.innerHTML = see6;
 
 // SHOW HOTELS ON PAGE
-var stay1 =
+let stay1 =
   "<div class='places-to-box'><p>" +
   theSwanHotel.name +
   "</p>" +
@@ -380,10 +380,10 @@ var stay1 =
   theSwanHotel.website +
   '">See Website</a></p>' +
   '<button class="view-on-map-marker" onclick="dropSingleMarker(hotels[0])"  >View On Map</button></div>';
-var hotel1 = document.getElementById("the-swan-hotel");
+let hotel1 = document.getElementById("the-swan-hotel");
 hotel1.innerHTML = stay1;
 
-var stay2 =
+let stay2 =
   "<div class='places-to-box'><p>" +
   theVine.name +
   "</p>" +
@@ -394,10 +394,10 @@ var stay2 =
   theVine.website +
   '">See Website</a></p>' +
   '<button class="view-on-map-marker" onclick="dropSingleMarker(hotels[1])"  >View On Map</button></div>';
-var hotel2 = document.getElementById("the-vine");
+let hotel2 = document.getElementById("the-vine");
 hotel2.innerHTML = stay2;
 
-var stay3 =
+let stay3 =
   "<div class='places-to-box'><p>" +
   tillingtonHall.name +
   "</p>" +
@@ -408,10 +408,10 @@ var stay3 =
   tillingtonHall.website +
   '">See Website</a></p>' +
   '<button class="view-on-map-marker" onclick="dropSingleMarker(hotels[2])"  >View On Map</button></div>';
-var hotel3 = document.getElementById("tillington-hall");
+let hotel3 = document.getElementById("tillington-hall");
 hotel3.innerHTML = stay3;
 
-var stay4 =
+let stay4 =
   "<div class='places-to-box'><p>" +
   theSpittalBrook.name +
   "</p>" +
@@ -422,10 +422,10 @@ var stay4 =
   theSpittalBrook.website +
   '">See Website</a></p>' +
   '<button class="view-on-map-marker" onclick="dropSingleMarker(hotels[3])"  >View On Map</button></div>';
-var hotel4 = document.getElementById("the-spittal-brook");
+let hotel4 = document.getElementById("the-spittal-brook");
 hotel4.innerHTML = stay4;
 
-var stay5 =
+let stay5 =
   "<div class='places-to-box'><p>" +
   abbeyHotel.name +
   "</p>" +
@@ -436,10 +436,10 @@ var stay5 =
   abbeyHotel.website +
   '">See Website</a></p>' +
   '<button class="view-on-map-marker" onclick="dropSingleMarker(hotels[4])"  >View On Map</button></div>';
-var hotel5 = document.getElementById("abbey-hotel");
+let hotel5 = document.getElementById("abbey-hotel");
 hotel5.innerHTML = stay5;
 
-var stay6 =
+let stay6 =
   "<div class='places-to-box'><p>" +
   cameronLodge.name +
   "</p>" +
@@ -450,7 +450,7 @@ var stay6 =
   cameronLodge.website +
   '">See Website</a></p>' +
   '<button class="view-on-map-marker" onclick="dropSingleMarker(hotels[5])"  >View On Map</button></div> ';
-var hotel6 = document.getElementById("cameron-lodge");
+let hotel6 = document.getElementById("cameron-lodge");
 hotel6.innerHTML = stay6;
 
 // HOVER EFFECT ON BUTTONS

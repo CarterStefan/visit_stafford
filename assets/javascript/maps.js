@@ -1,34 +1,34 @@
-// Declare Global variables
-var image;
-var markers = [];
-var map;
-var infowindow;
-var stafford = { lat: 52.8072076, lng: -2.1173127 };
+// Declare Global letiables
+let image;
+let markers = [];
+let map;
+let infowindow;
+let stafford = { lat: 52.8072076, lng: -2.1173127 };
 
 // Declare Websites
-var pizzaExpressWebsite = "https://www.pizzaexpress.com/stafford";
-var theSwanWebsite = "https://www.theswanstafford.co.uk/";
-var theMarketVaultsWebsite = "https://www.themarketvaults.co.uk/";
-var theSoupKitchenWebsite = "http://www.thesoupkitchen.co.uk/home.htm";
-var theBearWebsite = "https://www.thebearpubstafford.co.uk/index";
-var theSunWebsite = "https://www.titanicbrewery.co.uk/our-pubs/the-sun/";
+let pizzaExpressWebsite = "https://www.pizzaexpress.com/stafford";
+let theSwanWebsite = "https://www.theswanstafford.co.uk/";
+let theMarketVaultsWebsite = "https://www.themarketvaults.co.uk/";
+let theSoupKitchenWebsite = "http://www.thesoupkitchen.co.uk/home.htm";
+let theBearWebsite = "https://www.thebearpubstafford.co.uk/index";
+let theSunWebsite = "https://www.titanicbrewery.co.uk/our-pubs/the-sun/";
 
-var theAncientHighHouseWebsite =
+let theAncientHighHouseWebsite =
   "https://www.freedom-leisure.co.uk/centres/ancienthighhouse/";
-var staffordCastleWesbite =
+let staffordCastleWesbite =
   "https://www.freedom-leisure.co.uk/centres/stafford-castle/";
-var victoriaParkWebsite = "https://www.staffordbc.gov.uk/victoriapark";
-var doxeyMarshesWebsite =
+let victoriaParkWebsite = "https://www.staffordbc.gov.uk/victoriapark";
+let doxeyMarshesWebsite =
   "https://www.staffs-wildlife.org.uk/nature-reserves/doxey-marshes";
-var shireHallGalleryWesbite =
+let shireHallGalleryWesbite =
   "https://www.staffordshire.gov.uk/Business/Investment/Shire-Hall.aspx";
-var gateHouseTheatreWesbite = "https://staffordgatehousetheatre.co.uk/";
+let gateHouseTheatreWesbite = "https://staffordgatehousetheatre.co.uk/";
 
-var theVineWebsite = "https://www.vinehotelpub.co.uk/";
-var tillingtonHallWebsite = "https://www.tillingtonhall.co.uk/";
-var theSpittalBrookWebsite = "http://thespittalbrookstafford.co.uk/";
-var abbeyHotelWebsite = "http://www.abbeyhotelstafford.co.uk/";
-var cameronLodgeWebsite = "https://www.cameronlodgestafford.co.uk/";
+let theVineWebsite = "https://www.vinehotelpub.co.uk/";
+let tillingtonHallWebsite = "https://www.tillingtonhall.co.uk/";
+let theSpittalBrookWebsite = "http://thespittalbrookstafford.co.uk/";
+let abbeyHotelWebsite = "http://www.abbeyhotelstafford.co.uk/";
+let cameronLodgeWebsite = "https://www.cameronlodgestafford.co.uk/";
 
 // INITIALISE GOOGLE MAP
 function initMap() {
@@ -40,7 +40,7 @@ function initMap() {
 }
 
 // RESTAURANTS
-var restaurants = [
+let restaurants = [
   {
     position: { lat: 52.807589, lng: -2.117275 },
     image: { url: "assets/img/food.png" },
@@ -105,7 +105,7 @@ var restaurants = [
 
 // ATTRACTIONS
 
-var attractions = [
+let attractions = [
   {
     position: { lat: 52.806302, lng: -2.117101 },
     image: { url: "assets/img/see.png" },
@@ -170,7 +170,7 @@ var attractions = [
 
 // HOTELS
 
-var hotels = [
+let hotels = [
   {
     position: { lat: 52.806075, lng: -2.116975 },
     image: { url: "assets/img/hotel.png" },
@@ -236,7 +236,7 @@ var hotels = [
 // FUNCTION TO PREPARE RESTAURANT MARKERS
 function dropRestaurants() {
   clearMarkers();
-  for (var i = 0; i < restaurants.length; i++) {
+  for (let i = 0; i < restaurants.length; i++) {
     addRestaurantMarkersWithTimeout(
       restaurants[i].position,
       restaurants[i].image,
@@ -251,7 +251,7 @@ function dropRestaurants() {
 // FUNCTION TO PREPARE ATTRACTION MARKERS
 function dropAttractions() {
   clearMarkers();
-  for (var i = 0; i < attractions.length; i++) {
+  for (let i = 0; i < attractions.length; i++) {
     addAttractionsMarkersWithTimeout(
       attractions[i].position,
       attractions[i].image,
@@ -266,7 +266,7 @@ function dropAttractions() {
 // FUNCTION TO PREPARE HOTEL MARKERS
 function dropHotels() {
   clearMarkers();
-  for (var i = 0; i < hotels.length; i++) {
+  for (let i = 0; i < hotels.length; i++) {
     addHotelsMarkersWithTimeout(
       hotels[i].position,
       hotels[i].image,
@@ -280,7 +280,7 @@ function dropHotels() {
 
 // RESTAURANT FUNCTION
 function addRestaurantMarkersWithTimeout(position, image, timeout, content) {
-  var marker;
+  let marker;
   window.setTimeout(function () {
     marker = new google.maps.Marker({
       position: position,
@@ -301,7 +301,7 @@ function addRestaurantMarkersWithTimeout(position, image, timeout, content) {
 
 // ATTRACTIONS FUNCTION
 function addAttractionsMarkersWithTimeout(position, image, timeout, content) {
-  var marker;
+  let marker;
   window.setTimeout(function () {
     marker = new google.maps.Marker({
       position: position,
@@ -322,7 +322,7 @@ function addAttractionsMarkersWithTimeout(position, image, timeout, content) {
 
 // HOTELS FUNCTION
 function addHotelsMarkersWithTimeout(position, image, timeout, content) {
-  var marker;
+  let marker;
   window.setTimeout(function () {
     marker = new google.maps.Marker({
       position: position,
@@ -356,7 +356,7 @@ function dropSingleMarker(name) {
 }
 
 function addSingleMarkerWithTimeout(position, image, timeout, content) {
-  var marker;
+  let marker;
   window.setTimeout(function () {
     marker = new google.maps.Marker({
       position: position,
@@ -379,7 +379,7 @@ function addSingleMarkerWithTimeout(position, image, timeout, content) {
 
 // CLEAR ALL MARKERS FUNCTION
 function clearMarkers() {
-  for (var i = 0; i < markers.length; i++) {
+  for (let i = 0; i < markers.length; i++) {
     markers[i].setMap(null);
   }
   markers = [];
