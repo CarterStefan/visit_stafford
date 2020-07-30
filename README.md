@@ -32,7 +32,7 @@ I will create a website for my hometown of Stafford. This will feature informati
 The main user of the website will be residents who live here looking for something to do, as well as people who have never been to the town before who may be planning a visit.
 
 ## UX 
-The users of this website can be split into two simple groups, those who live in Stafford and those who don't. The aim of the website will be to inform people of what there is to do around stafford. This will include places to eat and drink, places of interest to visit, and places to shop. Due to this, despite the two groups of users being split, they share a common purpose to visit the site in the fact they are looking for something to do in Stafford.
+The users of this website can be split into two simple groups, those who live in Stafford and those who don't. The aim of the website will be to inform people of what there is to do around stafford. This will include places to eat and drink, places of interest to visit, and places to stay. Due to this, despite the two groups of users being split, they share a common purpose to visit the site in the fact they are looking for something to do in Stafford.
 
 The website will be focused on adults, so will need a professional and clean feel to the site, encouraging people to visit the area. It should be informative and easy to use.
 
@@ -43,14 +43,14 @@ The website will be focused on adults, so will need a professional and clean fee
   I would like to go on a website to show me a list of local eateries, so I can see them all in one place to see which one takes my fancy the most, and       perhaps find a restaurant I did not know about near to me. 
   
   
-- I am visiting Stafford on part of a business trip having never been to the town before. 
+- I am visiting Stafford on a business trip having never been to the town before. 
 
   As part of my expenses from work, I get a meal and drink included for each night. Not wanting to eat in the hotel room, I am looking for somewhere to eat   and find out a little about the town. As well as food, I would like to see more of the town than just the office and hotel room, so I would benefit from   suggestions of local places to walk to and attractions to see in my free time while I am here.
   
   
 - I am visiting Stafford for a wedding on Sunday. I will be staying from Friday - Monday. 
 
-  I would like to see what there is to do around the town on the days leading up to the wedding. Also, I would like to know what I need to pack in my         suitcase for the weekend. I want to know if I will need warm weathered clothing or cold weathered clothing for the days either side of the wedding.
+  I would like to see what there is to do around the town on the days leading up to the wedding. Also, I would like to know what I need to pack in my         suitcase for the weekend. I want to know if I will need warm clothing for warm or cold weather for the days either side of the wedding.
   
   
 ## Features
@@ -62,7 +62,7 @@ This is a one page website. I opted for this as I wanted the page to be a one st
 
 - What's on - This section features a small selection of places to eat / see and stay. Each of these items offers an external link to the website, or the option to view on the map.
 
-- Map controls - There are also some additional buttons which will have added control for the map. This includes show all of one category, show all of all categories and clear the map.
+- Map controls - There are also some additional buttons which will have added control for the map. This includes show all of one category, show everything in all categories and clear the map.
 
 - Map - This is where the above controls are visualised. Once markers appear on the map, they can be clicked to show info windows with another link to the website.
 
@@ -193,7 +193,6 @@ As well as this, I used my Huawei P20 to test the page on mobile.
 
 ## Validating Code
 List of websites used to validate the code:
-E.G
 1. [W3C HTML Validator](https://validator.w3.org/)
 2. [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
 3. [JSHINT](https://jshint.com/)
@@ -213,9 +212,9 @@ One bug which was found was when testing the page using the iPhone 5s option on 
 Another bug I found upon testing was the Info Windows on the Maps feature. When opening an info window and then clicking close, the page would jump down by a few pixels. This only occured on Chrome and Edge, the issue did not occur on Firefox. However, the issue was also present on the default Google Info Windows (not just my markers). Unfortunately, I was unable to find a solution to this issue.
 
 ## Deployment
-I used GitHub and Gitpod to create all pages and css on my site. This was initially started with the Code Institute Template.
+I used Gitpod to create the index page, CSS and Javascript / JQuery on my site. This was initially started with the Code Institute Template.
 
-This was used for version control and regularly pushed changes using the terminal in Gitpod.
+GitHub was used for version control and regularly pushing changes, using the terminal in Gitpod, to master branch.
 
 To deploy the page and make it viewable to others, I used Github pages:
 1. In the Visit Stafford project I clicked on the settings tab.
@@ -249,8 +248,8 @@ To deploy the page and make it viewable to others, I used Github pages:
 - INTRODUCTION PARAGRAPH - Taken from [Enjoy Stafford](https://www.enjoystaffordshire.com/information/product-catch-all/stafford-p736161).
 
 ## Acknowledgements
-- I would like to thank my mentor Adegbenga Adeye for his help in my mentoring sessions and input in some valuable advice with the development of my website. 
+- I would like to thank my mentor Adegbenga Adeye for his input in my mentoring sessions and his valuable advice for the development of my website. 
 
-- I would also like to thank the Code Institute team in helping with the learning new skills used to create this page.
+- I would also like to thank the Code Institute team for helping me learn the new skills needed to create this page.
 
 ##### [Back To Top](#Visit-Stafford)
